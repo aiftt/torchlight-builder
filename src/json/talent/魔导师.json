@@ -1,0 +1,296 @@
+{
+  "name": "魔导师",
+  "main": "",
+  "tags": ["法术", "护盾"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentIntS01_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "积聚",
+      "desc": "+1 聚能祝福层数上限每有 1 层聚能祝福， 额外 +3% 法术伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jiju_Icon_128.webp"
+    },
+    {
+      "name": "内能",
+      "desc": "护盾返还量翻倍",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_neineng_Icon_128.webp"
+    },
+    {
+      "name": "甲壳",
+      "desc": "额外 +30% 最大护盾最大生命固定为 100",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jiaqiao_Icon_128.webp"
+    },
+    {
+      "name": "稳扎稳打",
+      "desc": "对施法速度的加成与额外加成的 100% 同样作用于法术迸发充能速度非法术迸发释放的技能额外 -50% 击中伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_wenzhawenda_Icon_128.webp"
+    },
+    {
+      "name": "光辉结界",
+      "desc": "最近开启的护盾充能无法被伤害打断+50% 护盾充能速度",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_guanghuijiejie_Icon_128.webp"
+    },
+    {
+      "name": "心灵利刃",
+      "desc": "未携带法杖、锡杖时，额外 +30% 法术伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_xinlingliren_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 法术伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 最大魔力",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 法术伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 施法速度",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 最大魔力+18% 魔力自然回复速度",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 护盾返还",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 最大护盾",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 几率造成异常状态",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Ailment_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 施法速度",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 -15% 护盾返还间隔+8% 护盾返还",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 法术格挡率",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/BlockSpell_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 几率造成异常状态+15% 异常伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Ailment_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 防御值",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+12% 法术格挡率+5% 从盾牌获得的护盾值",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/BlockSpell_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 最大魔力",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+5% 暴击伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 防御值2.5% 元素抗性",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 最大魔力",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 施法速度",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 护盾充能速度",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "持盾时， +24% 法术伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 法术迸发充能速度",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 施法速度+15% 技能消耗",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "-12% 技能消耗",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "额外 -20% 护盾充能间隔",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+75 最大护盾",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 法术迸发充能速度",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 聚能祝福持续时间拥有聚能祝福时， +4% 施法速度",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 智慧",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "护盾充能时，额外 +12% 伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bleed_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 5 点智慧， +2 最大护盾",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "法术迸发上限 +1",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Aura_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每有 1 层聚能祝福， +6% 法术暴击伤害",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dot_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+15% 智慧",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "进入低护盾状态时，立即开启护盾充能",
+      "belong": "魔导师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Cannon02_64.webp"
+    }
+  ]
+}

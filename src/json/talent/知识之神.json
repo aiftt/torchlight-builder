@@ -1,0 +1,206 @@
+{
+  "name": "知识之神",
+  "main": "智力",
+  "tags": ["法术", "冰冷"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentInt_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "灯塔",
+      "desc": "法术迸发上限 +2",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_dengta_Icon_128.webp"
+    },
+    {
+      "name": "苦寒",
+      "desc": "击中时，+100% 几率获得 1 层聚能祝福+1 聚能祝福层数上限",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_kuhan_Icon_128.webp"
+    },
+    {
+      "name": "凛冬",
+      "desc": "敌人每有 2 点冰结值，对其额外 +1% 伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yongdongzhizhou_Icon_128.webp"
+    },
+    {
+      "name": "别具慧眼",
+      "desc": "额外 +30% 法术伤害额外 +25% 技能消耗",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_biejuhuiyan_Icon_128.webp"
+    },
+    {
+      "name": "炙手可热",
+      "desc": "额外 +20% 冰冷和火焰伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_zhishoukere_Icon_128.webp"
+    },
+    {
+      "name": "养精蓄锐",
+      "desc": "每消耗 6% 魔力，获得 1 层聚能祝福，间隔 0.3 秒额外 -50% 聚能祝福持续时间聚能祝福达到上限时，额外 +25% 施法速度",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yangjingxurui_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度2.5% 移动速度",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 最大魔力",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度-4 技能消耗+5% 移动速度",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 技能范围4.5% 投射物速度",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 最大魔力-4 技能消耗",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Aura_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+5% 暴击伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 法术迸发充能速度",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 技能范围+9% 投射物速度",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgLightning_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 最大护盾",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Aura_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 法术迸发充能速度",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Aura_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 护盾返还",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8% 冰冷伤害+6% 冰结几率",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 智慧",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 法术伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 护盾返还",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 聚能祝福持续时间拥有聚能祝福时， +10% 伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+16% 冰冷伤害+12% 冰结几率50% 物理伤害转化为冰冷伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 智慧",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/EsReg_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 法术技能等级",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 聚能祝福层数上限",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "造成冰封时，+100% 几率获得 1 层聚能祝福对冰结的敌人，额外 +8% 伤害",
+      "belong": "知识之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Ailment_64.webp"
+    }
+  ]
+}

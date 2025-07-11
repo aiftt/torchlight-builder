@@ -1,0 +1,302 @@
+{
+  "name": "驭影者",
+  "main": "",
+  "tags": ["腐蚀", "封印"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentAIS01_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "污垢",
+      "desc": "额外 +15% 腐蚀伤害对生命造成额外 15% 伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_xuewu_Icon_128.webp"
+    },
+    {
+      "name": "结界",
+      "desc": "附加 13% 已封印魔力的护盾",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jiejie_Icon_128.webp"
+    },
+    {
+      "name": "隐刺",
+      "desc": "具有迷踪时，额外 -20% 受到的伤害失去迷踪后的 3 秒内，额外 +25% 伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yinci_Icon_128.webp"
+    },
+    {
+      "name": "病入膏肓",
+      "desc": "造成伤害时，敌人每有一层凋零或恶化，额外 +6% 腐蚀伤害，最多额外 +30%",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_bingrugaohuang_Icon_128.webp"
+    },
+    {
+      "name": "扭曲信仰",
+      "desc": "+3 腐蚀技能等级-5% 腐蚀抗性上限",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_niuquxinyang_Icon_128.webp"
+    },
+    {
+      "name": "生命转换",
+      "desc": "对最大生命的加成的 100% 同样作用于最大魔力",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_xuerouxianji_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾+3% 最大生命",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8% 凋零伤害+6% 凋零几率",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击和施法速度",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大护盾+6% 最大生命",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 恶化几率",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 凋零几率+4% 凋零持续时间",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击和施法速度",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 腐蚀抗性",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 恶化伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+10% 暴击伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 凋零几率",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+4% 腐蚀抗性-100%受到凋零伤害召唤物免疫腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "4% 几率额外造成 1 层恶化4% 几率额外造成 1 层凋零",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 凋零几率+4% 凋零持续时间",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 护盾充能速度1.5% 护盾返还",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+15% 最大生命每秒自然回复 1.6% 生命召唤物免疫腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾+3% 最大生命",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "100% 物理伤害转化为腐蚀伤害召唤物 100% 物理伤害转化为腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 护盾充能速度+3% 护盾返还",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8% 凋零伤害+6% 凋零几率附加 1 基础凋零伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "同时封印魔力和生命时，额外 +12% 伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+12% 腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 腐蚀伤害对生命造成额外 2% 伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每造成 5 层凋零，获得迷踪",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Claw02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 魔力封印补偿",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "4% 几率额外造成 1 层凋零",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 恶化几率",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 腐蚀伤害",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 迷踪效果",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 魔力封印补偿",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "最近每造成 1 层凋零，1.6% 腐蚀伤害，至多叠加 60 层",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 +10% 恶化伤害+5% 恶化持续时间",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 腐蚀技能等级",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "具有迷踪时， +15% 移动速度具有迷踪时，移动速度无法降低至基础值以下",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/BlockSpell_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+10% 魔力封印补偿",
+      "belong": "驭影者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow01_64.webp"
+    }
+  ]
+}

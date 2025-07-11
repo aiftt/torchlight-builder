@@ -1,0 +1,284 @@
+{
+  "name": "游侠",
+  "main": "",
+  "tags": ["暴击", "距离"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSAS03_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "侥幸",
+      "desc": "拥有至少 50 点战意值时，暴击幸运",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jiaoxing_Icon_128.webp"
+    },
+    {
+      "name": "引力",
+      "desc": "额外 +20% 近战伤害近战技能具有反向击退",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yinli_Icon_128.webp"
+    },
+    {
+      "name": "流矢",
+      "desc": "额外 +20% 投射物伤害+50% 击退距离",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_liushi_Icon_128.webp"
+    },
+    {
+      "name": "再接再厉",
+      "desc": "暴击时，在接下来的 4 秒内获得增益：暴击时额外 +8% 伤害，-25% 暴击值，该效果有 0.5 秒间隔",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_zaijiezaili_Icon_128.webp"
+    },
+    {
+      "name": "近在眉睫",
+      "desc": "每隔 0.25 秒，使 10 米内敌人受到的来自你的伤害额外 +6%，该效果最多叠加 5 层",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jinzaimeijie_Icon_128.webp"
+    },
+    {
+      "name": "强弓劲弩",
+      "desc": "投射物伤害随飞行距离递增：对远处的敌人至多额外 +35% 伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_qianggongjinnu_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+30% 暴击值",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "7.5% 暴击伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 最大护盾",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "对周围敌人，+25% 伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "对远处敌人，+25% 伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 异常伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Ailment_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+15% 暴击伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 范围伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 投射物伤害4.5% 投射物速度",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+15% 异常伤害暴击 +20% 几率造成异常状态",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 最大魔力",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 攻击与施法速度+4% 移动速度",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 范围伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 投射物伤害+9% 投射物速度",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Freeze_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 最大魔力",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命1.5% 生命返还",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Electrocute_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 防御值1.5% 元素抗性",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 攻击格挡率+2% 法术格挡率",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+30% 暴击值",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+12% 最大生命+4% 生命返还如果最近有暴击，额外 -12% 生命返还间隔",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 防御值2.5% 元素抗性近处存在敌人时，额外 -4% 受到的伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 攻击格挡率+4% 法术格挡率",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 战意效果",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Axe01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 护盾返还",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 近战伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 击退几率",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每点战意值，0.6% 暴击伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+8% 护盾返还周围没有敌人时，额外 -12% 护盾返还间隔",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 近战伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+15% 击退距离",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "暴击可以淘汰生命值低于 10% 的敌人",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Cannon02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 +12% 近处敌人受到的伤害",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "对于击退距离的增加或减少的 150% 同样作用于伤害的加成",
+      "belong": "游侠",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    }
+  ]
+}

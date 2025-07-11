@@ -1,0 +1,296 @@
+{
+  "name": "神行武士",
+  "main": "",
+  "tags": ["近战", "格挡"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSAS02_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "挥洒",
+      "desc": "近战技能有 30% 几率 +30% 技能范围额外 +18% 近战伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_huisa_Icon_128.webp"
+    },
+    {
+      "name": "守势",
+      "desc": "+25% 格挡比例额外格挡 100 点伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shoushi_Icon_128.webp"
+    },
+    {
+      "name": "聚权",
+      "desc": "击中时，额外获得当前战意值 25% 的战意值，冷却时间 0.3 秒受击时消耗一半当前的战意值，每消耗 1 点，额外 -0.8% 该次伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_juquan_Icon_128.webp"
+    },
+    {
+      "name": "权衡轻重",
+      "desc": "当敏捷不小于力量时，额外 +25% 攻击速度当力量不小于敏捷时，额外 +25% 攻击伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_quanhengqingzhong_Icon_128.webp"
+    },
+    {
+      "name": "全面防御",
+      "desc": "额外 +25% 从盾牌获得的防御值每 1% 格挡比例，额外 -1% 受到的持续伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_quanmianfangyu_Icon_128.webp"
+    },
+    {
+      "name": "落叶飞花",
+      "desc": "额外 -20% 武器伤害额外 +40% 攻击伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_juediyiji_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 近战伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Curse_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 攻击格挡率+6% 伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 近战伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击速度",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 法术格挡率",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/BlockSpell_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 攻击格挡率+12% 伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击速度",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 法术格挡率",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Aura_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "持盾时， +12% 伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+10% 暴击伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "-4 技能消耗",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大护盾",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 护甲值",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "持盾时， +18% 伤害持盾时，+4% 攻击和施法速度",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 战意效果",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "-8 技能消耗",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Curse_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 近战伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+20% 护甲值额外格挡相当于护甲值 0.1% 的伤害，最多 100 点",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 攻击格挡率+2% 法术格挡率",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Block_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "暴击时，获得 3 点战意值",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 近战伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还1.5% 护盾返还",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Accuracy_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+4% 攻击格挡率+4% 法术格挡率如果最近格挡过， +50% 伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击速度",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 近战伤害",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6 力量+6 敏捷",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 生命返还+3% 护盾返还",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 战意效果",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 武器攻击速度",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 战吼技能的效果",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 力量+4% 敏捷",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Curse_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 战意效果",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bleed_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+15% 斩击几率",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Claw03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+42% 破击蓄能回复速度",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1  幻影数量",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+5% 格挡比例格挡时，回复 1% 已损生命和护盾",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Block_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+25% 战意效果",
+      "belong": "神行武士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    }
+  ]
+}

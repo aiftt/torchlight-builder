@@ -1,0 +1,206 @@
+{
+  "name": "狩猎之神",
+  "main": "敏捷",
+  "tags": ["速度", "闪电"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentAgi_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "敏锐",
+      "desc": "击中敌人时，+100% 概率获得 1 层灵动祝福+1 灵动祝福层数上限",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_minrui_Icon_128.webp"
+    },
+    {
+      "name": "感电",
+      "desc": "+50% 麻痹几率额外 +20% 闪电伤害",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_mabi_Icon_128.webp"
+    },
+    {
+      "name": "闪烁",
+      "desc": "额外 +50% 位移技能冷却回复速度额外 +25% 位移技能攻击与施法速度",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shanshuo_Icon_128.webp"
+    },
+    {
+      "name": "行色匆匆",
+      "desc": "如果最近移动了超过 5 米，额外 +30% 伤害",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_xingsecongcong_Icon_128.webp"
+    },
+    {
+      "name": "世事无常",
+      "desc": "额外 -40% 最小伤害额外 +40% 最大伤害",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shishiwuchang_Icon_128.webp"
+    },
+    {
+      "name": "灵光一现",
+      "desc": "对法术伤害，闪避值不再默认额外降低额外 +20% 闪避值",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_lingguangyixian_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 移动速度",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度-4 技能消耗",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 技能范围+5% 投射物速度",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 最大护盾",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgLightning_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 闪避值",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 移动速度+15% 位移技能冷却回复速度",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 敏捷",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 技能范围+10% 投射物速度",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 闪电伤害",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 闪避值闪避时，+15% 概率获得 1 层灵动祝福，间隔 1 秒",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击速度",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+16 敏捷",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Electrocute_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+16% 闪电伤害+12% 麻痹几率50% 物理伤害转化为闪电伤害",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+40% 攻击暴击值",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 施法速度",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还1.5% 护盾返还",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "如果最近击败了敌人， +12% 伤害",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Axe01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "如果最近有暴击，额外 +10% 攻击速度",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "最近每使用 1 次法术技能，+4% 暴击伤害，最多叠加 16 层",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bleed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 生命返还+3% 护盾返还",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "击败时， +5% 伤害，+2% 移动速度，持续 4 秒，最多叠加 8 层",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "使用位移技能后，额外 +12% 伤害，持续 4 秒",
+      "belong": "狩猎之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    }
+  ]
+}

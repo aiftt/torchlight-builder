@@ -1,0 +1,302 @@
+{
+  "name": "神射手",
+  "main": "",
+  "tags": ["投射物", "闪避"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentAgiS01_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "狂风",
+      "desc": "对投射物速度加成的 60% 同样作用于对伤害的额外加成",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_kuangfeng_Icon_128.webp"
+    },
+    {
+      "name": "心流",
+      "desc": "每 0.3 秒，额外 +5% 伤害，该效果最多叠加 8 层，并且在受击后重置",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_xinliu_Icon_128.webp"
+    },
+    {
+      "name": "亢奋",
+      "desc": "每有 1 层灵动祝福，额外 +4% 闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_kangfen_Icon_128.webp"
+    },
+    {
+      "name": "一箭三雕",
+      "desc": "+2 投射物数量+2 抛射投射物分裂数量额外 +10% 投射物伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yijiansandiao_Icon_128.webp"
+    },
+    {
+      "name": "逃脱大师",
+      "desc": "+1 偏斜层数上限闪避时，获得 1 层偏斜",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_taotuodashi_Icon_128.webp"
+    },
+    {
+      "name": "抵近射击",
+      "desc": "投射物对近处的敌人至多额外 +35% 伤害，随距离递减",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_dijinsheji_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 投射物伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 投射物伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 最大魔力",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 投射物速度",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 最大魔力-4 技能消耗",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 敏捷",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 投射物速度",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大护盾",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 10 点敏捷， +1% 闪避",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+5% 投射物伤害+3% 投射物速度",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+30% 暴击值暴击时， +9% 击退几率",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还1.5% 护盾返还",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 闪避值+6% 闪电抗性",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 投射物速度",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+15% 投射物暴击伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgPhys_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 生命返还+3% 护盾返还",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 几率避免伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "移动时， +20% 闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+10% 投射物速度投射物伤害随飞行距离递增：对远处的敌人至多 +60% 伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "对近处的敌人 +72% 投射物伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 几率避免投射物伤害额外 +6% 受到的近战伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 几率避免近战伤害额外 +6% 受到的投射物伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 抛射投射物分裂数量",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+12% 投射物伤害",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+12% 最大生命+12% 最大护盾闪避时，回复 +4% 已损生命和护盾，间隔 0.3 秒",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+450 闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Claw03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 弹射次数",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+2 直射投射物穿透次数",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 抛射投射物分裂数量",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+50% 从胸甲获得的闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每有 1 层灵动祝福， +8% 闪避值",
+      "belong": "神射手",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgLightning_64.webp"
+    }
+  ]
+}

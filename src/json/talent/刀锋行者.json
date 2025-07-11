@@ -1,0 +1,290 @@
+{
+  "name": "刀锋行者",
+  "main": "",
+  "tags": ["闪电", "攻击速度"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentAgiS02_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "导电",
+      "desc": "麻痹基础效果转换为：额外 +10% 受到的伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_daodian_Icon_128.webp"
+    },
+    {
+      "name": "入静",
+      "desc": "静止时，每 0.5 秒，额外  +10% 伤害，至多额外  +40% 伤害失去静止状态时，移除该效果",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_rujing_Icon_128.webp"
+    },
+    {
+      "name": "跃迁",
+      "desc": "释放技能时，50% 几率使该次技能额外 +16% 伤害释放技能时，25% 几率使该次技能额外 +32% 伤害释放技能时，10% 几率使该次技能额外 +80% 伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yueqian_Icon_128.webp"
+    },
+    {
+      "name": "奇妙角度",
+      "desc": "对麻痹的敌人，你与召唤物造成的伤害幸运",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_qimiaojiaodu_Icon_128.webp"
+    },
+    {
+      "name": "势如破竹",
+      "desc": "连续攻击伤害递增 55%召唤物连续攻击伤害递增 55%",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shirupozhu_Icon_128.webp"
+    },
+    {
+      "name": "伺机而动",
+      "desc": "每隔 2 秒，消耗所有灵动祝福，每消耗 1 层，在接下来的 2 秒内额外 +5% 伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_sijierdong_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 闪电伤害召唤物 +9% 闪电伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Accuracy_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击速度+3% 召唤物攻击速度",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 闪电伤害召唤物 +18% 闪电伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值+15% 召唤物暴击值",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bleed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 闪避值",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击速度+6% 召唤物攻击速度-4 技能消耗",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Accuracy_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Curse_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+20% 召唤物暴击值+5% 暴击伤害+5% 召唤物暴击伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 闪避值",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+12% 闪电抗性-100% 受到麻痹效果召唤物免疫闪电伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgLightning_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8% 闪电伤害+6% 麻痹几率召唤物 +8% 闪电伤害召唤物 +6% 麻痹几率",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大护盾",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "4.5% 投射物速度+9% 召唤物投射物速度",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害-4 技能消耗",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 闪电伤害召唤物 +9% 闪电伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgLightning_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+20% 麻痹效果",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Electrocute_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 投射物速度+18% 召唤物投射物速度",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还1.5% 护盾返还",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "100% 物理伤害转化为闪电伤害召唤物 100% 物理伤害转化为闪电伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 灵动祝福持续时间拥有灵动祝福时，+3% 攻击速度",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Claw03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "对于移动速度的加成的 35% 同样作用于位移技能冷却回复速度对移动速度的加成的 70% 同样作用于位移技能的攻击与施法速度",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 -12% 护盾返还间隔+8% 护盾返还",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 -12% 生命返还间隔+8% 生命返还",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 灵动祝福层数上限",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 敏捷",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 连续攻击几率召唤物 +6% 连续攻击几率",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8% 闪电伤害+6% 麻痹几率",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 闪电穿透召唤物 1.5% 闪电穿透",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+15% 敏捷",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "连续攻击时，额外 +3% 攻击速度召唤物连续攻击时，额外 +3% 攻击速度",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 闪电伤害召唤物 +9% 闪电伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "对至高首领，施加麻痹的最大生命和护盾阈值降低至 5%额外施加 1 层麻痹",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Electrocute_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "暴击 +12% 闪电穿透召唤物 +10% 闪电穿透",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 20 点敏捷， +1% 攻击速度",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "连续攻击伤害递增 20%召唤物连续攻击伤害递增 20%",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 +15% 最大伤害召唤物额外 +15% 最大伤害",
+      "belong": "刀锋行者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    }
+  ]
+}

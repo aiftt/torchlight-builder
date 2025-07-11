@@ -1,0 +1,302 @@
+{
+  "name": "秘术师",
+  "main": "",
+  "tags": ["冰冷", "魔力"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentIntS02_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "冻伤",
+      "desc": "对冰封的敌人额外 +20% 伤害对敌人首次造成冰冷伤害时，施加冰结和 100 冰结值",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_dongshang_Icon_128.webp"
+    },
+    {
+      "name": "魔能",
+      "desc": "20% 的伤害优先抵扣魔力额外 +12% 最大魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_moneng_Icon_128.webp"
+    },
+    {
+      "name": "满载",
+      "desc": "魔力达到上限时，下一次技能额外 +40% 伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_manzai_Icon_128.webp"
+    },
+    {
+      "name": "刺骨极寒",
+      "desc": "对冰封的敌人，可以继续施加冰结和冰结值冰封状态结束后，不再清除冰结和所有冰结值， +20% 保留的冰结值额外 -25% 冰封持续时间",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_bingdian_Icon_128.webp"
+    },
+    {
+      "name": "冰冻之莲",
+      "desc": "额外 +25% 冰冷伤害当前魔力低于 15% 时，额外 -100% 技能消耗",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_bingdongzhilian_Icon_128.webp"
+    },
+    {
+      "name": "聚气凝神",
+      "desc": "聚能祝福的基础效果转换为：攻击和法术附加等同于 0.8% 最大魔力的冰冷伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_juqiningshen_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 冰冷伤害召唤物 +9% 冰冷伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgCold_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 最大魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 冰冷伤害召唤物 +18% 冰冷伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度+3% 召唤物攻击与施法速度",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大护盾",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+24 最大魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 最大魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Freeze_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值+15% 召唤物暴击值",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度+6% 召唤物攻击与施法速度",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+32 最大魔力击中时，回复 6 魔力，间隔0.1秒",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 法术伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+20% 召唤物暴击值+5% 暴击伤害+5% 召唤物暴击伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 冰冷伤害召唤物 +9% 冰冷伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+24% 冰冷抗性召唤物免疫冰冷伤害召唤物免疫冰结和冰封",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgCold_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "满魔时，+30% 施法速度+24% 最大魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "低魔时，+30% 法术伤害+24% 最大魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 冰结几率+9% 冰冷伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Claw02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "100% 物理伤害转化为冰冷伤害召唤物 100% 物理伤害转化为冰冷伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 护盾充能速度1.5% 护盾返还",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/EsReg_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 投射物速度+18% 召唤物投射物速度",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 最大魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 冰结几率+18% 冰冷伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgCold_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 聚能祝福持续时间拥有聚能祝福时，每秒自然回复 0.4% 魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 护盾充能速度+3% 护盾返还",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 最大魔力每秒自然回复 0.6% 魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 冰封持续时间",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+5% 施加的冰结值",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 智慧",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "附加 2% 最大魔力的护盾",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+24 最大魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 冰封持续时间",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 施加的冰结值",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 8 点智慧， +3 点魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dot_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 聚能祝福持续时间拥有聚能祝福时，每秒自然回复 0.4% 魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+50% 魔力自然回复速度",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "最近被你冰封过的敌人，额外 +12% 受到的伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "对冰结的敌人，每秒施加 6 点冰结值",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgCold_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "对冰结的敌人，每秒施加 6 点冰结值",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgCold_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 聚能祝福层数上限拥有聚能祝福时，每秒自然回复 0.8% 魔力",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "最近每使用1次技能， +2% 技能消耗额外 +8% 法术伤害",
+      "belong": "秘术师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    }
+  ]
+}

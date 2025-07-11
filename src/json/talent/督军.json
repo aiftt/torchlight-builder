@@ -1,0 +1,302 @@
+{
+  "name": "督军",
+  "main": "",
+  "tags": ["火焰", "范围"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentStrS03_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "野火",
+      "desc": "对生命濒危敌人额外 +100% 火焰伤害召唤物对生命濒危敌人额外 +100% 火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yehuo_Icon_128.webp"
+    },
+    {
+      "name": "燃尽",
+      "desc": "额外 +15% 火焰伤害受到伤害时，额外 +10% 火焰伤害，持续 8 秒",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_ranjin_Icon_128.webp"
+    },
+    {
+      "name": "磐石",
+      "desc": "每有 1 层坚韧祝福， +3% 火焰穿透",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jianruopanshi_Icon_128.webp"
+    },
+    {
+      "name": "真实之焰",
+      "desc": "敌人被点燃时，加剧对其受到的持续伤害额外加成的 60% 同样作用于你的击中火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_zhenshizhiyan_Icon_128.webp"
+    },
+    {
+      "name": "聚能之击",
+      "desc": "范围技能对中心敌人至多额外 +32% 伤害召唤物的范围技能对中心敌人至多额外 32% 伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_junengzhiji_Icon_128.webp"
+    },
+    {
+      "name": "星星之火",
+      "desc": "+1 点燃上限+30% 点燃持续时间",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_xinhuo_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 火焰伤害+9% 召唤物火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 范围伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 火焰伤害+18% 召唤物火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度+3% 召唤物攻击与施法速度",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 最大护盾",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "4.5% 投射物速度+9% 召唤物投射物速度",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 范围伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 点燃几率+8% 点燃伤害召唤物 +10% 点燃几率",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度+6% 召唤物攻击与施法速度",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 最大魔力",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Accuracy_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 投射物速度+18% 召唤物投射物速度",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 护甲值",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+16% 点燃伤害+12% 点燃几率召唤物 +20% 点燃几率",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 火焰伤害+9% 召唤物火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 最大魔力",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Blind_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 护甲值2.5% 元素抗性",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值+15% 召唤物暴击值",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 火焰穿透召唤物 +3% 火焰穿透",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还1.5% 护盾返还",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+4% 火焰抗性额外 -100% 受到点燃伤害-100% 受到点燃效果召唤物免疫火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 技能范围",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+20% 召唤物暴击值+5% 暴击伤害+5% 召唤物暴击伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 火焰伤害+9% 召唤物火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 生命返还+3% 护盾返还",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 坚韧祝福持续时间拥有坚韧祝福时， 1.5% 元素抗性",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 技能范围",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 火焰伤害+9% 召唤物火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "100% 物理伤害转化为火焰伤害召唤物 100% 物理伤害转化为火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgPhys_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+5 力量+5% 火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 坚韧祝福层数上限",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 范围伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "对生命濒危敌人， +45% 火焰伤害对生命濒危敌人， +45% 召唤物造成的火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Axe02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 火焰持续伤害+9% 召唤物火焰伤害附加 10 基础点燃伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dot_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 力量",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 范围伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外造成 1 层点燃",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+15% 加剧效果+15% 召唤物加剧效果+8 每秒施加加剧值+8 召唤物每秒施加加剧值",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+15% 力量",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 6 点力量， +1% 火焰伤害",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "如果近 2 秒内没有使用核心技能，+40% 技能范围",
+      "belong": "督军",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    }
+  ]
+}

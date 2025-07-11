@@ -1,0 +1,200 @@
+{
+  "name": "巨力之神",
+  "main": "力量",
+  "tags": ["攻击", "火焰"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentStr_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "淘汰",
+      "desc": "攻击击中时，淘汰生命值低于 18% 的敌人",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_taotai_Icon_128.webp"
+    },
+    {
+      "name": "借势",
+      "desc": "每隔 0.5 秒，下一次核心技能额外 +30% 攻击伤害；击败时，刷新此间隔",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jieshi_Icon_128.webp"
+    },
+    {
+      "name": "坚韧",
+      "desc": "击中敌人时，+100% 几率获得 1 层坚韧祝福+1 坚韧祝福层数上限",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jianren_Icon_128.webp"
+    },
+    {
+      "name": "势大力沉",
+      "desc": "-10% 攻击速度额外 +30% 攻击伤害额外 +30% 攻击造成的异常伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shidalichen_Icon_128.webp"
+    },
+    {
+      "name": "火上浇油",
+      "desc": "伤害无视敌人火焰抗性",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_huoshangjiaoyou_Icon_128.webp"
+    },
+    {
+      "name": "燎原烈火",
+      "desc": "额外 +20% 火焰持续伤害造成火焰伤害时，施加 10 加剧值，冷却时间 0.1 秒",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_liaoyuanliehuo_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击速度",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 施法速度",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 攻击暴击值+3% 暴击伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击速度-4 攻击技能消耗",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+5% 护甲值+2% 最大生命",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 施法速度+5% 火焰技能范围",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8% 点燃伤害+6% 点燃几率",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 投射物速度+25% 远程攻击暴击值",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 技能范围+10% 近战攻击暴击伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 护甲值+4% 最大生命",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+16% 点燃伤害+12% 点燃几率",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 攻击伤害+2% 移动速度",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 力量",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 火焰伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 攻击伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 攻击伤害+4% 移动速度",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 最大生命1.5% 生命返还",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+16 力量",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 火焰抗性50% 物理伤害转化为火焰伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 战吼技能冷却回复速度",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 攻击技能等级",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 最大生命+3% 生命返还",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每隔 1 秒，额外 +12% 下一次核心技能造成的火焰伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "如果最近 8 秒内释放过战吼技能，额外 +12% 攻击伤害",
+      "belong": "巨力之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "name": "元素师",
+  "main": "",
+  "tags": ["引导", "元素"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentIntS03_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "专注",
+      "desc": "+2 引导层数上限每有 +1 额外引导层数上限，额外 +5% 伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_zhuanzhu_Icon_128.webp"
+    },
+    {
+      "name": "适应",
+      "desc": "25% 受到的物理伤害转化为随机元素伤害+4% 元素抗性上限",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shiying_Icon_128.webp"
+    },
+    {
+      "name": "透明",
+      "desc": "如果最近造成了火焰伤害，额外 +20% 闪电伤害如果最近造成了闪电伤害，额外 +20% 冰冷伤害如果最近造成了冰冷伤害，额外 +20% 火焰伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_touming_Icon_128.webp"
+    },
+    {
+      "name": "快速仪式",
+      "desc": "+1 引导层数下限额外 +20% 引导技能伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_kuaisuyishi_Icon_128.webp"
+    },
+    {
+      "name": "奇幻莫测",
+      "desc": "+50% 几率造成元素异常状态对元素异常状态下的敌人，额外 +25% 伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_qihuanmoce_Icon_128.webp"
+    },
+    {
+      "name": "入木三分",
+      "desc": "元素技能无视护甲额外 +30% 受到的物理伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_rumusanfen_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 引导技能伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 元素伤害+9% 召唤物元素伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 引导技能伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度+3% 召唤物攻击与施法速度",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大护盾",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值+15% 召唤物暴击值",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 元素伤害+18% 召唤物元素伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 最大魔力",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度+6% 召唤物攻击与施法速度-4 技能消耗",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+20% 召唤物暴击值+5% 暴击伤害+5% 召唤物暴击伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "伤害穿透 1.5% 元素抗性召唤物伤害穿透 1.5% 元素抗性",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 最大魔力",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "4.5% 投射物速度+9% 召唤物投射物速度",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 最大生命+3% 元素抗性",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 几率造成元素异常状态召唤物 +10% 几率造成元素异常状态",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "造成伤害时，敌人每有一种元素异常状态，伤害穿透 4% 元素抗性召唤物伤害穿透 10% 元素抗性",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害+9% 召唤物伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 投射物速度+18% 召唤物投射物速度",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还1.5% 护盾返还",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 几率造成元素异常状态召唤物 +15% 几率造成元素异常状态",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 元素抗性",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "静止时，+60% 伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 智慧",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Blind_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 生命返还+3% 护盾返还",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 聚能祝福持续时间拥有聚能祝福时， +10% 伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "最近每受到一种类型的元素伤害，额外 -8% 受到的元素伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 引导技能攻击与施法速度",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 智慧",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "获得聚能祝福时，+8% 几率同时获得坚韧祝福与灵动祝福",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Axe03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "每有 +1 额外引导层数上限，+6% 伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "引导层数不等于上限时， +12% 攻击与施法速度",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Blind_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 最大护盾拥有护盾时，+4% 几率避免元素异常状态",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "攻击和法术附加 2 - 2 点火焰伤害攻击和法术附加 1 - 3 点闪电伤害攻击和法术附加 2 - 2 点冰冷伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 引导层数上限",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 +40% 射线长度",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Accuracy_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 火焰技能等级",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 闪电技能等级",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgLightning_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 冰冷技能等级",
+      "belong": "元素师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgCold_64.webp"
+    }
+  ]
+}

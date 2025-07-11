@@ -1,0 +1,278 @@
+{
+  "name": "机械师",
+  "main": "",
+  "tags": ["智械", "哨卫"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSIS01_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "领主",
+      "desc": "+1 智械召唤物数量上限额外 +10% 召唤物伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_lingzhu_Icon_128.webp"
+    },
+    {
+      "name": "预热",
+      "desc": "如果最近释放过哨卫技能，额外 +30% 哨卫伤害额外 -30% 哨卫启动时间",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yure_Icon_128.webp"
+    },
+    {
+      "name": "点兵",
+      "desc": "+1 一次召唤的智械召唤物数量额外 +20% 召唤物伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_dianbing_Icon_128.webp"
+    },
+    {
+      "name": "侵略如火",
+      "desc": "10 米内有劲敌时，每隔 2 秒，获得 30 点统御值",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_qinlueruhuo_Icon_128.webp"
+    },
+    {
+      "name": "同频共振",
+      "desc": "额外 +25% 哨卫伤害对于攻击速度的加成和额外加成的 100% 同样作用于攻击哨卫的释放频率对于施法速度的加成和额外加成的 100% 同样作用于法术哨卫的释放频率",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_tongpingongzhen_Icon_128.webp"
+    },
+    {
+      "name": "众志成城",
+      "desc": "周围 10 米内每有 1 个智械召唤物， 额外 -5% 受到的伤害-10% 召唤物侵略性",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_zhongzhichengcheng_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 召唤物伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+12% 哨卫伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 召唤物伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 召唤物攻击与施法速度",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 最大护盾",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/BlockSpell_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 哨卫技能释放频率",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+24% 哨卫伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 召唤物暴击值",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 召唤物攻击与施法速度",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Accuracy_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 召唤物最大生命",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 哨卫技能释放频率",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 哨卫技能暴击值",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crossbow02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 召唤物暴击值+5% 召唤物暴击伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "每秒统御值增加 1 点",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 召唤物最大生命",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/EsReg_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+12% 哨卫伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 哨卫技能暴击值+5% 哨卫技能暴击伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "每秒统御值增加 2 点",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 最大护盾+1% 护盾充能速度",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 哨卫伤害+18% 哨卫技能范围+9% 哨卫投射物速度",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 召唤物最大生命",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 最大护盾+2% 护盾充能速度",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 屏障吸收量",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 移动速度",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 召唤物最大生命",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 召唤物伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 最大生命每秒自然回复 0.4% 生命",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+25% 屏障吸收量",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 移动速度移动时，+20% 哨卫伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "智械召唤物 +2% 几率造成双倍伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "召唤物 +3% 护甲减伤穿透",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 最大生命每秒自然回复 0.6% 生命",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 哨卫技能释放频率",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgCold_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+12% 哨卫伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 智械技能等级",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "召唤物附加 10 异常基础伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+30% 哨卫技能释放频率额外 -5% 哨卫伤害",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 一次能够放置的哨卫数量",
+      "belong": "机械师",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    }
+  ]
+}

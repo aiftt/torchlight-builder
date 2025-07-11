@@ -1,0 +1,296 @@
+{
+  "name": "猛袭者",
+  "main": "",
+  "tags": ["双手武器", "生命"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSIS15_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "清扫",
+      "desc": "持双手武器时，额外 +20% 攻击伤害持双手武器时，+20% 攻击技能范围",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_qingsao_Icon_128.webp"
+    },
+    {
+      "name": "秘法",
+      "desc": "魔力消耗的 100% 转换为生命消耗额外 +20% 最大生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_mifa_Icon_128.webp"
+    },
+    {
+      "name": "舍命",
+      "desc": "坚韧祝福的基础效果转换为：额外 +8% 伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_sheming_Icon_128.webp"
+    },
+    {
+      "name": "善始善终",
+      "desc": "生命濒危时，额外 +50% 攻击伤害你的最大护盾恒定为 0",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shanshishanzhong_Icon_128.webp"
+    },
+    {
+      "name": "生命通道",
+      "desc": "生命返还量翻倍生命返还仅在生命小于 50% 时生效",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shengmingtongdao_Icon_128.webp"
+    },
+    {
+      "name": "生存意志",
+      "desc": "非生命濒危时，额外 +30% 攻击伤害生命濒危时，回复 40% 最大生命，该效果有 10 秒间隔",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shengcunyizhi_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 攻击伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 防御值",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/EsReg_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 攻击伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击速度",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 防御值",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "每秒自然回复 0.4% 生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 攻击暴击值",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击速度-4 技能消耗",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 坚韧祝福持续时间拥有坚韧祝福时， 1.5% 元素抗性",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "每秒自然回复 0.8% 生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 护甲值",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 攻击暴击值+5% 暴击伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 攻击伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每有 1 层坚韧祝福， +3% 生命自然回复速度每有 1 层坚韧祝福，每秒自然回复 25 生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+16% 护甲值受到重创时，回复 20% 已损生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击速度",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+30% 攻击伤害-5% 攻击速度",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 攻击格挡率",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 受伤缓冲",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dot_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "对生命造成额外 4% 伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "额外 +3% 远程双手武器基础攻击速度",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "持双手武器时， +4% 格挡比例",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 技能消耗+8% 生命自然回复速度",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命-8% 技能消耗",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每损失1%生命， 0.4% 攻击速度",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "持双手武器时， +12% 攻击伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 攻击伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 力量",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 攻击伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "额外 +4% 双手武器基础伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "持双手武器时， +40% 攻击暴击值",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 -20% 生命返还间隔使用攻击技能时，消耗 2% 当前生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+80 最大生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "对生命健康敌人，额外 +40% 攻击伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 +12% 双手武器基础伤害",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "持双手武器时，+100% 施加的瘫痪效果",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 4 点力量， +1 点最大生命",
+      "belong": "猛袭者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dot_64.webp"
+    }
+  ]
+}

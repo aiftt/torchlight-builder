@@ -1,0 +1,302 @@
+{
+  "name": "德鲁伊",
+  "main": "",
+  "tags": ["施法速度", "返还"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSIS11_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "栽培",
+      "desc": "最近每使用一次技能，+3% 施法速度，至多叠加 15 层",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_zaipei_Icon_128.webp"
+    },
+    {
+      "name": "稳定",
+      "desc": "返还生命时，回复 5% 生命返还护盾时，回复 5% 护盾",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_wending_Icon_128.webp"
+    },
+    {
+      "name": "沉着",
+      "desc": "生命濒危并且低护盾时，额外 -30% 受到的伤害生命健康时，额外 +25% 受到的伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_chenzhuo_Icon_128.webp"
+    },
+    {
+      "name": "似曾相识",
+      "desc": "使用核心法术技能时，+30% 几率额外触发一次",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_sicengxiangshi_Icon_128.webp"
+    },
+    {
+      "name": "脱胎换骨",
+      "desc": "50% 生命返还与护盾返还转换为持续回复额外 -50% 返还间隔",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_tuotaihuangu_Icon_128.webp"
+    },
+    {
+      "name": "饮鸩止渴",
+      "desc": "+25% 受伤缓冲生命濒危时，额外 -15% 受到的伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_wujikexun_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 施法速度",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 施法速度",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 法术伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Aura_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Freeze_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 法术伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+8% 生命返还额外 -12% 生命返还间隔",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgPhys_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 最大魔力",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+5% 暴击伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 闪避值",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大护盾",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 灵动祝福持续时间",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 最大魔力每秒自然回复 0.6% 魔力",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 施法速度",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 闪避值",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+5% 投射物速度",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "获得灵动祝福时，回复 1.5% 生命，冷却 0.1 秒获得灵动祝福时，回复 1.5% 魔力，冷却 0.1 秒",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 护盾返还",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+15% 施法速度-15% 法术伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 投射物速度",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "-4% 技能消耗",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+8% 护盾返还额外 -12% 护盾返还间隔",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 灵动祝福持续时间",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Claw03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 敏捷",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgLightning_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "-8% 技能消耗",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每有 1 层灵动祝福， +5% 施法速度",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 法术伤害",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 20 点敏捷， +1% 施法速度",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bleed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "受到重创时，回复 25% 已损生命受到重创时，回复 25% 已损护盾",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "使用法术技能时，+15% 概率获得 1 层灵动祝福，间隔 1 秒",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "使用核心法术技能时，+12% 几率额外触发一次",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "受到伤害的 50% 穿透护盾",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "返还时，基于已损护盾额外返还生命返还时，基于已损生命额外返还护盾",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 -20% 返还间隔",
+      "belong": "德鲁伊",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual03_64.webp"
+    }
+  ]
+}

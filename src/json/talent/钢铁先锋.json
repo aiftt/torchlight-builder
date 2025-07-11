@@ -1,0 +1,296 @@
+{
+  "name": "钢铁先锋",
+  "main": "",
+  "tags": ["增益效果", "抗性"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSIS02_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "映射",
+      "desc": "每受到一种光环影响，额外 +5% 伤害召唤物每受到一种光环影响，额外 +5% 伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yingshe_Icon_128.webp"
+    },
+    {
+      "name": "抵抗",
+      "desc": "+15% 元素抗性+20% 几率避免元素异常状态",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_dikang_Icon_128.webp"
+    },
+    {
+      "name": "帷幕",
+      "desc": "额外 +40% 屏障吸收量",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_weimu_Icon_128.webp"
+    },
+    {
+      "name": "博闻强识",
+      "desc": "+10 激发技能等级+10 防护技能等级",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_bowenqiangshi_Icon_128.webp"
+    },
+    {
+      "name": "百恶不侵",
+      "desc": "+5% 腐蚀抗性上限25% 受到的物理和元素伤害转化为腐蚀伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_baidubuqin_Icon_128.webp"
+    },
+    {
+      "name": "动能转化",
+      "desc": "每移动 5 米， 100% 几率获得屏障获得屏障时，刷新屏障额外 -40% 屏障吸收量",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_dongnengzhuanhua_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害+9% 召唤物伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 元素抗性",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害+18% 召唤物伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度+3% 召唤物攻击与施法速度",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 最大护盾",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还1.5% 护盾返还",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Accuracy_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 元素抗性",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 最大魔力",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dot_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度+6% 召唤物攻击与施法速度",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 生命返还+3% 护盾返还",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 腐蚀抗性",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 最大魔力",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害+9% 召唤物伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 最大护盾+4% 护盾充能速度",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 腐蚀抗性",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+300 护甲值+5% 护甲值",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+1 激发技能等级",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "4.5% 投射物速度+9% 召唤物投射物速度",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 屏障吸收量",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 元素抗性",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+600 护甲值+10% 护甲值",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害+9% 召唤物伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 投射物速度+18% 召唤物投射物速度",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 屏障吸收量",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Freeze_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "额外 -8% 受到的元素伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害+9% 召唤物伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+1 加持技能等级",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgPhys_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 屏障吸收量",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 腐蚀抗性",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "8% 受到的物理伤害转化为随机元素伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "击败时， +10% 伤害，持续 4 秒，最多叠加 8 层",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Axe01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 光环效果",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 屏障吸收量",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+1% 腐蚀抗性上限3% 受到的物理和元素伤害转化为腐蚀伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "伤害穿透 2% 元素抗性召唤物伤害穿透 2% 元素抗性",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "击败时， +3% 移动速度，持续 4 秒，最多叠加 8 层",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 光环效果",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Axe02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+10% 屏障吸收比例",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "对生命造成额外 10% 伤害召唤物对生命造成额外 10% 伤害",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "伤害穿透 4% 元素抗性召唤物伤害穿透 4% 元素抗性",
+      "belong": "钢铁先锋",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    }
+  ]
+}

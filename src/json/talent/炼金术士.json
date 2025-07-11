@@ -1,0 +1,296 @@
+{
+  "name": "炼金术士",
+  "main": "",
+  "tags": ["魔灵", "回复"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSIS03_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "源泉",
+      "desc": "魔灵技能 +50% 魔力封印补偿额外 +30% 魔灵之源效果魔灵额外 +30% 激发技能效果",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yuanquan_Icon_128.webp"
+    },
+    {
+      "name": "应急",
+      "desc": "每损失 2% 生命，1.5% 生命自然回复速度每损失 2% 魔力，1.5% 魔力自然回复速度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yingji_Icon_128.webp"
+    },
+    {
+      "name": "赋能",
+      "desc": "魔灵最大数量上限为 1额外 +85% 魔灵技能伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_funeng_Icon_128.webp"
+    },
+    {
+      "name": "冲锋号角",
+      "desc": "额外 -10% 召唤物攻击和施法速度魔灵 +50% 强化技能使用几率",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_chongfenghaojiao_Icon_128.webp"
+    },
+    {
+      "name": "灵丹妙药",
+      "desc": "回复技能 +100% 回复效果回复技能的回复效果不会移除",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_lingdanmiaoyao_Icon_128.webp"
+    },
+    {
+      "name": "深渊爪牙",
+      "desc": "魔灵每有 20 点生长值，额外 +1% 伤害魔灵每有 40 点生长值，额外 +1% 终极技能攻击与施法速度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shenyuanzhaoya_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 召唤物伤害+9% 伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "回复技能每秒获得 0.5 充能进度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 召唤物伤害+18% 伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 召唤物攻击与施法速度+3% 攻击与施法速度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "每秒自然回复 0.4% 生命",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "回复技能生效期间，+24% 伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "4.5% 魔灵终极技能冷却回复速度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 召唤物攻击与施法速度+6% 攻击与施法速度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Accuracy_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "每秒自然回复 0.8% 生命",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "每秒自然回复 0.4% 魔力",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 召唤物移动速度召唤物 +16% 几率造成异常状态",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 召唤物暴击值",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大护盾",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 生命自然回复速度+12% 魔力自然回复速度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "每秒自然回复 0.8% 魔力",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 召唤物伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 召唤物暴击值+5% 召唤物暴击伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 移动速度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 生命自然回复速度+24% 魔力自然回复速度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 召唤物伤害+9% 伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "魔灵 +4% 强化技能使用几率",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+24% 魔灵终极技能伤害和终极技能造成的异常伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "周围每有1个召唤物， 1.5% 移动速度",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 护甲值",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 被动技能等级",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dagger03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 魔灵之源效果",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 最大生命每秒自然回复 0.4% 生命",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+16% 护甲值附加 0.5% 护甲值至屏障吸收量",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "魔灵技能 12.5% 魔力封印补偿",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 魔灵之源效果",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每损失1%生命， +2% 回复技能效果",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "回复技能 +8% 回复效果",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 最大护盾",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "10% 受到的伤害转移至随机召唤物魔灵额外 -80% 受到的伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 魔灵最大数量上限额外 -40% 魔灵技能伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 魔灵技能等级魔灵额外 -80% 受到的伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "回复技能生效期间， 额外 -25% 受到的持续伤害",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgFire_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 +16% 生命自然回复速度额外 -45% 护盾充能间隔",
+      "belong": "炼金术士",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual03_64.webp"
+    }
+  ]
+}

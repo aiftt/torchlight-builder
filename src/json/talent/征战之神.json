@@ -1,0 +1,212 @@
+{
+  "name": "征战之神",
+  "main": "力量、敏捷",
+  "tags": ["几率", "物理"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSA_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "凝聚",
+      "desc": "每隔 1 秒，下一次核心技能额外 +50% 暴击值",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_ningju_Icon_128.webp"
+    },
+    {
+      "name": "残暴",
+      "desc": "额外 +25% 物理伤害每 5 等级，额外 -1% 元素伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_canbao_Icon_128.webp"
+    },
+    {
+      "name": "坚强",
+      "desc": "受到巨额伤害后，50% 几率保留 1 点生命",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jianqiang_Icon_128.webp"
+    },
+    {
+      "name": "自主升级",
+      "desc": "使用近战技能时，+25% 几率获得硬化拥有硬化时，额外 +25% 近战伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_zizhushengji_Icon_128.webp"
+    },
+    {
+      "name": "迎头痛击",
+      "desc": "额外 +80% 暴击造成的创伤伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yingtoutongji_Icon_128.webp"
+    },
+    {
+      "name": "无边战意",
+      "desc": "拥有战意+12% 战意效果",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_wubianzhanyi_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 技能范围+5% 投射物速度+2% 移动速度",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "2.5% 防御值1.5% 几率避免伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Evasion_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+25% 暴击值-4 技能消耗",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 攻击格挡率+2% 法术格挡率",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 技能范围+10% 投射物速度+3% 移动速度",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 防御值",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 防御值+3% 几率避免伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8% 暴击伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 攻击格挡率+4% 法术格挡率",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Block_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 物理伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 防御值",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+16% 暴击伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "格挡时，10% 几率回复 15% 生命、护盾和魔力",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 物理伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Aura_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击速度",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 施法速度",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还1.5% 护盾返还",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 物理技能等级",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 物理伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+40% 连续攻击几率",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "使用核心法术技能时，+12% 几率额外触发一次",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+8% 生命返还受到重创时，回复 20% 已损生命",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+8% 护盾返还受到重创时，回复 20% 已损护盾",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "拥有战意时，额外 +10% 物理伤害",
+      "belong": "征战之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    }
+  ]
+}

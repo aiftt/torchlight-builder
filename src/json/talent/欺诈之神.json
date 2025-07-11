@@ -1,0 +1,206 @@
+{
+  "name": "欺诈之神",
+  "main": "敏捷、智慧",
+  "tags": ["持续", "腐蚀"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentAI_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "瘟疫",
+      "desc": "持续伤害有 100% 几率扩散至近处目标+10% 持续伤害持续时间",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_wenyi_Icon_128.webp"
+    },
+    {
+      "name": "混入",
+      "desc": "+50% 恶化几率",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_hunru_Icon_128.webp"
+    },
+    {
+      "name": "疾徐",
+      "desc": "施加持续伤害后 2 秒内，额外 +25% 持续伤害，该效果不可叠加",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jixu_Icon_128.webp"
+    },
+    {
+      "name": "潜移默化",
+      "desc": "迷踪获得额外效果：额外 +25% 持续伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_qianyimohua_Icon_128.webp"
+    },
+    {
+      "name": "禁忌力量",
+      "desc": "额外 +35% 腐蚀伤害-10% 元素抗性",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jinjililiang_Icon_128.webp"
+    },
+    {
+      "name": "怪力乱神",
+      "desc": "如果最近 8 秒内受到了伤害，  +1 坚韧祝福层数上限如果最近 8 秒内使用了位移技能，  +1 灵动祝福层数上限如果最近 8 秒内造成了暴击或收割，  +1 聚能祝福层数上限",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yinzhenzhike_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2% 移动速度+7% 技能范围",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Curse_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾+3% 护盾充能速度",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/EsReg_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 移动速度+14% 技能范围",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Curse_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Claw01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度-4 技能消耗",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+16% 最大护盾护盾开始充能时，获得迷踪",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 持续伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 最大生命每秒自然回复 0.5% 生命",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 腐蚀伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 暴击值+10% 暴击伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+2 每秒施加加剧值+9% 持续伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dot_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 持续伤害+2% 技能效果持续时间",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 恶化几率",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "造成持续伤害时，收割 0.09 秒持续伤害，该效果对同一目标有 6 秒冷却时间",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+5 敏捷+5 智慧",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 最大护盾+4% 护盾充能速度",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 恶化伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 腐蚀伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgChaos_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 持续技能等级",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Cannon01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10 敏捷+10 智慧",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow03_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "12% 几率额外造成 1 层恶化额外 -20% 恶化持续时间",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Claw02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "对生命造成额外 10% 伤害",
+      "belong": "欺诈之神",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    }
+  ]
+}

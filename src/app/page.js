@@ -1,85 +1,224 @@
+'use client'
+
 import Layout from '@/components/Layout';
-import { useState, useEffect, useRef } from 'react';
-import heroDataS8 from '@/json/hero.s8.json';
+import { useState, useEffect } from 'react';
+import heroData from '@/json/hero.json';
 
 export default function Home() {
-  const [season, setSeason] = useState('s8');
-  const [heroes, setHeroes] = useState([]);
+  const [heroes, setHeroes] = useState(heroData);
   const [selectedHero, setSelectedHero] = useState(null);
-  const [availableSeasons, setAvailableSeasons] = useState(['s8']);
-  const availableSeasonsRef = useRef(['s8']);
+  const [selectedTraits, setSelectedTraits] = useState({});
+  const [attributes, setAttributes] = useState({
+    strength: 100,
+    dexterity: 80,
+    wisdom: 60,
+    mana: 120
+  });
+  const [equipment, setEquipment] = useState({
+    weapon: null,
+    helmet: null,
+    armor: null,
+    gloves: null,
+    belt: null,
+    boots: null,
+    necklace: null,
+    ring: null
+  });
 
-  // 动态加载英雄数据
+  // 当选择英雄时，重置已选特性和属性
   useEffect(() => {
-    const loadHeroData = async () => {
-      try {
-        let heroData;
+    if (selectedHero) {
+      // 初始化特性选择，默认选择第一个特性
+      const initialTraits = {};
+      // 获取所有特性等级
+      const traitLevels = [...new Set(selectedHero.skills.map(skill => skill.level))];
+      
+      // 对于每个等级，默认选择该等级的第一个特性
+      traitLevels.forEach(level => {
+        const firstTraitOfLevel = selectedHero.skills.find(skill => skill.level === level);
+        if (firstTraitOfLevel) {
+          initialTraits[level] = firstTraitOfLevel.name;
+        }
+      });
+      
+      setSelectedTraits(initialTraits);
+      
+      // 根据英雄类型设置初始属性
+      // 这里只是示例，实际应该根据英雄的基础属性来设置
+      const heroType = selectedHero.name.split('|')[1] || '';
+      let baseAttributes = {
+        strength: 100,
+        dexterity: 80,
+        wisdom: 60,
+        mana: 120
+      };
+      
+      if (heroType.includes('怒火') || heroType.includes('战火')) {
+        baseAttributes = {
+          strength: 140,
+          dexterity: 70,
+          wisdom: 50,
+          mana: 100
+        };
+      } else if (heroType.includes('猎') || heroType.includes('影')) {
+        baseAttributes = {
+          strength: 70,
+          dexterity: 140,
+          wisdom: 60,
+          mana: 110
+        };
+      } else if (heroType.includes('焰') || heroType.includes('冰')) {
+        baseAttributes = {
+          strength: 60,
+          dexterity: 70,
+          wisdom: 140,
+          mana: 150
+        };
+      }
+      
+      setAttributes(baseAttributes);
+    } else {
+      setSelectedTraits({});
+      setAttributes({
+        strength: 100,
+        dexterity: 80,
+        wisdom: 60,
+        mana: 120
+      });
+    }
+  }, [selectedHero]);
+
+  // 当特性或装备改变时，重新计算属性
+  useEffect(() => {
+    if (!selectedHero) return;
+    
+    // 获取基础属性
+    let calculatedAttributes = { ...attributes };
+    
+    // 应用特性加成
+    Object.entries(selectedTraits).forEach(([level, traitName]) => {
+      const trait = selectedHero.skills.find(skill => skill.name === traitName);
+      if (trait) {
+        // 这里应该解析特性描述，提取属性加成
+        // 这只是一个简化的示例，实际应该有更复杂的解析逻辑
+        const description = trait.description[0];
         
-        // 根据赛季加载不同的数据
-        if (season === 's8') {
-          heroData = heroDataS8;
-        } else if (season === 's9') {
-          // 尝试动态导入 S9 数据
-          try {
-            const s9Module = await import('@/json/hero.s9.json');
-            heroData = s9Module.default;
-            
-            // 如果成功加载了 S9 数据，将其添加到可用赛季中
-            if (!availableSeasonsRef.current.includes('s9')) {
-              availableSeasonsRef.current.push('s9');
-              setAvailableSeasons([...availableSeasonsRef.current]);
-            }
-          } catch (error) {
-            console.error('S9 数据尚未可用:', error);
-            heroData = [];
+        if (description.includes('力量')) {
+          calculatedAttributes.strength += 20;
+        }
+        if (description.includes('敏捷')) {
+          calculatedAttributes.dexterity += 20;
+        }
+        if (description.includes('智慧')) {
+          calculatedAttributes.wisdom += 20;
+        }
+        if (description.includes('魔力')) {
+          calculatedAttributes.mana += 30;
+        }
+      }
+    });
+    
+    // 应用装备加成
+    Object.values(equipment).forEach(item => {
+      if (item) {
+        // 这里应该应用装备的属性加成
+        // 由于我们没有实际的装备数据，这里只是一个示例
+      }
+    });
+    
+    setAttributes(calculatedAttributes);
+  }, [selectedTraits, equipment, selectedHero]);
+
+  // 选择特性
+  const selectTrait = (level, traitName) => {
+    setSelectedTraits(prev => ({
+      ...prev,
+      [level]: traitName
+    }));
+  };
+
+  // 获取特定等级的所有特性
+  const getTraitsByLevel = (level) => {
+    if (!selectedHero) return [];
+    return selectedHero.skills.filter(skill => skill.level === level);
+  };
+
+  // 检查特性是否被选中
+  const isTraitSelected = (level, traitName) => {
+    return selectedTraits[level] === traitName;
+  };
+
+  // 计算属性百分比
+  const calculateAttributePercentage = (attribute) => {
+    const maxValues = {
+      strength: 200,
+      dexterity: 200,
+      wisdom: 200,
+      mana: 200
+    };
+    
+    return (attributes[attribute] / maxValues[attribute]) * 100;
+  };
+
+  // 计算伤害
+  const calculateDamage = () => {
+    if (!selectedHero) return { base: 0, critRate: 0, critDamage: 0, attackSpeed: 0, dps: 0 };
+    
+    // 基础伤害计算
+    let baseDamage = 100;
+    
+    // 根据主属性增加基础伤害
+    const heroType = selectedHero.name.split('|')[1] || '';
+    if (heroType.includes('怒火') || heroType.includes('战火')) {
+      baseDamage += attributes.strength * 2;
+    } else if (heroType.includes('猎') || heroType.includes('影')) {
+      baseDamage += attributes.dexterity * 2;
+    } else if (heroType.includes('焰') || heroType.includes('冰')) {
+      baseDamage += attributes.wisdom * 2;
+    }
+    
+    // 应用特性加成
+    Object.entries(selectedTraits).forEach(([level, traitName]) => {
+      const trait = selectedHero.skills.find(skill => skill.name === traitName);
+      if (trait) {
+        const description = trait.description[0];
+        
+        // 解析伤害加成
+        // 这只是一个简化的示例
+        if (description.includes('伤害')) {
+          const match = description.match(/\+(\d+)%\s*伤害/);
+          if (match && match[1]) {
+            baseDamage *= (1 + parseInt(match[1]) / 100);
           }
         }
-        
-        setHeroes(heroData || []);
-        setSelectedHero(null); // 重置选中的英雄
-      } catch (error) {
-        console.error('加载英雄数据失败:', error);
-        setHeroes([]);
       }
+    });
+    
+    // 暴击率和暴击伤害
+    let critRate = 5 + attributes.dexterity * 0.1;
+    let critDamage = 150 + attributes.strength * 0.2;
+    
+    // 攻击速度
+    let attackSpeed = 1 + attributes.dexterity * 0.005;
+    
+    // 每秒伤害
+    let dps = baseDamage * attackSpeed * (1 + (critRate / 100) * (critDamage / 100 - 1));
+    
+    return {
+      base: Math.round(baseDamage),
+      critRate: Math.min(Math.round(critRate), 100),
+      critDamage: Math.round(critDamage),
+      attackSpeed: attackSpeed.toFixed(2),
+      dps: Math.round(dps)
     };
+  };
 
-    loadHeroData();
-  }, [season]);
-
-  // 检查 S9 数据是否可用
-  useEffect(() => {
-    const checkS9Availability = async () => {
-      try {
-        await import('@/json/hero.s9.json');
-        if (!availableSeasonsRef.current.includes('s9')) {
-          availableSeasonsRef.current.push('s9');
-          setAvailableSeasons([...availableSeasonsRef.current]);
-        }
-      } catch (error) {
-        // S9 数据不可用，不做任何操作
-      }
-    };
-
-    checkS9Availability();
-  }, []);
+  const damage = calculateDamage();
 
   return (
     <Layout>
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold text-amber-400">火炬之光：无限 构建工具</h1>
-        <div className="flex items-center space-x-2">
-          <span>赛季:</span>
-          <select 
-            className="bg-gray-700 border border-gray-600 rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
-            value={season}
-            onChange={(e) => setSeason(e.target.value)}
-          >
-            <option value="s8">S8 赛季</option>
-            <option value="s9" disabled={!availableSeasons.includes('s9')}>
-              S9 赛季 {!availableSeasons.includes('s9') && '(即将更新)'}
-            </option>
-          </select>
-        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -108,52 +247,93 @@ export default function Home() {
             </div>
           ) : (
             <div className="bg-gray-700 p-4 rounded-lg text-center">
-              <p>当前赛季数据尚未可用</p>
+              <p>英雄数据加载失败</p>
             </div>
           )}
         </div>
 
         {/* 中间 - 技能和属性 */}
         <div className="lg:col-span-2">
-          {/* 技能选择 */}
+          {/* 英雄特性选择 */}
           <div className="bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
-            <h2 className="text-xl font-bold mb-4 text-amber-400">技能配置</h2>
-            <div className="grid grid-cols-3 gap-4 mb-4">
-              <div className="bg-gray-700 p-3 rounded-lg text-center">
-                <div className="w-12 h-12 bg-gray-600 rounded-full mx-auto mb-2"></div>
-                <p className="text-sm">主动技能1</p>
+            <h2 className="text-xl font-bold mb-4 text-amber-400">英雄特性</h2>
+            {selectedHero ? (
+              <div className="space-y-6">
+                {/* 基础特性 - 1级 */}
+                <div>
+                  <h3 className="font-semibold mb-2 text-amber-400">基础特性 (1级)</h3>
+                  <div className="bg-gray-700 p-3 rounded-lg">
+                    {getTraitsByLevel(1).map((trait, index) => (
+                      <div key={index} className="mb-2">
+                        <h4 className="font-medium">{trait.name}</h4>
+                        <p className="text-sm text-gray-300">{trait.description[0]}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* 45级特性 */}
+                {getTraitsByLevel(45).length > 0 && (
+                  <div>
+                    <h3 className="font-semibold mb-2 text-amber-400">45级特性 (选择一项)</h3>
+                    <div className="grid grid-cols-1 gap-2">
+                      {getTraitsByLevel(45).map((trait, index) => (
+                        <div 
+                          key={index} 
+                          className={`bg-gray-700 p-3 rounded-lg cursor-pointer ${isTraitSelected(45, trait.name) ? 'ring-2 ring-amber-500' : ''}`}
+                          onClick={() => selectTrait(45, trait.name)}
+                        >
+                          <h4 className="font-medium">{trait.name}</h4>
+                          <p className="text-sm text-gray-300">{trait.description[0]}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                
+                {/* 60级特性 */}
+                {getTraitsByLevel(60).length > 0 && (
+                  <div>
+                    <h3 className="font-semibold mb-2 text-amber-400">60级特性 (选择一项)</h3>
+                    <div className="grid grid-cols-1 gap-2">
+                      {getTraitsByLevel(60).map((trait, index) => (
+                        <div 
+                          key={index} 
+                          className={`bg-gray-700 p-3 rounded-lg cursor-pointer ${isTraitSelected(60, trait.name) ? 'ring-2 ring-amber-500' : ''}`}
+                          onClick={() => selectTrait(60, trait.name)}
+                        >
+                          <h4 className="font-medium">{trait.name}</h4>
+                          <p className="text-sm text-gray-300">{trait.description[0]}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                
+                {/* 75级特性 */}
+                {getTraitsByLevel(75).length > 0 && (
+                  <div>
+                    <h3 className="font-semibold mb-2 text-amber-400">75级特性 (选择一项)</h3>
+                    <div className="grid grid-cols-1 gap-2">
+                      {getTraitsByLevel(75).map((trait, index) => (
+                        <div 
+                          key={index} 
+                          className={`bg-gray-700 p-3 rounded-lg cursor-pointer ${isTraitSelected(75, trait.name) ? 'ring-2 ring-amber-500' : ''}`}
+                          onClick={() => selectTrait(75, trait.name)}
+                        >
+                          <h4 className="font-medium">{trait.name}</h4>
+                          <p className="text-sm text-gray-300">{trait.description[0]}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
-              <div className="bg-gray-700 p-3 rounded-lg text-center">
-                <div className="w-12 h-12 bg-gray-600 rounded-full mx-auto mb-2"></div>
-                <p className="text-sm">主动技能2</p>
+            ) : (
+              <div className="bg-gray-700 p-4 rounded-lg">
+                <p>请先选择一个英雄来查看特性</p>
               </div>
-              <div className="bg-gray-700 p-3 rounded-lg text-center">
-                <div className="w-12 h-12 bg-gray-600 rounded-full mx-auto mb-2"></div>
-                <p className="text-sm">主动技能3</p>
-              </div>
-              <div className="bg-gray-700 p-3 rounded-lg text-center">
-                <div className="w-12 h-12 bg-gray-600 rounded-full mx-auto mb-2"></div>
-                <p className="text-sm">辅助技能1</p>
-              </div>
-              <div className="bg-gray-700 p-3 rounded-lg text-center">
-                <div className="w-12 h-12 bg-gray-600 rounded-full mx-auto mb-2"></div>
-                <p className="text-sm">辅助技能2</p>
-              </div>
-              <div className="bg-gray-700 p-3 rounded-lg text-center">
-                <div className="w-12 h-12 bg-gray-600 rounded-full mx-auto mb-2"></div>
-                <p className="text-sm">被动技能</p>
-              </div>
-            </div>
-            <div className="mt-4">
-              <h3 className="font-semibold mb-2">技能搭配推荐</h3>
-              <div className="bg-gray-700 p-3 rounded-lg">
-                <p className="text-sm">
-                  {selectedHero 
-                    ? "根据您选择的职业和技能方向，推荐以下技能搭配..." 
-                    : "请先选择一个英雄来查看技能搭配推荐"}
-                </p>
-              </div>
-            </div>
+            )}
           </div>
 
           {/* 属性分配 */}
@@ -163,37 +343,49 @@ export default function Home() {
               <div className="bg-gray-700 p-4 rounded-lg">
                 <div className="flex justify-between items-center mb-2">
                   <span className="font-semibold">力量</span>
-                  <span className="bg-amber-600 px-2 py-1 rounded text-sm">120</span>
+                  <span className="bg-amber-600 px-2 py-1 rounded text-sm">{attributes.strength}</span>
                 </div>
                 <div className="w-full bg-gray-600 rounded-full h-2">
-                  <div className="bg-amber-500 h-2 rounded-full" style={{ width: '60%' }}></div>
+                  <div 
+                    className="bg-amber-500 h-2 rounded-full" 
+                    style={{ width: `${calculateAttributePercentage('strength')}%` }}
+                  ></div>
                 </div>
               </div>
               <div className="bg-gray-700 p-4 rounded-lg">
                 <div className="flex justify-between items-center mb-2">
                   <span className="font-semibold">敏捷</span>
-                  <span className="bg-amber-600 px-2 py-1 rounded text-sm">85</span>
+                  <span className="bg-amber-600 px-2 py-1 rounded text-sm">{attributes.dexterity}</span>
                 </div>
                 <div className="w-full bg-gray-600 rounded-full h-2">
-                  <div className="bg-amber-500 h-2 rounded-full" style={{ width: '40%' }}></div>
+                  <div 
+                    className="bg-amber-500 h-2 rounded-full" 
+                    style={{ width: `${calculateAttributePercentage('dexterity')}%` }}
+                  ></div>
                 </div>
               </div>
               <div className="bg-gray-700 p-4 rounded-lg">
                 <div className="flex justify-between items-center mb-2">
                   <span className="font-semibold">智慧</span>
-                  <span className="bg-amber-600 px-2 py-1 rounded text-sm">65</span>
+                  <span className="bg-amber-600 px-2 py-1 rounded text-sm">{attributes.wisdom}</span>
                 </div>
                 <div className="w-full bg-gray-600 rounded-full h-2">
-                  <div className="bg-amber-500 h-2 rounded-full" style={{ width: '30%' }}></div>
+                  <div 
+                    className="bg-amber-500 h-2 rounded-full" 
+                    style={{ width: `${calculateAttributePercentage('wisdom')}%` }}
+                  ></div>
                 </div>
               </div>
               <div className="bg-gray-700 p-4 rounded-lg">
                 <div className="flex justify-between items-center mb-2">
                   <span className="font-semibold">魔力</span>
-                  <span className="bg-amber-600 px-2 py-1 rounded text-sm">150</span>
+                  <span className="bg-amber-600 px-2 py-1 rounded text-sm">{attributes.mana}</span>
                 </div>
                 <div className="w-full bg-gray-600 rounded-full h-2">
-                  <div className="bg-amber-500 h-2 rounded-full" style={{ width: '75%' }}></div>
+                  <div 
+                    className="bg-amber-500 h-2 rounded-full" 
+                    style={{ width: `${calculateAttributePercentage('mana')}%` }}
+                  ></div>
                 </div>
               </div>
             </div>
@@ -225,6 +417,20 @@ export default function Home() {
               )}
             </div>
           </div>
+          
+          {/* 已选特性摘要 */}
+          {selectedHero && Object.keys(selectedTraits).length > 0 && (
+            <div className="bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
+              <h2 className="text-xl font-bold mb-4 text-amber-400">已选特性</h2>
+              <div className="space-y-2">
+                {Object.entries(selectedTraits).map(([level, traitName]) => (
+                  <div key={level} className="bg-gray-700 p-3 rounded-lg">
+                    <h3 className="text-sm font-medium">{level}级: {traitName}</h3>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
           
           {/* 装备选择 */}
           <div className="bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
@@ -264,7 +470,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-
+          
           {/* 伤害统计 */}
           <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
             <h2 className="text-xl font-bold mb-4 text-amber-400">伤害统计</h2>
@@ -272,31 +478,31 @@ export default function Home() {
               <div className="bg-gray-700 p-3 rounded-lg">
                 <div className="flex justify-between">
                   <span>基础伤害</span>
-                  <span className="text-amber-400">1250</span>
+                  <span className="text-amber-400">{damage.base}</span>
                 </div>
               </div>
               <div className="bg-gray-700 p-3 rounded-lg">
                 <div className="flex justify-between">
                   <span>暴击率</span>
-                  <span className="text-amber-400">35%</span>
+                  <span className="text-amber-400">{damage.critRate}%</span>
                 </div>
               </div>
               <div className="bg-gray-700 p-3 rounded-lg">
                 <div className="flex justify-between">
                   <span>暴击伤害</span>
-                  <span className="text-amber-400">180%</span>
+                  <span className="text-amber-400">{damage.critDamage}%</span>
                 </div>
               </div>
               <div className="bg-gray-700 p-3 rounded-lg">
                 <div className="flex justify-between">
                   <span>攻击速度</span>
-                  <span className="text-amber-400">1.75</span>
+                  <span className="text-amber-400">{damage.attackSpeed}</span>
                 </div>
               </div>
               <div className="bg-gray-700 p-3 rounded-lg">
                 <div className="flex justify-between">
                   <span>每秒伤害</span>
-                  <span className="text-amber-400">2850</span>
+                  <span className="text-amber-400">{damage.dps}</span>
                 </div>
               </div>
             </div>
@@ -349,7 +555,7 @@ export default function Home() {
             <>
               <h3 className="font-semibold mb-2">{selectedHero.name} - 构建方案</h3>
               <p className="text-sm text-gray-300">
-                根据所选英雄特性，您可以创建一个专属构建方案。完成技能、属性和装备配置后，可以保存和分享您的构建。
+                已选择 {Object.keys(selectedTraits).length} 个特性。根据所选英雄特性，您可以创建一个专属构建方案。完成技能、属性和装备配置后，可以保存和分享您的构建。
               </p>
             </>
           ) : (
@@ -359,7 +565,7 @@ export default function Home() {
             </>
           )}
         </div>
-      </div>
+    </div>
     </Layout>
   );
 }

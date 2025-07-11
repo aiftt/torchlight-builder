@@ -1,0 +1,296 @@
+{
+  "name": "勇者",
+  "main": "",
+  "tags": ["单手武器", "护甲"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSIS07_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "审判",
+      "desc": "攻击击中时， +100% 几率造成瘫痪对瘫痪敌人， 额外 +20% 暴击伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shenpan_Icon_128.webp"
+    },
+    {
+      "name": "坚毅",
+      "desc": "每有 1 层坚韧祝福， 额外 +4% 护甲值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_jianyi_Icon_128.webp"
+    },
+    {
+      "name": "合力",
+      "desc": "双持时，副手武器不参与攻击附加 60% 副手武器伤害至主手武器",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_heli_Icon_128.webp"
+    },
+    {
+      "name": "势均力敌",
+      "desc": "对近处的敌人至多额外 +25% 攻击伤害，该效果随与敌人距离增加而递减额外 -15% 来自近处敌人的伤害，该效果随与敌人距离增加而递减",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shijunlidi_Icon_128.webp"
+    },
+    {
+      "name": "灰烬装甲",
+      "desc": "对非物理伤害，+25% 护甲有效率",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_huijinzhuangjia_Icon_128.webp"
+    },
+    {
+      "name": "大象无形",
+      "desc": "战吼立即释放额外 +25% 近战伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_daxiangwuxing_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 攻击伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Duration_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 护甲值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 攻击伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Accuracy_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击速度",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 最大生命每秒自然回复 0.5% 生命",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+450 护甲值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 护甲值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 攻击暴击值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击速度-4 技能消耗",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 攻击格挡率",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+900 护甲值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命+3% 最大护盾",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+20% 攻击暴击值+5% 暴击伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "1.5% 生命返还",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Axe01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+8% 攻击格挡率",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+10% 坚韧祝福持续时间拥有坚韧祝福时， 1.5% 元素抗性",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Curse_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大生命+6% 最大护盾",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 攻击伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgPhys_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 生命返还",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/AtkSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+5% 投射物速度",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "受到伤害时，+25% 几率获得 1 层坚韧祝福，间隔 1 秒",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 攻击伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgPhys_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 战吼技能范围",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+10% 投射物速度",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每有 1 层坚韧祝福， +8% 护甲值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "- 30 受到的物理伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 攻击伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+14% 战吼技能范围",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+5 战吼至少影响的敌人数量",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 护甲值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 -20% 受到的元素伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "双持时， +8% 攻击速度",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "持盾时， +8% 攻击速度",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8 力量",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgEle_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+4% 几率获得双倍护甲效果",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+7% 护甲值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "双持时，每装备一把不同类型的武器，额外 +6% 攻击伤害",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "持盾时，额外 +8% 主手武器伤害持盾时，+5% 移动速度",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dual02_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 10 点力量， +1% 护甲值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+50% 从胸甲获得的防御值",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Dot_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 3000 点护甲， 0.5% 元素抗性，至多 6%每 3000 点护甲， 0.5% 腐蚀抗性，至多 6%",
+      "belong": "勇者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    }
+  ]
+}

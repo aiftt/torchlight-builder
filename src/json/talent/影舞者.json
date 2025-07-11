@@ -1,0 +1,284 @@
+{
+  "name": "影舞者",
+  "main": "",
+  "tags": ["物理", "触发"],
+  "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/128/UI_TalentIcon_TalentSAS01_Icon_png_128.webp",
+  "talents": [
+    {
+      "name": "钝器",
+      "desc": "额外 +24% 物理伤害敌人 +20% 受伤缓冲",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_dunqi_Icon_128.webp"
+    },
+    {
+      "name": "断续",
+      "desc": "攻击暴击时， +350 法术暴击值，持续 4 秒",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_duanxu_Icon_128.webp"
+    },
+    {
+      "name": "野心",
+      "desc": "击中劲敌时，获得 10 点战意值周围有敌人时，获得战意",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_yexin_Icon_128.webp"
+    },
+    {
+      "name": "伤口撕裂",
+      "desc": "对创伤状态下的敌人，再次造成创伤时，+50% 创伤持续时间对创伤状态下的敌人， +125% 暴击伤害对创伤状态下的敌人，召唤物 +125% 暴击伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_shangkousilie_Icon_128.webp"
+    },
+    {
+      "name": "一触即发",
+      "desc": "每有 7 点战意值，触发技能时，该技能额外 +2% 伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_lingguangzhaxian_Icon_128.webp"
+    },
+    {
+      "name": "内外兼修",
+      "desc": "最近每释放一次攻击技能，额外 +9% 法术伤害，最多叠加 3 层如果最近法术击中，额外 +25% 攻击伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/UI_CoreTalentIcon_neiwaijianxiu_Icon_128.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 物理伤害召唤物 +9% 物理伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bow01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度+3% 召唤物攻击与施法速度",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 物理伤害召唤物 +18% 物理伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgPhys_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+6% 创伤几率召唤物 +10% 创伤几率",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bleed_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+5% 最大生命每秒自然回复 0.6% 生命",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Flask02_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 被触发技能的伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度+6% 召唤物攻击与施法速度-4 技能消耗",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/CastSpeed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8% 暴击伤害+8% 召唤物暴击伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit03_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+12% 创伤几率+15% 创伤伤害召唤物 +20% 创伤几率",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Bleed_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大护盾1.5% 护盾返还",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 被触发技能的伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+15% 暴击值+15% 召唤物暴击值",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit02_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+16% 暴击伤害+16% 召唤物暴击伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+5% 护甲值+5% 闪避值",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Armor_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 最大护盾+3% 护盾返还",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Es_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 攻击格挡率",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Block_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+30% 暴击值+30% 召唤物暴击值",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit04_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+9% 护甲值+9% 闪避值额外 -4% 受到的物理伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence03_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 最大生命1.5% 生命返还",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel01_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击格挡率额外 -4% 受到的物理伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 物理伤害召唤物 +9% 物理伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgPhys_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+3% 攻击与施法速度+3% 召唤物攻击与施法速度",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+6% 最大生命-100%受到创伤伤害召唤物免疫物理伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Atk_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+6% 攻击与施法速度",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 冷却回复速度",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+22% 物理伤害-12% 元素伤害召唤物 +22% 物理伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgExtra_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+3% 护甲减伤穿透召唤物 +3% 护甲减伤穿透",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Aura_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+4% 战意效果",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Channel01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 被触发技能的伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 物理伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Aura_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+9% 创伤伤害附加 8 基础创伤伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "每 8 点战意值，+1% 移动速度",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Defence01_64.webp"
+    },
+    {
+      "name": "小型天赋",
+      "desc": "+8% 创伤伤害+2% 创伤持续时间",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Curse_64.webp"
+    },
+    {
+      "name": "中型天赋",
+      "desc": "+18% 被触发技能的伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Agi_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+1 物理技能等级物理伤害无法转化为其它类型的伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgPhys_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "+30% 创伤收割时间",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/DmgAll_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "额外 +15% 暴击造成的创伤伤害",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Crit01_64.webp"
+    },
+    {
+      "name": "传奇中型天赋",
+      "desc": "触发任意技能时，+50% 几率使周围敌人虚弱",
+      "belong": "影舞者",
+      "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/64/Area_64.webp"
+    }
+  ]
+}
