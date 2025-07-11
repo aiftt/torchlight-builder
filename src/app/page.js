@@ -1,6 +1,7 @@
 'use client'
 
 import Layout from '@/components/Layout';
+import TalentSelector from '@/components/TalentSelector';
 import { useState, useEffect } from 'react';
 import heroData from '@/json/hero.json';
 
@@ -8,6 +9,7 @@ export default function Home() {
   const [heroes, setHeroes] = useState(heroData);
   const [selectedHero, setSelectedHero] = useState(null);
   const [selectedTraits, setSelectedTraits] = useState({});
+  const [selectedTalents, setSelectedTalents] = useState([]);
   const [attributes, setAttributes] = useState({
     strength: 100,
     dexterity: 80,
@@ -77,6 +79,8 @@ export default function Home() {
       }
       
       setAttributes(baseAttributes);
+      // 重置已选天赋
+      setSelectedTalents([]);
     } else {
       setSelectedTraits({});
       setAttributes({
@@ -85,10 +89,11 @@ export default function Home() {
         wisdom: 60,
         mana: 120
       });
+      setSelectedTalents([]);
     }
   }, [selectedHero]);
 
-  // 当特性或装备改变时，重新计算属性
+  // 当特性、天赋或装备改变时，重新计算属性
   useEffect(() => {
     if (!selectedHero) return;
     
@@ -118,6 +123,53 @@ export default function Home() {
       }
     });
     
+    // 应用天赋加成
+    selectedTalents.forEach(talent => {
+      if (talent.desc) {
+        // 解析天赋描述，提取属性加成
+        const desc = talent.desc;
+        
+        // 处理力量加成
+        if (desc.includes('力量')) {
+          const strengthMatch = desc.match(/\+(\d+)\s*力量/);
+          if (strengthMatch && strengthMatch[1]) {
+            calculatedAttributes.strength += parseInt(strengthMatch[1]);
+          }
+        }
+        
+        // 处理敏捷加成
+        if (desc.includes('敏捷')) {
+          const dexterityMatch = desc.match(/\+(\d+)\s*敏捷/);
+          if (dexterityMatch && dexterityMatch[1]) {
+            calculatedAttributes.dexterity += parseInt(dexterityMatch[1]);
+          }
+        }
+        
+        // 处理智慧加成
+        if (desc.includes('智慧')) {
+          const wisdomMatch = desc.match(/\+(\d+)\s*智慧/);
+          if (wisdomMatch && wisdomMatch[1]) {
+            calculatedAttributes.wisdom += parseInt(wisdomMatch[1]);
+          }
+          // 处理百分比智慧加成
+          const wisdomPercentMatch = desc.match(/\+(\d+)%\s*智慧/);
+          if (wisdomPercentMatch && wisdomPercentMatch[1]) {
+            const percent = parseInt(wisdomPercentMatch[1]) / 100;
+            calculatedAttributes.wisdom += Math.floor(calculatedAttributes.wisdom * percent);
+          }
+        }
+        
+        // 处理魔力加成
+        if (desc.includes('魔力') || desc.includes('最大魔力')) {
+          const manaMatch = desc.match(/\+(\d+)%\s*最大魔力/);
+          if (manaMatch && manaMatch[1]) {
+            const percent = parseInt(manaMatch[1]) / 100;
+            calculatedAttributes.mana += Math.floor(calculatedAttributes.mana * percent);
+          }
+        }
+      }
+    });
+    
     // 应用装备加成
     Object.values(equipment).forEach(item => {
       if (item) {
@@ -127,7 +179,7 @@ export default function Home() {
     });
     
     setAttributes(calculatedAttributes);
-  }, [selectedTraits, equipment, selectedHero]);
+  }, [selectedTraits, selectedTalents, equipment, selectedHero]);
 
   // 选择特性
   const selectTrait = (level, traitName) => {
@@ -135,6 +187,11 @@ export default function Home() {
       ...prev,
       [level]: traitName
     }));
+  };
+
+  // 处理天赋选择
+  const handleTalentSelect = (talents) => {
+    setSelectedTalents(talents);
   };
 
   // 获取特定等级的所有特性
@@ -194,12 +251,65 @@ export default function Home() {
       }
     });
     
+    // 应用天赋加成
+    selectedTalents.forEach(talent => {
+      const desc = talent.desc;
+      
+      // 解析伤害加成
+      if (desc.includes('伤害')) {
+        const damageMatch = desc.match(/\+(\d+)%\s*伤害/);
+        if (damageMatch && damageMatch[1]) {
+          baseDamage *= (1 + parseInt(damageMatch[1]) / 100);
+        }
+        
+        // 解析元素伤害加成
+        const elementalMatch = desc.match(/\+(\d+)%\s*元素伤害/);
+        if (elementalMatch && elementalMatch[1] && 
+            (heroType.includes('焰') || heroType.includes('冰') || heroType.includes('元素'))) {
+          baseDamage *= (1 + parseInt(elementalMatch[1]) / 100);
+        }
+      }
+    });
+    
     // 暴击率和暴击伤害
     let critRate = 5 + attributes.dexterity * 0.1;
     let critDamage = 150 + attributes.strength * 0.2;
     
+    // 从天赋中加入暴击率和暴击伤害的修正
+    selectedTalents.forEach(talent => {
+      const desc = talent.desc;
+      
+      // 暴击率加成
+      if (desc.includes('暴击值')) {
+        const critRateMatch = desc.match(/\+(\d+)%\s*暴击值/);
+        if (critRateMatch && critRateMatch[1]) {
+          critRate += parseInt(critRateMatch[1]);
+        }
+      }
+      
+      // 暴击伤害加成
+      if (desc.includes('暴击伤害')) {
+        const critDamageMatch = desc.match(/\+(\d+)%\s*暴击伤害/);
+        if (critDamageMatch && critDamageMatch[1]) {
+          critDamage += parseInt(critDamageMatch[1]);
+        }
+      }
+    });
+    
     // 攻击速度
     let attackSpeed = 1 + attributes.dexterity * 0.005;
+    
+    // 从天赋中加入攻击速度修正
+    selectedTalents.forEach(talent => {
+      const desc = talent.desc;
+      
+      if (desc.includes('攻击与施法速度')) {
+        const speedMatch = desc.match(/\+(\d+)%\s*攻击与施法速度/);
+        if (speedMatch && speedMatch[1]) {
+          attackSpeed *= (1 + parseInt(speedMatch[1]) / 100);
+        }
+      }
+    });
     
     // 每秒伤害
     let dps = baseDamage * attackSpeed * (1 + (critRate / 100) * (critDamage / 100 - 1));
@@ -336,8 +446,14 @@ export default function Home() {
             )}
           </div>
 
+          {/* 天赋选择器 */}
+          <TalentSelector 
+            selectedHero={selectedHero} 
+            onTalentSelect={handleTalentSelect} 
+          />
+
           {/* 属性分配 */}
-          <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
+          <div className="bg-gray-800 rounded-lg p-6 shadow-lg mt-6">
             <h2 className="text-xl font-bold mb-4 text-amber-400">属性分配</h2>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-gray-700 p-4 rounded-lg">
@@ -426,6 +542,20 @@ export default function Home() {
                 {Object.entries(selectedTraits).map(([level, traitName]) => (
                   <div key={level} className="bg-gray-700 p-3 rounded-lg">
                     <h3 className="text-sm font-medium">{level}级: {traitName}</h3>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          
+          {/* 已选天赋摘要 */}
+          {selectedTalents.length > 0 && (
+            <div className="bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
+              <h2 className="text-xl font-bold mb-4 text-amber-400">已选天赋</h2>
+              <div className="space-y-2">
+                {selectedTalents.map((talent, index) => (
+                  <div key={talent.id || index} className="bg-gray-700 p-3 rounded-lg">
+                    <h3 className="text-sm font-medium">{talent.name}</h3>
                   </div>
                 ))}
               </div>
@@ -555,7 +685,7 @@ export default function Home() {
             <>
               <h3 className="font-semibold mb-2">{selectedHero.name} - 构建方案</h3>
               <p className="text-sm text-gray-300">
-                已选择 {Object.keys(selectedTraits).length} 个特性。根据所选英雄特性，您可以创建一个专属构建方案。完成技能、属性和装备配置后，可以保存和分享您的构建。
+                已选择 {Object.keys(selectedTraits).length} 个特性，{selectedTalents.length} 个天赋。根据所选英雄特性和天赋，您可以创建一个专属构建方案。完成技能、属性和装备配置后，可以保存和分享您的构建。
               </p>
             </>
           ) : (

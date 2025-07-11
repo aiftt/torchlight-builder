@@ -1,0 +1,3315 @@
+[
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_O1_0_Icon_128.webp",
+    "name": "星星蛾火",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_O2_0_Icon_128.webp",
+    "name": "神祇足音",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_I1_0_Icon_128.webp",
+    "name": "群星辉陨",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_I2_0_Icon_128.webp",
+    "name": "末神泪珠",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_V1_0_Icon_128.webp",
+    "name": "神性一角",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_W1_0_Icon_128.webp",
+    "name": "末神远矣",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_II1_1_Icon_128.webp",
+    "name": "末神示现",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_II1_0_Icon_128.webp",
+    "name": "寰空神隙",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_ZZ1_0_Icon_128.webp",
+    "name": "神之谱系",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_LL1_0_Icon_128.webp",
+    "name": "众星归所",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/TalentSlate/128/UI_MI_TalantNG_Gold_O3_0_Icon_128.webp",
+    "name": "蛾火燎原之刻",
+    "level": 1,
+    "list": []
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_401_128.webp",
+    "name": "辉煌旅途",
+    "level": 1,
+    "list": [
+      "+(15–20) 全属性",
+      "+(60–80) 反射火焰伤害",
+      "+(60–80) 反射闪电伤害",
+      "+(60–80) 反射冰冷伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_310_128.webp",
+    "name": "全知的雏形",
+    "level": 1,
+    "list": ["+(1–10) 该装备护甲值", "+1 最大生命", "+1 最大魔力", "全知全能"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_401_128.webp",
+    "name": "岩石巨蜥之颅",
+    "level": 4,
+    "list": [
+      "+50 该装备护甲值",
+      "+(80–100) 最大生命",
+      "- 20 受到的物理伤害",
+      "受击时， +60% 几率获得一层坚韧祝福"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_410_128.webp",
+    "name": "海妖面甲",
+    "level": 4,
+    "list": [
+      "法术附加 (20–24) - (28–32) 点冰冷伤害",
+      "周围 10 米内敌人受到 (10–15) 级蚀骨之寒诅咒",
+      "免疫冰结"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Wand_Epic_104_128.webp",
+    "name": "春日复苏",
+    "level": 6,
+    "list": [
+      "+(100–120)% 法术伤害",
+      "+(15–18)% 施法速度",
+      "使用技能时，回复 (16–20) 点生命",
+      "使用技能时，回复 (9–15) 点魔力"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_420_128.webp",
+    "name": "阴翳舞步",
+    "level": 6,
+    "list": [
+      "+(50–70)% 移动速度",
+      "近处存在劲敌时， 每0.1秒获得一层基础伤害为 30 点的 凋零"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HSword_Epic_105_128.webp",
+    "name": "荣辱",
+    "level": 10,
+    "list": [
+      "该装备附加 (15–18) - (21–24) 点物理伤害",
+      "+(10–30)% 该装备物理伤害",
+      "(-15–-30)% 该装备攻击暴击值",
+      "借势"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HMace_Epic_101_128.webp",
+    "name": "炽热真言",
+    "level": 10,
+    "list": [
+      "+1 火焰技能等级",
+      "该装备附加 (8–10) - (16–20) 点火焰伤害",
+      "法术附加 (6–7) - (10–12) 点火焰伤害",
+      "+(60–80)% 火焰伤害",
+      "+(40–60)% 火焰技能范围"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Claw_Epic_101_128.webp",
+    "name": "不落之月",
+    "level": 10,
+    "list": [
+      "该装备附加 (25–30) - (40–52) 点物理伤害",
+      "+(20–25)% 该装备攻击速度",
+      "+1 投射物数量",
+      "不具有迷踪时，+2 直射投射物穿透次数",
+      "具有迷踪时，+2 弹射次数"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_412_128.webp",
+    "name": "幻躯",
+    "level": 10,
+    "list": [
+      "+(120–320) 该装备闪避值",
+      "+55 最大生命",
+      "移动时，每隔 0.6 秒，触发 20 级分裂射击",
+      "+15% 投射物速度",
+      "体型增大 (10–15)%"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_106_128.webp",
+    "name": "裁决之盾",
+    "level": 10,
+    "list": [
+      "+(10–13)% 攻击格挡率",
+      "+(44–66) 最大生命",
+      "+(150–300) 反射物理伤害",
+      "若最近格挡法术，+(150–300) 反射物理伤害",
+      "若最近格挡攻击，+(150–300) 反射物理伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_106_128.webp",
+    "name": "背水一战",
+    "level": 10,
+    "list": [
+      "+(600–800) 该装备护甲值",
+      "+(176–198) 最大生命",
+      "+(35–53) 最大护盾",
+      "+6% 攻击格挡率",
+      "生命低于 75% 时， +10% 格挡比例"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_411_128.webp",
+    "name": "灵佑之坠",
+    "level": 10,
+    "list": [
+      "+29 攻击和法术暴击值",
+      "+25% 最大护盾",
+      "非低护盾时， +96% 攻击和法术暴击值",
+      "额外 -20% 护盾充能间隔"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_405_128.webp",
+    "name": "元素秘语腰带",
+    "level": 10,
+    "list": [
+      "法术附加 (4–6) - (14–16) 点火焰伤害",
+      "法术附加 (4–6) - (14–16) 点冰冷伤害",
+      "法术附加 (1–3) - (25–30) 点闪电伤害",
+      "每秒自然回复 (5–7) 魔力"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_213_128.webp",
+    "name": "独活",
+    "level": 11,
+    "list": [
+      "+(60–70) 最大生命",
+      "如果只装备了一个戒指，+35% 受伤缓冲",
+      "如果只装备了一个戒指，额外 -20% 返还间隔",
+      "如果只装备了一个戒指，+(10–20)% 生命返还",
+      "如果只装备了一个戒指，-99% 生命自然回复速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_212_128.webp",
+    "name": "孤胆",
+    "level": 11,
+    "list": [
+      "+(25–30) 最大魔力",
+      "如果只装备了一个戒指，则核心技能被 (1–7) 级附加火焰伤害辅助",
+      "如果只装备了一个戒指，则核心技能被 (1–7) 级附加冰冷伤害辅助",
+      "如果只装备了一个戒指，则核心技能被 (1–7) 级附加闪电伤害辅助",
+      "如果只装备了一个戒指，则核心技能被 (1–7) 级附加腐蚀伤害辅助"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HSword_Epic_105_128.webp",
+    "name": "交错者",
+    "level": 12,
+    "list": [
+      "+(30–40)% 该装备物理伤害",
+      "+(20–25)% 攻击格挡率",
+      "额外格挡 (20–30) 攻击伤害",
+      "格挡时， 60% 概率获得一层坚韧祝福",
+      "具有坚韧祝福时，格挡幸运"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Shotgun_Epic_101_128.webp",
+    "name": "热潮",
+    "level": 12,
+    "list": [
+      "+(40–60)% 点燃伤害+(40–60)% 点燃几率",
+      "该装备附加 (32–37) - (41–45) 点火焰伤害",
+      "附加主手武器火焰伤害的 (40–50)% 至基础点燃伤害",
+      "造成点燃时，点燃有 50% 几率扩散到周围敌人"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_crossbow_Epic_104_128.webp",
+    "name": "雷尔夫的野心",
+    "level": 12,
+    "list": [
+      "该装备附加 (15–17) - (23–25) 点物理伤害",
+      "+(10–15)% 该装备攻击速度",
+      "拥有战意",
+      "每点战意值，+(3–4)% 投射物伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_411_128.webp",
+    "name": "失期",
+    "level": 12,
+    "list": [
+      "+(44–55) 最大生命",
+      "每秒自然回复 (15–20) 生命",
+      "+(6–10)% 移动速度",
+      "非满护盾时， +20% 移动速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_416_128.webp",
+    "name": "避火义肢",
+    "level": 12,
+    "list": [
+      "使用位移技能时，触发一次 15 级爆炎术，该效果有 1 秒间隔时间",
+      "使用位移技能时，触发一次 15 级烈焰释放，该效果有 1 秒间隔时间",
+      "+48% 技能范围",
+      "+20% 法术迸发充能速度",
+      "-20% 移动速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_418_128.webp",
+    "name": "引雷义肢",
+    "level": 12,
+    "list": [
+      "使用位移技能时，触发一次 15 级闪电链，该效果有 1 秒间隔时间",
+      "使用位移技能时，触发一次 15 级电火花，该效果有 1 秒间隔时间",
+      "+48% 技能范围",
+      "+20% 法术迸发充能速度",
+      "-20% 移动速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_417_128.webp",
+    "name": "御寒义肢",
+    "level": 12,
+    "list": [
+      "使用位移技能时，触发一次 15 级冰环术，该效果有 1 秒间隔时间",
+      "使用位移技能时，触发一次 15 级寒霜地面，该效果有 1 秒间隔时间",
+      "+48% 技能范围",
+      "+(20–30)% 法术迸发充能速度",
+      "-20% 移动速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_412_128.webp",
+    "name": "五芒星盘",
+    "level": 12,
+    "list": [
+      "<随机一条攻击或法术物理点伤>",
+      "<随机一条攻击或法术火焰点伤>",
+      "<随机一条攻击或法术冰冷点伤>",
+      "<随机一条攻击或法术闪电点伤>",
+      "<随机一条攻击或法术腐蚀点伤>"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_412_128.webp",
+    "name": "求生之欲",
+    "level": 12,
+    "list": [
+      "+(5–10) 力量",
+      "+(10–15)% 最大生命",
+      "生命健康时， +(9–11)% 移动速度",
+      "移动时，每秒自然回复 0.5% 生命",
+      "生命濒危时，回复 65% 最大生命并击退周围敌人，间隔 20 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HMace_Epic_104_128.webp",
+    "name": "灵魂交错",
+    "level": 13,
+    "list": [
+      "+(16–20) 力量与智慧",
+      "+(120–150)% 召唤物伤害",
+      "+(20–30)% 召唤物最大生命",
+      "+(20–30)% 召唤物持续时间",
+      "使用召唤技能时，消耗 5% 最大生命",
+      "召唤物每秒自然回复 3% 生命"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_409_128.webp",
+    "name": "寒冰法脉",
+    "level": 14,
+    "list": [
+      "+(15–20)% 施加的冰结值",
+      "+(60–80)% 法术伤害",
+      "击败冰结状态下的敌人时，回复技能和位移技能 -20% 当前冷却时间",
+      "+1 充能点数上限",
+      "魔力消耗的 50% 转换为生命消耗"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_322_128.webp",
+    "name": "渎影",
+    "level": 15,
+    "list": [
+      "+(5–15) 敏捷",
+      "+(20–30) 最大生命",
+      "使用影袭技能时，有 33% 几率 +3 幻影数量",
+      "额外 (-20–-10)% 幻影伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_401_128.webp",
+    "name": "龙鳞轻履",
+    "level": 15,
+    "list": [
+      "+154 最大生命",
+      "移动时，每秒自然回复 36 生命",
+      "+20% 移动速度",
+      "免疫创伤"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_402_128.webp",
+    "name": "罪火之足",
+    "level": 15,
+    "list": [
+      "+20% 移动速度",
+      "+25% 点燃几率",
+      "+(30–40)% 对点燃的敌人造成的伤害",
+      "免疫点燃"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_219_128.webp",
+    "name": "崇光",
+    "level": 15,
+    "list": ["+1 射线技能等级", "+1 射线条数"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Staff_Epic_103_128.webp",
+    "name": "智者远见",
+    "level": 16,
+    "list": [
+      "+(100–120)% 法术伤害",
+      "+40 最大魔力",
+      "攻击和法术附加 (24–28) - (54–64) 点冰冷伤害",
+      "+(10–25)% 技能范围"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_407_128.webp",
+    "name": "翩然之靴",
+    "level": 16,
+    "list": [
+      "+(130–180) 该装备护盾",
+      "+10% 移动速度",
+      "+(12–18) 智慧",
+      "+(5–11)% 冰冷抗性",
+      "聚能祝福达到上限时，+(15–20)% 移动速度",
+      "非暴击时，+20% 几率获得 1 层聚能祝福"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_421_128.webp",
+    "name": "破空轻履",
+    "level": 16,
+    "list": [
+      "-20% 地面技能持续时间",
+      "处于地面技能上时， +80% 移动速度，持续 2 秒",
+      "-30% 玩家移动速度",
+      "+40 最大生命"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Wand_Epic_103_128.webp",
+    "name": "绝罚权杖",
+    "level": 18,
+    "list": ["+(20–30) 智慧", "+(30–50)% 腐蚀伤害", "+12% 腐蚀抗性穿透"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_401_128.webp",
+    "name": "火焰降生",
+    "level": 18,
+    "list": [
+      "每 1 等级， +5 最大生命",
+      "每 1 等级， +1 %火焰伤害",
+      "每秒自然回复 (30–40) 生命"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_313_128.webp",
+    "name": "萨日图雅",
+    "level": 20,
+    "list": [
+      "迷你化",
+      "+50% 灵敏光环效果",
+      "+3 光环技能等级",
+      "+1 偏斜层数上限"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_314_128.webp",
+    "name": "阿日斯兰",
+    "level": 20,
+    "list": [
+      "极巨化",
+      "+50% 坚固光环效果",
+      "+3 光环技能等级",
+      "对非物理伤害，+10% 护甲有效率"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_319_128.webp",
+    "name": "莽夫的铁冠",
+    "level": 20,
+    "list": [
+      "+(150–170) 最大生命",
+      "受到伤害时， +50% 几率获得屏障，间隔 4 秒",
+      "具有屏障时，主手武器附加 (25–30) - (31–36) 点物理伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_404_128.webp",
+    "name": "狂猎者护腕",
+    "level": 20,
+    "list": [
+      "+(30–40)% 投射物伤害",
+      "+(10–20)% 攻击与施法速度",
+      "+(60–70)% 暴击值"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_422_128.webp",
+    "name": "追风步履",
+    "level": 20,
+    "list": [
+      "+(23–24)% 投射物速度",
+      "移动速度固定为基础值的 130%",
+      "+50% 瞄准技能持续时间"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_103_128.webp",
+    "name": "蔽日",
+    "level": 20,
+    "list": [
+      "+(900–1100) 该装备护甲值",
+      "99% 冰冷伤害转化为火焰伤害",
+      "99% 闪电伤害转化为火焰伤害",
+      "施加诅咒时，同时施加 1 层坚韧祝福",
+      "施加的坚韧祝福获得额外效果：-8% 火焰抗性，-2% 火焰抗性上限",
+      "巨龙末裔的憎恨"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_103_128.webp",
+    "name": "反反反面镜",
+    "level": 20,
+    "list": [
+      "+3% 攻击与法术格挡率",
+      "如果最近格挡过， +(90–108)% 伤害",
+      "每移动 4 米，对周围的敌人施加 2 层灵动祝福",
+      "每移动 6 米，有 50% 几率获得灵动祝福"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_401_128.webp",
+    "name": "钢铁悲鸣",
+    "level": 20,
+    "list": [
+      "+(165–176) 最大生命",
+      "额外 (-8–-6)% 受到的伤害",
+      "战吼技能被 (10–15) 级角斗怒吼辅助",
+      "+12% 战吼技能冷却回复速度",
+      "+(80–100)% 战吼范围"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_105_128.webp",
+    "name": "沉默守卫之盾",
+    "level": 22,
+    "list": [
+      "+(1000–1200) 该装备闪避值",
+      "+(16–19)% 法术格挡率",
+      "法术格挡率大于 60% 时， +(10–20)% 攻击速度",
+      "攻击格挡率大于 60% 时， +(50–100)% 攻击伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_414_128.webp",
+    "name": "无主",
+    "level": 22,
+    "list": [
+      "+(209–220) 最大生命",
+      "+(10–12)% 攻击与施法速度",
+      "+16% 投射物速度",
+      "+10% 移动速度",
+      "+(14–18) 全属性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Bow_Epic_103_128.webp",
+    "name": "雷光绝影之触",
+    "level": 24,
+    "list": [
+      "该装备附加 (15–17) - (23–25) 点物理伤害",
+      "50% 物理伤害转化为闪电伤害",
+      "+(20–30)% 该装备攻击速度",
+      "+(100–150)% 该装备物理伤害",
+      "攻击时有 50% 几率触发闪电连锁"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_crossbow_Epic_104_128.webp",
+    "name": "原野回响",
+    "level": 24,
+    "list": [
+      "+(80–100)% 该装备物理伤害",
+      "+(10–15)% 该装备攻击速度",
+      "击败时，回复 5% 生命",
+      "击中时，失去 (3–5) 生命",
+      "+36% 投射物伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_408_128.webp",
+    "name": "灵猫手套",
+    "level": 24,
+    "list": [
+      "+(200–250) 最大生命",
+      "+(8–10)% 攻击与施法速度",
+      "每有 1 层灵动祝福， +(4–6)% 元素伤害",
+      "+(40–50)% 灵动祝福持续时间",
+      "击败时， +50% 几率获得 1 层灵动祝福"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_412_128.webp",
+    "name": "无尽斗志",
+    "level": 24,
+    "list": [
+      "若最近使用过引导技能，额外 (-10–-5)% 受到的伤害",
+      "若最近使用过引导技能， +(20–30)% 移动速度",
+      "额外 +10% 引导技能伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_426_128.webp",
+    "name": "雷尔夫的苦旅",
+    "level": 25,
+    "list": [
+      "+(18–22)% 敏捷",
+      "每 20 点敏捷， +1% 移动速度",
+      "每 10 点敏捷，额外 +(7–8)% 闪电伤害",
+      "主属性基础不再额外增加伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_411_128.webp",
+    "name": "猩红敕令",
+    "level": 26,
+    "list": [
+      "+(1000–1200) 该装备护甲值",
+      "附加 (8–10)% 物理伤害的火焰伤害",
+      "附加 (8–10)% 物理伤害的闪电伤害",
+      "附加 (8–10)% 物理伤害的冰冷伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HAxe_Epic_106_128.webp",
+    "name": "瓦拉冈的狂袭",
+    "level": 30,
+    "list": [
+      "+(30–50)% 该装备物理伤害",
+      "+(10–15)% 该装备攻击速度",
+      "使用技能时，有 (10–20)% 概率 +(80–100)% 该次技能范围",
+      "击中敌人时，触发 (5–15) 级狂猛战吼，间隔 8 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HSword_Epic_103_128.webp",
+    "name": "雷枝",
+    "level": 30,
+    "list": [
+      "该装备附加 (1–2) - (90–96) 点闪电伤害",
+      "+(20–30)% 该装备攻击暴击值",
+      "攻击时有 50% 几率触发闪电连锁",
+      "你的副手为空时，+(80–100)% 闪电伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HMace_Epic_104_128.webp",
+    "name": "冰封之志",
+    "level": 30,
+    "list": [
+      "该装备附加 (15–18) - (24–27) 点物理伤害",
+      "+(10–15)% 该装备攻击速度",
+      "+(50–70)% 冰冷伤害",
+      "+25% 施加的冰结值",
+      "100% 物理伤害转化为冰冷伤害",
+      "击中冰封的敌人触发冻裂，该效果有 0.5 秒间隔时间"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Dagger_Epic_103_128.webp",
+    "name": "求告匕首",
+    "level": 30,
+    "list": [
+      "+(180–200)% 该装备物理伤害",
+      "+(40–50)% 连续攻击几率",
+      "+(12–15)% 该装备攻击速度",
+      "+(5–10)% 凋零持续时间",
+      "附加主手武器物理伤害的 (18–25)% 至基础凋零伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Bow_Epic_105_128.webp",
+    "name": "射日长弓",
+    "level": 30,
+    "list": [
+      "+(120–200)% 该装备物理伤害",
+      "+(8–12)% 该装备攻击速度",
+      "+(8–12)% 该装备攻击暴击值",
+      "核心技能被 20 级弹射辅助",
+      "+60% 投射物伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Pistol_Epic_103_128.webp",
+    "name": "冰冻目光",
+    "level": 30,
+    "list": [
+      "该装备附加 (35–39) - (44–49) 点冰冷伤害",
+      "+(30–40)% 冰结几率",
+      "+(10–15)% 该装备攻击速度",
+      "如果最近施加过冰结状态，触发20级寒冰射击，间隔0.3秒",
+      "+11% 冰冷伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Wand_Epic_105_128.webp",
+    "name": "炎魔的允诺",
+    "level": 30,
+    "list": [
+      "+(60–80)% 法术伤害",
+      "+17% 施法速度",
+      "(-20–-10)% 技能效果持续时间",
+      "+1 回复技能充能点数上限",
+      "最近释放过回复技能， +60% 暴击值",
+      "回复技能持续时间内， +30% 暴击伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_316_128.webp",
+    "name": "怒汉之躯",
+    "level": 30,
+    "list": [
+      "额外 -20% 移动速度",
+      "+10 最大生命",
+      "破击技能被 (20–25) 级快速回气辅助",
+      "消耗破击蓄能时，获得 80% 移动速度，该效果在 2 秒内逐渐衰减至0"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_318_128.webp",
+    "name": "玛格努斯的妒火",
+    "level": 30,
+    "list": [
+      "+(2880–3744) 该装备护甲值",
+      "+12% 力量",
+      "每 10 点力量，附加 5 - 8 点火焰伤害",
+      "主属性基础不再额外增加伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_319_128.webp",
+    "name": "雷尔夫的骨冢",
+    "level": 30,
+    "list": [
+      "+(2880–3744) 该装备闪避值",
+      "+12% 敏捷",
+      "每 10 点敏捷，附加 (1–2) - (11–12) 点闪电伤害",
+      "主属性基础不再额外增加伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_320_128.webp",
+    "name": "伊斯拉菲尔的悲愿",
+    "level": 30,
+    "list": [
+      "+(170–238) 该装备护盾",
+      "+(120–144) 最大魔力",
+      "+36% 智慧",
+      "至少有 600 点智慧时，附加 (297–317) - (413–433) 点冰冷伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_410_128.webp",
+    "name": "灼热指骨",
+    "level": 30,
+    "list": ["附加 120 基础点燃伤害", "+25% 点燃几率", "无法造成收割"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_220_128.webp",
+    "name": "污秽祝祷",
+    "level": 30,
+    "list": ["+1 灵动祝福层数上限", "造成伤害时，获得一层 灵动祝福，间隔 1 秒"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_220_128.webp",
+    "name": "污秽祝祷",
+    "level": 30,
+    "list": ["+1 聚能祝福层数上限", "造成伤害时，获得一层 聚能祝福，间隔 1 秒"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_220_128.webp",
+    "name": "污秽祝祷",
+    "level": 30,
+    "list": ["+1 坚韧祝福层数上限", "造成伤害时，获得一层 坚韧祝福，间隔 1 秒"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_318_128.webp",
+    "name": "厌光",
+    "level": 30,
+    "list": ["灯塔", "激活法术迸发时，每次法术迸发额外 -5% 技能范围"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_321_128.webp",
+    "name": "铃兰",
+    "level": 30,
+    "list": [
+      "+1 被动技能等级",
+      "额外 +(8–16)% 魔灵终极技能伤害和终极技能造成的异常伤害",
+      "魔灵重聚时，每秒自然回复 (20–30)% 生命",
+      "魔灵免疫元素伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_415_128.webp",
+    "name": "神性之呼",
+    "level": 32,
+    "list": [
+      "每秒自然回复 1% 生命",
+      "+30% 召唤物伤害",
+      "召唤物暴击时，每秒获得 8 点统御值，持续 3 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_216_128.webp",
+    "name": "灵魄之应",
+    "level": 32,
+    "list": [
+      "每秒自然回复 1% 生命",
+      "+30% 召唤物伤害",
+      "召唤物暴击时，获得 5 点生长值，持续 25 秒，最多获得 50"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_411_128.webp",
+    "name": "神射手护腕",
+    "level": 33,
+    "list": [
+      "+(150–200) 该装备闪避值",
+      "+(154–176) 最大生命",
+      "+(22–25)% 投射物伤害",
+      "+2 弹射次数",
+      "直射投射物每弹射 1 次，额外 +(3–4)% 伤害（叠乘）"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_410_128.webp",
+    "name": "天籁长袍",
+    "level": 35,
+    "list": [
+      "+44 最大生命",
+      "+24 最大魔力",
+      "+70 最大护盾",
+      "+7 全属性",
+      "每隔 15 秒，触发 10 级绝境阵"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_307_128.webp",
+    "name": "蚀髓",
+    "level": 35,
+    "list": [
+      "+150 最大生命和最大护盾",
+      "+(10–20)% 技能范围",
+      "-40% 地面蓄能回复速度",
+      "+1 地面蓄能层数上限",
+      "释放地面技能时，+20% 移动速度，持续 2 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_414_128.webp",
+    "name": "冰结雷光",
+    "level": 35,
+    "list": [
+      "+(7–11) 点敏捷与智慧",
+      "+(36–43)% 元素伤害",
+      "+3% 冰冷与闪电抗性",
+      "50% 闪电伤害转化为冰冷伤害",
+      "击中敌人时，附加一层减速，持续 2 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_215_128.webp",
+    "name": "泥偶的断指",
+    "level": 35,
+    "list": [
+      "使用地面技能后，+80% 法术伤害，持续 2 秒",
+      "+10% 地面技能范围",
+      "受到地面持续伤害的敌人免疫异常状态",
+      "+20 最大生命"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HSword_Epic_105_128.webp",
+    "name": "决意",
+    "level": 36,
+    "list": [
+      "该装备附加 (44–48) - (57–63) 点物理伤害",
+      "+(10–20)% 几率造成双倍伤害",
+      "最近造成双倍伤害时 +(3–5)% 攻击和施法速度，最多叠加 +10 层"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HMace_Epic_104_128.webp",
+    "name": "密修比的拒绝",
+    "level": 36,
+    "list": [
+      "+(120–150)% 该装备物理伤害",
+      "+40% 技能范围",
+      "+50% 击退距离",
+      "挥击时，具有反向击退",
+      "斩击时，造成击退"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_406_128.webp",
+    "name": "皇家禁卫之靴",
+    "level": 36,
+    "list": [
+      "+(75–100) 最大护盾",
+      "+(25–30)% 移动速度",
+      "+10% 腐蚀抗性",
+      "生命濒危时，额外 -10% 受到的伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_401_128.webp",
+    "name": "抗争铁链",
+    "level": 36,
+    "list": [
+      "+(165–176) 最大生命",
+      "+12% 攻击与施法速度",
+      "如果最近击败了敌人， +30% 技能范围",
+      "如果最近没有击败敌人， +(29–36)% 范围伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_407_128.webp",
+    "name": "砰砰手套",
+    "level": 38,
+    "list": [
+      "+(130–150) 最大生命",
+      "攻击和法术附加 (17–19) - (22–25) 点物理伤害",
+      "造成瘫痪时，触发 (15–25) 级震撼大地，该效果有 1.5 秒间隔时间",
+      "反向击退"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_408_128.webp",
+    "name": "巫医的草药包",
+    "level": 38,
+    "list": [
+      "+(30–50) 最大生命",
+      "+(15–20) 最大魔力",
+      "回复技能 +(60–80)% 回复效果",
+      "回复技能 +(60–80)% 回复时间"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_415_128.webp",
+    "name": "贤者的铁枷",
+    "level": 40,
+    "list": [
+      "+25 全属性",
+      "+(19–24)% 冷却回复速度",
+      "无法回复生命",
+      "+(60–80)% 魔力自然回复速度",
+      "+(12–14)% 护盾充能速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_321_128.webp",
+    "name": "幻罪黑纱",
+    "level": 45,
+    "list": [
+      "+1 灵动祝福层数上限",
+      "+1 聚能祝福层数上限",
+      "+1 坚韧祝福层数上限",
+      "每拥有一层祝福，额外-2%伤害（叠乘）"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_417_128.webp",
+    "name": "断海",
+    "level": 45,
+    "list": [
+      "核心技能被 (15–20) 级的怒斩辅助",
+      "+(40–70) 最大生命",
+      "+(6–10)% 攻击速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_425_128.webp",
+    "name": "孤誓之握",
+    "level": 45,
+    "list": [
+      "+(40–80) 该装备护盾",
+      "+(48–60) 智慧",
+      "+(50–60) 力量",
+      "自身只受 1 个光环影响时，额外 +(16–20)% 近战物理伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_426_128.webp",
+    "name": "暴君的凶焰",
+    "level": 45,
+    "list": [
+      "攻击附加 60 - 80 点火焰伤害",
+      "+(20–25)% 火焰抗性",
+      "暴击幸运",
+      "无法触发激发技能"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_427_128.webp",
+    "name": "合金圣约",
+    "level": 45,
+    "list": [
+      "+(10–12)% 元素抗性",
+      "额外 (-8–-5)% 受到的伤害",
+      "+(15–25)% 召唤物生命返还和护盾返还",
+      "智械召唤物的生命和护盾返还效果的 (15–18)% 作用于玩家"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_430_128.webp",
+    "name": "神意恩典",
+    "level": 45,
+    "list": [
+      "+(10–20)% 元素抗性",
+      "<随机一条祝福层数上限词缀>",
+      "如果坚韧祝福上限不低于其他祝福，额外 (-10–-8)% 受到的伤害",
+      "如果灵动祝福上限不低于其他祝福，额外 +(8–10)% 攻击和施法速度",
+      "如果聚能祝福上限不低于其他祝福，额外 +(8–10)% 伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_432_128.webp",
+    "name": "仇恶之手",
+    "level": 45,
+    "list": [
+      "+(50–60)% 该装备护盾",
+      "+(30–40)% 暴击值",
+      "+(20–30)% 暴击伤害",
+      "如果最近有暴击，额外 +(35–45)% 恶化伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_325_128.webp",
+    "name": "颂恶念珠",
+    "level": 45,
+    "list": [
+      "+60 最大生命",
+      "+(30–50)% 技能范围",
+      "对劲敌，额外 +10% 腐蚀范围伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_406_128.webp",
+    "name": "冰火交融",
+    "level": 50,
+    "list": [
+      "+(20–25)% 火焰和冰冷抗性",
+      "如果最近使用过火焰技能， +(75–100)% 冰冷伤害",
+      "如果最近使用过冰冷技能， +(75–100)% 火焰伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HAxe_Epic_101_128.webp",
+    "name": "阿米尼乌斯断头台",
+    "level": 58,
+    "list": [
+      "+(150–300)% 该装备物理伤害",
+      "该装备附加 (10–12) - (15–18) 点物理伤害",
+      "+40% 技能范围",
+      "击中敌人时，+20% 几率获得 1 层坚韧祝福",
+      "舍命额外拥有 1 层坚韧祝福"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HAxe_Epic_001_128.webp",
+    "name": "至高一瞥",
+    "level": 58,
+    "list": [
+      "+(180–220)% 该装备物理伤害",
+      "该装备附加 (19–23) - (27–31) 点物理伤害",
+      "+(30–40)% 该装备攻击暴击值",
+      "额外 (-80–-60)% 挥击伤害；额外 +(100–120)% 斩击伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HAxe_Epic_101_128.webp",
+    "name": "终夜狂宴",
+    "level": 58,
+    "list": [
+      "+40% 该装备攻击速度",
+      "至少拥有 8 层灵动祝福时，攻击附加 (160–180) - (200–220) 点物理伤害",
+      "至少拥有 8 层灵动祝福时，+90% 暴击伤害",
+      "灵动祝福达到上限时，失去 (1–4) 层灵动祝福，获得狂宴"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HAxe_Epic_001_128.webp",
+    "name": "不详馈赠",
+    "level": 58,
+    "list": [
+      "该装备附加 (28–32) - (47–53) 点物理伤害",
+      "+(110–130)% 该装备物理伤害",
+      "附加 (40–50)% 副手武器伤害至主手武器"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HSword_Epic_101_128.webp",
+    "name": "环形清算",
+    "level": 58,
+    "list": [
+      "+(150–300)% 该装备物理伤害",
+      "+(30–35)% 该装备攻击暴击值",
+      "连续攻击时， +(40–50)% 攻击速度",
+      "静止时，每秒获得 1 层入定",
+      "入定到达上限时，暴击至多失去 10 点战意值，间隔 3 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HSword_Epic_101_128.webp",
+    "name": "咒焰",
+    "level": 58,
+    "list": [
+      "+(250–300)% 该装备物理伤害",
+      "该装备附加 (13–15) - (17–19) 点物理伤害",
+      "+25% 点燃几率",
+      "附加主手武器伤害的 (40–50)% 至基础点燃伤害",
+      "造成点燃时，扩散点燃，并额外 +(10–40)% 周围的敌人所受到的 点燃伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HSword_Epic_104_128.webp",
+    "name": "亡鸟的逆羽",
+    "level": 58,
+    "list": [
+      "该装备附加 400 - 400 点腐蚀伤害",
+      "-100% 该装备攻击暴击值",
+      "+(20–30)% 该装备攻击速度",
+      "累计施加了 10 层恶化后，+100% 几率造成双倍伤害，持续 10 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HSword_Epic_001_128.webp",
+    "name": "临别索求",
+    "level": 58,
+    "list": [
+      "+(200–220)% 该装备物理伤害",
+      "+(20–30)% 该装备攻击暴击值",
+      "+(15–25)% 该装备攻击速度",
+      "+(110–144)% 连续攻击几率",
+      "连续攻击伤害递增 (40–60)%",
+      "击败时，消耗 1% 生命和魔力"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HSword_Epic_106_128.webp",
+    "name": "虚握之恨",
+    "level": 58,
+    "list": [
+      "+(150–200)% 该装备物理伤害",
+      "该装备附加 (12–14) - (18–20) 点物理伤害",
+      "双持时， +(5–20)% 攻击和法术格挡持盾时， +(5–20)% 格挡比例",
+      "如果最近格挡过， +(300–360)% 暴击值",
+      "如果最近格挡过， +64% 攻击速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_2HMace_Epic_103_128.webp",
+    "name": "错误仲裁",
+    "level": 58,
+    "list": [
+      "+(1000–2000)% 该装备攻击暴击值",
+      "暴击时，对自身造成 200 点伤害的创伤"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_1HMace_Epic_001_128.webp",
+    "name": "钢铁凝滞",
+    "level": 58,
+    "list": [
+      "+(120–160)% 该装备物理伤害",
+      "该装备附加 (25–28) - (40–53) 点物理伤害",
+      "消耗破击蓄能时，该次技能额外 +(30–40)% 范围伤害",
+      "+50% 技能范围",
+      "破击蓄能回复速度固定为默认值的 150%"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Claw_Epic_003_128.webp",
+    "name": "元素洄旋",
+    "level": 58,
+    "list": [
+      "+(120–140)% 该装备物理伤害",
+      "+(8–12)% 该装备攻击速度",
+      "+(14–18)% 该装备攻击暴击值",
+      "附加 (12–16)% 物理伤害的随机元素伤害",
+      "+25% 几率造成异常状态",
+      "附加主手武器物理伤害的 (20–27)% 至异常基础伤害",
+      "造成伤害时，敌人每有一种异常状态，额外 +(5–6)% 伤害（叠乘）"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Claw_Epic_004_128.webp",
+    "name": "飞鸟",
+    "level": 58,
+    "list": [
+      "+(200–220)% 该装备物理伤害",
+      "+(24–32)% 位移技能攻击与施法速度",
+      "如果最近移动了超过 30 米，被你击败的凋零敌人会爆炸，对半径 3 米内的敌人造成被击败的敌人最大生命 (10–50)% 的间接腐蚀伤害",
+      "如果最近移动了超过 (20–50) 米，使用位移技能时， 获得屏障",
+      "如果最近移动了超过 60 米，额外 +(25–35)% 位移技能伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Dagger_Epic_001_128.webp",
+    "name": "追忆",
+    "level": 58,
+    "list": [
+      "+(20–30)% 法术伤害",
+      "+(5–10)% 施法速度",
+      "获得技能伤害的 (35–40)% 至基础凋零伤害",
+      "+50% 凋零几率",
+      "被你击败的凋零敌人会爆炸，对半径 3 米内的敌人造成被击败的敌人最大生命 (4–5)% 的间接腐蚀伤害",
+      "对传奇敌人 +(5–10)% 凋零持续时间"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Dagger_Epic_105_128.webp",
+    "name": "雷光绝影的冷眼",
+    "level": 58,
+    "list": [
+      "+1 闪电技能等级",
+      "+(10–20)% 施法速度",
+      "+(20–30)% 技能范围",
+      "如果最近造成了冰冷伤害，+20% 闪电穿透"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Dagger_Epic_002_128.webp",
+    "name": "乱影",
+    "level": 58,
+    "list": [
+      "该装备附加 (157–167) - (175–185) 点物理伤害",
+      "+(22–26)% 该装备攻击速度",
+      "+(20–30)% 该装备攻击暴击值",
+      "+1 幻影数量",
+      "幻影击中敌人时， 1% 几率 +150% 攻击速度，持续 1 秒",
+      "幻影击中敌人时， 10% 几率 +60% 攻击速度，持续 2 秒",
+      "幻影击中敌人时， 50% 几率 +20% 攻击速度，持续 3 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Bow_Epic_103_128.webp",
+    "name": "山峦尖啸",
+    "level": 58,
+    "list": [
+      "+(120–150)% 该装备物理伤害",
+      "该装备附加 (26–29) - (32–36) 点物理伤害",
+      "+(25–35)% 该装备攻击速度",
+      "+50% 击退几率",
+      "额外 +20% 击退距离",
+      "周围没有敌人时，额外 +(108–120)% 攻击伤害",
+      "-30% 移动速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Bow_Epic_001_128.webp",
+    "name": "无尽黄昏之弓",
+    "level": 58,
+    "list": [
+      "该装备附加 (107–112) - (116–121) 点物理伤害",
+      "+(14–18)% 该装备攻击速度",
+      "+(30–40)% 该装备攻击暴击值",
+      "附加 40% 物理伤害的火焰，冰冷和闪电伤害",
+      "额外 -80% 法术伤害额外 -80% 召唤物伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Bow_Epic_001_128.webp",
+    "name": "寒渊箭影",
+    "level": 58,
+    "list": [
+      "该装备附加 (175–178) - (182–185) 点冰冷伤害",
+      "+(20–25)% 冰冷穿透",
+      "+(70–80)% 暴击伤害",
+      "+50% 暴击造成冰结几率",
+      "对冰结的敌人，额外 +(36–48)% 伤害",
+      "心灵利刃"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Shotgun_Epic_002_128.webp",
+    "name": "狮心王的热望",
+    "level": 58,
+    "list": [
+      "+(250–300)% 该装备物理伤害",
+      "+(30–40)% 该装备攻击速度",
+      "至少拥有 8 层 灵动祝福时，额外 +17% 异常伤害",
+      "至少拥有 10 层 灵动祝福时，附加主手武器物理伤害的 67% 至异常基础伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Pistol_Epic_003_128.webp",
+    "name": "断腕",
+    "level": 58,
+    "list": [
+      "+(150–180) 攻击暴击值",
+      "+(1–2) 投射物数量",
+      "击败时， +30% 移动速度，持续 3 秒",
+      "额外 +(40–50)% 主手武器伤害",
+      "+30% 主手武器攻击速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Pistol_Epic_103_128.webp",
+    "name": "蜂鸣",
+    "level": 58,
+    "list": [
+      "该装备附加 (56–59) - (64–67) 点物理伤害",
+      "+(30–40)% 该装备攻击速度",
+      "如果最近使用过位移技能， +(30–50)% 移动速度",
+      "击败时，+10% 几率获得 1 层灵动祝福",
+      "使用位移技能时，可以消耗 (1–3) 层灵动祝福，重置位移技能冷却，间隔 0.3 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Pistol_Epic_002_128.webp",
+    "name": "砂砾",
+    "level": 58,
+    "list": [
+      "+(150–200)% 该装备物理伤害",
+      "+(25–30)% 该装备攻击速度",
+      "+3 弹射次数",
+      "额外 +(20–30)% 投射物伤害",
+      "+1 投射物技能等级",
+      "额外 -10% 攻击和施法速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_crossbow_Epic_101_128.webp",
+    "name": "喑哑",
+    "level": 58,
+    "list": [
+      "+30% 该装备物理伤害",
+      "+(10–12)% 该装备攻击暴击值",
+      "+(8–10)% 该装备攻击速度",
+      "至少拥有 100000 点闪避值时， 附加 36% 物理伤害的闪电伤害",
+      "至少拥有 100000 点闪避值时， 暴击值增加 600"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Wand_Epic_001_128.webp",
+    "name": "凌汛",
+    "level": 58,
+    "list": [
+      "+(180–240) 最大魔力",
+      "+(30–35)% 施法速度",
+      "至少拥有 6 层聚能祝福时，额外 +30% 法术伤害",
+      "-72% 法术伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Wand_Epic_001_128.webp",
+    "name": "雷光绝影之怒",
+    "level": 58,
+    "list": [
+      "+(80–100)% 法术伤害",
+      "+(120–180)% 暴击值",
+      "法术附加 1 - 50 点闪电伤害",
+      "激活法术迸发时，至少消耗 4 层法术迸发充能时，伤害幸运"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Wand_Epic_105_128.webp",
+    "name": "寒枝扭结",
+    "level": 58,
+    "list": [
+      "技能范围的增加和减少的 (10–20)% 同样作用于投射物速度",
+      "攻击和法术附加 (87–92) - (113–118) 点物理伤害",
+      "+(120–150)% 该装备物理伤害",
+      "+1 投射物技能等级",
+      "+(40–50)% 该装备攻击速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Wand_Epic_104_128.webp",
+    "name": "智者千虑",
+    "level": 58,
+    "list": [
+      "+(3–5) 法术技能等级",
+      "间隔 4 秒，轮流获得以下效果：+40% 技能范围，+20% 移动速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Weapon/128/Icon_Equip_Weapon_Wand_Epic_001_128.webp",
+    "name": "无上权柄",
+    "level": 58,
+    "list": [
+      "法术附加 (46–48) - (55–60) 点冰冷，火焰，闪电和物理伤害",
+      "<随机一条引导层数上限或下限词缀>",
+      "引导层数到达上限时，获得 1 层王权，最多10层"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_403_128.webp",
+    "name": "不破胸甲",
+    "level": 58,
+    "list": [
+      "+2304 该装备护甲值",
+      "+220 最大生命",
+      "受到伤害时，触发 (10–20) 级重整阵势，间隔 5 秒",
+      "附加 (2–6)% 护甲值至屏障吸收量"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_404_128.webp",
+    "name": "龙息护甲",
+    "level": 58,
+    "list": [
+      "+(2448–2592) 该装备护甲值",
+      "+(10–13)% 最大生命",
+      "+216% 火焰伤害",
+      "(20–30)% 受到的物理伤害转化为火焰伤害",
+      "你只能造成火焰伤害",
+      "有敌人时，你一直受到 +(600–700) 点伤害的点燃"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_201_128.webp",
+    "name": "邪心护甲",
+    "level": 58,
+    "list": [
+      "+(2200–2400) 该装备闪避值",
+      "(-40–-20)% 腐蚀抗性",
+      "附加 3 异常基础伤害",
+      "额外 +(40–60)% 异常伤害",
+      "卑劣"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_202_128.webp",
+    "name": "迸碎月光",
+    "level": 58,
+    "list": [
+      "+(350–370) 该装备护盾",
+      "+25% 法术迸发充能速度",
+      "法术迸发释放的技能额外 +20% 击中伤害",
+      "激活法术迸发时，回复 (2–3)% 已损魔力"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_203_128.webp",
+    "name": "深红之王",
+    "level": 58,
+    "list": [
+      "+(450–500) 最大生命",
+      "魔力消耗的 100% 转换为生命消耗",
+      "如果最近消耗了超过 150% 生命，额外 -55% 受到的伤害",
+      "如果最近消耗了超过 100% 生命，+50% 暴击值和暴击伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_408_128.webp",
+    "name": "王魂护甲",
+    "level": 58,
+    "list": [
+      "+(5–8)% 最大生命和最大护盾",
+      "+1 地面蓄能层数上限",
+      "+1 核心技能等级",
+      "+(15–20)% 腐蚀抗性",
+      "地面蓄能回复速度固定为默认值的 (200–300)%",
+      "最近每消耗一次地面蓄能，(-2–-1)% 移动速度，最多叠加 (5–15) 层"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_315_128.webp",
+    "name": "饮冰者的樊笼",
+    "level": 58,
+    "list": [
+      "+(400–600) 该装备护盾",
+      "(-4–-2) 核心技能等级",
+      "最近每使用 1 次核心技能，额外 +(8–12)% 冰封持续时间，间隔 3 秒",
+      "造成冰封时，获得 (7–8) 层樊笼，间隔 2 秒",
+      "+(1–50)% 受到的控制类状态效果"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_301_128.webp",
+    "name": "王事枯荣",
+    "level": 58,
+    "list": [
+      "+(50–60)% 元素伤害",
+      "+(6–8)% 元素抗性",
+      "每 (10–12) 点力量， +1% 火焰伤害",
+      "每 (10–12) 点敏捷， +1% 闪电伤害",
+      "每 (10–12) 点智慧， +1% 冰冷伤害",
+      "每 (28–30) 点力量、敏捷和智慧中的最高的属性，额外 +1% 元素伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_415_128.webp",
+    "name": "不灭信仰",
+    "level": 58,
+    "list": [
+      "+272 该装备护盾",
+      "+2 被动技能等级",
+      "+12% 魔力封印补偿",
+      "生命濒危时，额外 +24% 伤害",
+      "生命濒危时， +9% 光环效果"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_205_128.webp",
+    "name": "无限要塞",
+    "level": 58,
+    "list": [
+      "+(204–238) 该装备护盾",
+      "+(3–4)% 冰冷与闪电抗性",
+      "+(3–5)% 攻击与法术格挡率",
+      "召唤物生命濒危时，额外 +(12–18)% 召唤物伤害",
+      "(-2–2) 智械召唤物数量上限",
+      "秘法"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_416_128.webp",
+    "name": "殉节神木",
+    "level": 58,
+    "list": [
+      "+(50–60)% 最大生命",
+      "+1 最大护盾",
+      "+1 最大魔力",
+      "+1 全属性",
+      "+(5–15)% 受伤缓冲"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_417_128.webp",
+    "name": "浸蚀壁垒",
+    "level": 58,
+    "list": [
+      "+1 最大生命",
+      "+(1750–1925) 最大护盾",
+      "+1 最大魔力",
+      "+1 全属性",
+      "移动时，+(12–16)% 护盾充能速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_419_128.webp",
+    "name": "虚空堤岸",
+    "level": 58,
+    "list": [
+      "+1 最大生命",
+      "+1 最大护盾",
+      "+1 最大魔力",
+      "+120 全属性",
+      "每 60 点属性， +1% 元素抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_423_128.webp",
+    "name": "双虹",
+    "level": 58,
+    "list": [
+      "+1% 力量",
+      "+1% 敏捷",
+      "+1% 智慧",
+      "+(6–10)% 元素抗性",
+      "每有两个 元素抗性相同时， 额外 +17% 伤害，额外 -5% 受到伤害（叠乘）"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_424_128.webp",
+    "name": "噬火之恶",
+    "level": 58,
+    "list": [
+      "+(4–6)% 火焰抗性上限",
+      "+1% 冰冷抗性上限",
+      "+1% 闪电抗性上限",
+      "+(10–16)% 最大生命、最大魔力和最大护盾",
+      "每 1% 火焰抗性， 2.5% 暴击伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_425_128.webp",
+    "name": "冰封行径",
+    "level": 58,
+    "list": [
+      "+1% 火焰抗性上限",
+      "+(4–6)% 冰冷抗性上限",
+      "+1% 闪电抗性上限",
+      "+(10–16)% 最大生命、最大魔力和最大护盾",
+      "每 2% 冰冷抗性， +11 攻击和法术暴击值"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_426_128.webp",
+    "name": "苍蓝刹那",
+    "level": 58,
+    "list": [
+      "+1% 火焰抗性上限",
+      "+1% 冰冷抗性上限",
+      "+(4–6)% 闪电抗性上限",
+      "+(10–16)% 最大生命、最大魔力和最大护盾",
+      "每 3% 闪电抗性， +2% 攻击和施法速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_427_128.webp",
+    "name": "蝉锐",
+    "level": 58,
+    "list": [
+      "+1% 火焰抗性上限",
+      "+1% 冰冷抗性上限",
+      "+1% 闪电抗性上限",
+      "+(10–16)% 最大生命、最大魔力和最大护盾",
+      "-80% 护盾充能速度攻击和法术附加相当于最大护盾 (1.1–1.4)% 点的元素伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_206_128.webp",
+    "name": "重器",
+    "level": 58,
+    "list": [
+      "+(1728–2016) 该装备护甲值",
+      "+(66–88) 最大生命",
+      "+(8–11)% 腐蚀抗性",
+      "+(30–36) 力量",
+      "额外 +(16–18)% 近处敌人受到的伤害",
+      "近处敌人造成的伤害额外 -12%"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_304_128.webp",
+    "name": "恢弘群星法袍",
+    "level": 58,
+    "list": [
+      "+(270–280) 该装备护盾",
+      "+(8–10)% 元素抗性",
+      "+60 智慧",
+      "-60% 轰炸技能波次间隔，额外 -8% 轰炸技能伤害",
+      "轰炸技能 +(45–50)% 每波伤害递增，且每轰炸 1 波，-10% 技能范围"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_306_128.webp",
+    "name": "薄暮笼罩法袍",
+    "level": 58,
+    "list": [
+      "+(238–272) 该装备护盾",
+      "+1 主动技能等级",
+      "收割时，护盾立即充能",
+      "(-36–12)% 护盾充能速度",
+      "+(8–12)% 收割时间",
+      "+(3–5)% 元素抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_308_128.webp",
+    "name": "嗜炎之潮",
+    "level": 58,
+    "list": [
+      "+2016 该装备护甲值",
+      "+154 最大生命",
+      "+(12–14)% 火焰抗性",
+      "连续攻击中，每次攻击击中时， +75% 暴击值",
+      "连续攻击伤害递增 50%",
+      "达到最大连续攻击计数时，每秒受到 400 点间接火焰伤害，持续 4 秒，最多可以叠加 4 层"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_428_128.webp",
+    "name": "极夜照临",
+    "level": 58,
+    "list": [
+      "+(8–10)% 震慑效果",
+      "+(176–264) 最大生命",
+      "12 米内的敌人拥有震慑",
+      "生命濒危时，额外 +(24–29)% 生命自然回复速度",
+      "击中处于至少三种控制类状态下的敌人时，每秒回复 2% 最大生命值，持续4秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_309_128.webp",
+    "name": "群星定势",
+    "level": 58,
+    "list": ["<随机一条新神效果词缀>", "+(200–220)% 该装备护盾"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_311_128.webp",
+    "name": "区区永恒",
+    "level": 58,
+    "list": [
+      "+(3000–3100) 该装备护甲值",
+      "+(50–70) 最大生命",
+      "对非物理伤害，+24% 护甲有效率",
+      "护甲值不低于 50000 点时，+(12–15)% 受伤缓冲",
+      "+(45–50)% 暴击伤害减免",
+      "护甲值不低于 65000 点时，+50% 生命自然回复速度",
+      "额外 (-15–-10)% 攻击速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_312_128.webp",
+    "name": "密友克星",
+    "level": 58,
+    "list": [
+      "+(3160–3560) 该装备护盾",
+      "额外 +(26–40)% 魔灵技能伤害",
+      "如果最近移动了超过 (10–20) 米，魔灵 +(36–60) 初始生长值",
+      "魔灵重聚时，每秒自然回复 (20–40)% 生命",
+      "非生命健康时，魔灵受到 1000 点间接物理伤害，间隔 0.5 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_317_128.webp",
+    "name": "疯医的镀银肺",
+    "level": 58,
+    "list": [
+      "释放回复技能时，+(20–30)% 受伤缓冲，该效果在 3 秒内逐渐衰减至 0",
+      "释放激发技能时，每秒自然回复 (3–5)% 生命和魔力，该效果在 3 秒内逐渐衰减至 0",
+      "释放防护技能时，+(25–30)% 激发技能效果和回复技能的回复效果，该效果在 3 秒内逐渐衰减至 0",
+      "如果最近释放过回复、激发和防护技能， +(30–50)% 体型，+(10–20)% 移动速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_324_128.webp",
+    "name": "恶劫",
+    "level": 58,
+    "list": [
+      "+(20–30)% 最大生命和最大护盾",
+      "+(30–40)% 攻击与施法速度",
+      "敌人每拥有一层恶化，额外 +16% 受到的恶化伤害，最多叠加 8 次",
+      "额外 -50% 恶化持续时间"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_325_128.webp",
+    "name": "煞星",
+    "level": 58,
+    "list": [
+      "+(20–30)% 腐蚀抗性",
+      "+(15–30)% 恶化持续时间",
+      "每隔 0.5 秒，下一次非引导核心技能将 100% 物理和元素伤害转化为腐蚀伤害",
+      "最近每造成一层恶化，额外 -1.5% 恶化伤害（叠乘）",
+      "恶化持续时间结束时不再造成真实伤害，改为持续时间内每隔 0.33 秒造成 1 次真实伤害，每次额外递增 40%，最多递增 6 次"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_322_128.webp",
+    "name": "苦痛之拥",
+    "level": 58,
+    "list": [
+      "-10% 腐蚀抗性上限",
+      "+50% 防御值",
+      "+10% 移动速度",
+      "(20–25)% 受到的物理和元素伤害转化为腐蚀伤害",
+      "如果最近使用过腐蚀技能，+30% 腐蚀抗性穿透，+15% 生命返还与护盾返还"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Armor/128/Icon_Equip_Armor_Epic_323_128.webp",
+    "name": "掣电者的骶骨",
+    "level": 58,
+    "list": [
+      "+(6000–8000) 该装备闪避值",
+      "+1 直射投射物技能等级",
+      "攻击附加 1 - (180–240) 点闪电伤害",
+      "闪避时，获得 1 层偏斜"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_403_128.webp",
+    "name": "混沌遗言",
+    "level": 58,
+    "list": [
+      "+(1200–1300) 该装备护甲值",
+      "+(190–220) 最大生命",
+      "+(12–16)% 火焰抗性",
+      "+(40–50) 力量",
+      "每 50 点力量， +1% 技能范围",
+      "每 120 点力量， +1% 几率造成双倍伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_301_128.webp",
+    "name": "传奇战士护目镜",
+    "level": 58,
+    "list": [
+      "使用位移技能后，创造一个斗技场，该效果有 2 秒间隔时间",
+      "凶名敌人拥有极巨化对远处敌人，额外 -50% 伤害",
+      "处于斗技场时，每隔 1 秒，获得一层威名，威名持续 10 秒",
+      "至少拥有 4 层威名时，无视敌人的护甲",
+      "+(80–100) 最大生命"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_303_128.webp",
+    "name": "机械领主",
+    "level": 58,
+    "list": [
+      "+(10–20)% 元素抗性",
+      "智械召唤物最大数量上限固定为 2",
+      "召唤物 +(20–30)% 体型",
+      "智械召唤物附加 (120–160)% 物理伤害的火焰，冰冷和闪电伤害",
+      "智械召唤物造成伤害时，淘汰生命值低于 (12–18)% 的敌人"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_405_128.webp",
+    "name": "敞开心扉",
+    "level": 58,
+    "list": [
+      "+2592 该装备闪避值",
+      "+220 最大生命",
+      "+60% 暴击伤害",
+      "拥有战意",
+      "周围敌人造成的伤害额外 +10%"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_406_128.webp",
+    "name": "冰冷呼吸",
+    "level": 58,
+    "list": [
+      "+(60–72) 最大魔力",
+      "+(16–22)% 冰冷抗性",
+      "附加 (15–20)% 最大魔力的护盾，上限 1000",
+      "+(25–35)% 技能消耗"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_302_128.webp",
+    "name": "涌动灵感",
+    "level": 58,
+    "list": [
+      "+(300–310) 该装备护盾",
+      "使用技能时，+50% 几率立即获得 1 层法术迸发充能",
+      "激活法术迸发时，失去 50% 当前魔力",
+      "法术迸发释放的技能额外 +(20–30)% 击中伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_201_128.webp",
+    "name": "邪龙头冠",
+    "level": 58,
+    "list": [
+      "+(12–16)% 召唤物攻击速度",
+      "+(20–25)% 召唤物移动速度",
+      "+20% 召唤物元素抗性",
+      "+(6–10)% 魔力封印补偿",
+      "+(40–60)% 召唤物暴击伤害",
+      "召唤物暴击幸运"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_408_128.webp",
+    "name": "蛛网奥秘头巾",
+    "level": 58,
+    "list": [
+      "+(24–26)% 最大生命",
+      "+(27–29)% 最大护盾",
+      "静止时，获得屏障，间隔 0.5 秒",
+      "护盾低于 (4000–5000) 时，屏障抵挡 (1–5) 次击中伤害后破碎",
+      "最大生命大于 (3000–5000) 时，屏障吸收比例固定为 (60–65)%"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_409_128.webp",
+    "name": "盲眼之视",
+    "level": 58,
+    "list": [
+      "+(187–242) 最大生命",
+      "核心技能被 20 级的疾风投射辅助",
+      "对于投射物速度的加成的 60% 同样作用于投射物伤害",
+      "免疫致盲"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_202_128.webp",
+    "name": "皇家铁卫",
+    "level": 58,
+    "list": [
+      "(-25–-15)% 最大生命和最大护盾",
+      "额外 +(90–100)% 哨卫伤害",
+      "主手武器暴击值套用至法术哨卫技能基础暴击值",
+      "哨卫暴击时，回复 (0.5–3)% 生命和护盾，间隔 0.5 秒",
+      "哨卫周围的敌人受到 20 级胆怯诅咒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_203_128.webp",
+    "name": "冥河潮汐",
+    "level": 58,
+    "list": [
+      "+(280–330) 最大生命",
+      "+(140–160) 攻击和法术暴击值",
+      "最近每消耗 4000 生命， +10% 伤害",
+      "最近每消耗 5000 生命， +1% 攻击速度",
+      "非生命健康时，视为处于生命濒危状态",
+      "无法充能护盾"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_305_128.webp",
+    "name": "烈阳之拥",
+    "level": 58,
+    "list": [
+      "+(180–220) 最大生命",
+      "+(130–160)% 火焰伤害",
+      "+1 点燃上限",
+      "额外造成 1 层点燃",
+      "+(49–54)% 冰冷抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_306_128.webp",
+    "name": "万雷颚骨",
+    "level": 58,
+    "list": [
+      "+(1500–2000) 该装备闪避值",
+      "额外 +10% 闪电伤害",
+      "+50% 麻痹几率",
+      "+20% 麻痹效果"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_309_128.webp",
+    "name": "霜起之时",
+    "level": 58,
+    "list": [
+      "+(88–110) 最大生命",
+      "+40% 技能消耗",
+      "+(8–12)% 冰冷抗性",
+      "+1 轰炸技能总波次",
+      "每轰炸 1 波次，敌人随机 -1% 元素抗性或 -2.5% 护甲，上限各 (6–15) 层，持续 1 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_311_128.webp",
+    "name": "愚人的帝冕",
+    "level": 58,
+    "list": [
+      "+(4176–4464) 该装备护甲值",
+      "额外 -99% 智慧",
+      "主手武器附加 (92–108) - (122–138) 点物理伤害",
+      "+(60–90) 力量",
+      "+(2–4)% 火焰抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_312_128.webp",
+    "name": "神躯燃烬",
+    "level": 58,
+    "list": [
+      "+(2500–2600) 该装备护甲值",
+      "+(8–12)% 攻击与法术格挡率",
+      "坚韧祝福达到上限时，攻击附加 5% 最大生命的火焰伤害，最多 (220–250) 点",
+      "如果最近获得过聚能祝福或灵动祝福，无法回复生命和魔力"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_313_128.webp",
+    "name": "巫神视界",
+    "level": 58,
+    "list": [
+      "+(20–27)% 腐蚀抗性",
+      "你只能施加 1 个诅咒",
+      "对被诅咒敌人的伤害额外 +20% ，来自被诅咒敌人的伤害额外 -20%",
+      "+100% 诅咒持续时间",
+      "+100% 诅咒技能范围"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_314_128.webp",
+    "name": "追猎海妖之眼",
+    "level": 58,
+    "list": [
+      "+(198–220) 最大生命",
+      "+(58–86)% 投射物伤害",
+      "+(15–23)% 投射物速度",
+      "攻击投射物击败非劲敌 25% 几率爆炸，对半径 3 米内的敌人造成被击败的敌人最大生命 10% 的间接腐蚀伤害",
+      "击败劲敌时，有 50% 概率淘汰 10 米内非劲敌"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_413_128.webp",
+    "name": "飞光破晓",
+    "level": 58,
+    "list": [
+      "+(8–16)% 腐蚀抗性",
+      "+(8–16)% 冰冷抗性",
+      "击中时，淘汰生命低于 8% 的敌人",
+      "击败处于控制类状态下的敌人时，移除自身具有的负面状态和持续伤害，该效果有 3 秒冷却时间",
+      "击败处于至少三种控制类状态下的敌人时，触发 20 级回复药剂，该效果有 4 秒间隔时间",
+      "击中时，有 25% 几率造成一层减速"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_317_128.webp",
+    "name": "捣乱份子",
+    "level": 58,
+    "list": [
+      "+(90–150) 魔灵暴击值",
+      "+(4–8)% 元素抗性",
+      "使用激发技能时，获得迷你硬汉，冷却 10 秒",
+      "被魔灵暴击击败的敌人会爆炸，对半径 3 米内的敌人造成被击败的敌人等同于 (10–15)% 过量伤害的间接物理伤害",
+      "魔灵每有 100 点生长值，额外 +(12–15)% 伤害，额外 -6% 攻击和施法速度",
+      "魔灵技能 +(50–70)% 魔力封印补偿"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_322_128.webp",
+    "name": "无脚鸟的悲啼",
+    "level": 58,
+    "list": [
+      "+(100–120) 敏捷",
+      "每 +2% 闪电抗性， +3% 闪电穿透",
+      "每 +1% 闪电抗性， -1% 腐蚀抗性",
+      "如果装备了鞋子，额外 -30% 伤害和召唤物伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_323_128.webp",
+    "name": "倒吊的半面",
+    "level": 58,
+    "list": [
+      "额外 +(25–30)% 周围敌人受到的远程伤害对远处敌人，额外 +(25–30)% 近战伤害",
+      "周围没有敌人时，+20% 几率避免伤害周围只有 1 个敌人时，+40% 受伤缓冲"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_324_128.webp",
+    "name": "玛格努斯的疤面",
+    "level": 58,
+    "list": [
+      "+(18–22)% 力量",
+      "每 10 点力量， +4 点最大生命",
+      "每 10 点力量，额外 +(6–7)% 火焰伤害",
+      "主属性基础不再额外增加伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Helmet/128/Icon_Equip_Helmet_Epic_325_128.webp",
+    "name": "无首之冕",
+    "level": 58,
+    "list": [
+      "(-40–-30)% 最大护盾",
+      "(-20–-10)% 最大生命",
+      "前两个被动技能栏被 (20–30) 级的精密 节流辅助",
+      "后两个被动技能栏被 (20–30) 级的精密 全神贯注辅助"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_403_128.webp",
+    "name": "伤损礼赞",
+    "level": 58,
+    "list": [
+      "+(70–90) 力量",
+      "+(140–160) 最大生命",
+      "+80% 创伤几率",
+      "+80% 创伤伤害",
+      "被你击败的 创伤状态下的敌人有 (15–20)% 几率爆炸，对半径 3 米内的敌人造成被击败的敌人最大生命 (3–5)% 间接物理伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_202_128.webp",
+    "name": "混沌深渊",
+    "level": 58,
+    "list": [
+      "额外 +(53–47)% 凋零伤害",
+      "+(22–26)% 攻击与施法速度",
+      "+(24–30)% 腐蚀抗性",
+      "最近每造成 1 层凋零， +1% 元素和腐蚀抗性穿透；上限 (30–38) 层",
+      "12% 几率额外造成 1 层凋零"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_203_128.webp",
+    "name": "贤者的洞察",
+    "level": 58,
+    "list": [
+      "+(300–350) 该装备护盾",
+      "+1 法术技能等级",
+      "法术击中造成火焰伤害时， -15% 目标冰冷、闪电、腐蚀抗性，持续 3 秒",
+      "法术击中造成冰冷伤害时， -15% 目标火焰、闪电、腐蚀抗性，持续 3 秒",
+      "法术击中造成闪电伤害时， -15% 目标火焰、冰冷、腐蚀抗性，持续 3 秒",
+      "法术击中造成腐蚀伤害时， -15% 目标火焰、冰冷、闪电抗性，持续 3 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_204_128.webp",
+    "name": "雷霆操纵者",
+    "level": 58,
+    "list": [
+      "+(2400–2600) 该装备闪避值",
+      "对麻痹的敌人，额外 +35% 闪电伤害",
+      "+(54–68)% 闪电抗性",
+      "额外施加 1 层麻痹",
+      "击中麻痹敌人时，施加标记"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_413_128.webp",
+    "name": "灼眼战腕",
+    "level": 58,
+    "list": [
+      "+25% 点燃几率",
+      "击中点燃状态下的敌人时，附加致盲",
+      "额外 -12% 来自致盲敌人的伤害",
+      "额外 +20% 对致盲敌人造成的伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_205_128.webp",
+    "name": "暴君的铁腕",
+    "level": 58,
+    "list": [
+      "+(90–120) 智慧",
+      "+(160–200) 最大魔力",
+      "每秒自然回复 (2–3)% 魔力",
+      "最近每消耗 (375–450) 魔力， +5% 暴击值和暴击伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_206_128.webp",
+    "name": "热忱",
+    "level": 58,
+    "list": [
+      "+(1152–1440) 该装备护甲值",
+      "+55 最大生命",
+      "+(2–8)% 生命返还",
+      "生命返还量翻倍"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_209_128.webp",
+    "name": "瓦拉冈裹躯布",
+    "level": 58,
+    "list": [
+      "+2304 该装备护甲值",
+      "+(110–154) 最大生命",
+      "无法获得灵动祝福",
+      "坚韧祝福达到上限时，+25% 连续攻击几率",
+      "至少拥有 10 层坚韧祝福时，额外 +10% 攻击暴击值，额外 +10% 攻击速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_210_128.webp",
+    "name": "鬼途",
+    "level": 58,
+    "list": [
+      "+(180–220) 最大生命",
+      "战意获得额外基础效果：每 3 点战意值，+1% 技能范围",
+      "战意获得额外基础效果：每 4 点战意值，额外 +3% 攻击和异常伤害",
+      "拥有战意时，每秒消耗 (10–12)% 当前生命与护盾",
+      "进入生命濒危状态时，失去战意"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_215_128.webp",
+    "name": "掌中虚海",
+    "level": 58,
+    "list": [
+      "+(238–272) 该装备护盾",
+      "+(5–10)% 全属性",
+      "召唤物附加 (12–16)% 最大生命的护盾",
+      "每拥有一个召唤物，额外 +(14–15)% 召唤物伤害，最多 7 层",
+      "每移动 5 米，触发一次核心技能，间隔 3 秒",
+      "回复技能 -80% 回复效果"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_415_128.webp",
+    "name": "趋光之翼",
+    "level": 58,
+    "list": [
+      "+(25–60)% 暴击伤害",
+      "+(50–150) 最大生命",
+      "<随机一条免疫控制词缀>",
+      "震慑获得额外基础效果：每拥有一种控制类状态，额外 +22% 受到的伤害，最多 6 层"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_419_128.webp",
+    "name": "紧握的发条",
+    "level": 58,
+    "list": [
+      "+(198–220) 最大生命",
+      "每 (2550–2630) 点护甲值，攻击和法术附加 (1–2) - (3–4) 点物理伤害",
+      "额外 +20% 护甲值"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_420_128.webp",
+    "name": "舞锋者的双指",
+    "level": 58,
+    "list": [
+      "+(220–264) 最大生命",
+      "最近每消耗 1100 生命，攻击附加 (6–7) - (8–9) 点物理伤害",
+      "使用技能时，消耗 (10–15)% 当前生命",
+      "-16% 生命自然回复速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_421_128.webp",
+    "name": "玛格努斯的旧律",
+    "level": 58,
+    "list": [
+      "+(2880–3456) 该装备护甲值",
+      "+(20–30)% 祝福持续时间",
+      "每有 1 层坚韧祝福，额外 +(8–9)% 火焰伤害",
+      "每有 1 层坚韧祝福， 攻击和法术附加 (7–8) - (9–10) 火焰伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_422_128.webp",
+    "name": "雷尔夫的旧律",
+    "level": 58,
+    "list": [
+      "+(2880–3456) 该装备闪避值",
+      "+(20–30)% 祝福持续时间",
+      "每有 1 层灵动祝福，额外 +(8–9)% 闪电伤害",
+      "每有 1 层灵动祝福，伤害穿透 1% 元素抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_423_128.webp",
+    "name": "伊斯拉菲尔的旧律",
+    "level": 58,
+    "list": [
+      "+(340–408) 该装备护盾",
+      "+(20–30)% 祝福持续时间",
+      "每有 1 层聚能祝福，额外 +(7–8)% 冰冷伤害",
+      "每有 1 层聚能祝福， +3% 暴击伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_207_128.webp",
+    "name": "殉永恒者",
+    "level": 58,
+    "list": [
+      "+50% 创伤几率",
+      "+(75–85) 攻击和法术暴击值",
+      "额外 (-20–-15)% 受到的物理伤害",
+      "+(94–100)% 收割冷却回复速度",
+      "最近每造成 1 次暴击，额外 +(18–20)% 创伤伤害，最多 3 层（叠乘）"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_212_128.webp",
+    "name": "大法师之手",
+    "level": 58,
+    "list": [
+      "+(272–340) 该装备护盾",
+      "+(27–54)% 冰冷抗性",
+      "(15–20)% 的伤害优先抵扣魔力",
+      "额外 +(80–100)% 最大魔力技能消耗固定为 (1–50)",
+      "每有 (75–100) 最大魔力，额外 +1% 法术伤害，至多 100%"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_428_128.webp",
+    "name": "迷鸟的归栖",
+    "level": 58,
+    "list": [
+      "+(2880–3456) 该装备闪避值",
+      "+1 攻击投射物技能等级",
+      "攻击直射投射物达到最大飞行距离后，会返回自身，并且可以再次击中路径上的敌人",
+      "迷鸟"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_429_128.webp",
+    "name": "凶神之手",
+    "level": 58,
+    "list": [
+      "+(176–220) 最大生命",
+      "额外 +(150–180)% 双手武器基础伤害",
+      "武器暴击值固定为 200",
+      "<随机一条暴击或武器伤害词缀>",
+      "<随机一条暴击或武器伤害词缀>"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Gloves/128/Icon_Equip_Gloves_Epic_431_128.webp",
+    "name": "舞锋者的群锋",
+    "level": 58,
+    "list": [
+      "+(1500–2000) 该装备护甲值",
+      "哨卫 +30% 索敌距离",
+      "+1 哨卫数量上限",
+      "周围 10 米内每有 1 个哨卫， 额外 +(3–5)% 哨卫伤害",
+      "周围 10 米内每有 1 个哨卫， 对非物理伤害，+(3–5)% 护甲有效率"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_201_128.webp",
+    "name": "独行者之靴",
+    "level": 58,
+    "list": [
+      "<你拥有随机 20 级精密增伤光环>",
+      "+50% 移动速度",
+      "被 (4–5) 个或以上的光环影响时，+(15–30)% 光环效果",
+      "每 +2% 魔力封印补偿, +1% 光环效果"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_403_128.webp",
+    "name": "坚定步伐",
+    "level": 58,
+    "list": [
+      "+(1728–2304) 该装备护甲值",
+      "+165 最大生命",
+      "+30% 移动速度",
+      "脱胎换骨",
+      "拥有坚韧祝福时， +10% 元素抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_404_128.webp",
+    "name": "最后壁垒",
+    "level": 58,
+    "list": [
+      "+(1900–2100) 该装备护甲值",
+      "+154 最大生命",
+      "+11% 火焰抗性",
+      "+8% 移动速度",
+      "每秒自然回复 3% 生命受到持续伤害时，每秒自然回复 3% 生命",
+      "免疫击退"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_206_128.webp",
+    "name": "瓦里哀的夜行",
+    "level": 58,
+    "list": [
+      "+150% 持续伤害",
+      "+(3500–4000) 该装备闪避值",
+      "暴击时，失去 20 点迷踪值，间隔 1 秒",
+      "获得迷踪时，刷新迷踪；+10% 迷踪效果",
+      "隐刺",
+      "+(30–40)% 移动速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_409_128.webp",
+    "name": "动力作战胫甲",
+    "level": 58,
+    "list": [
+      "+272 该装备护盾",
+      "+(14–16)% 冰冷抗性",
+      "+(20–30)% 移动速度",
+      "满护盾时， +20% 移动速度",
+      "护盾充能时， +10% 几率避免伤害",
+      "当前护盾低于 35% 时，护盾充能无法被打断"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_410_128.webp",
+    "name": "商会护卫战靴",
+    "level": 58,
+    "list": [
+      "+75 最大生命和最大护盾",
+      "+(7–10)% 火焰与冰冷抗性",
+      "+(20–30)% 移动速度",
+      "释放防护技能时，+(10–20)% 几率获得屏障",
+      "释放防护技能时，+(10–20)% 几率触发 1 级重整阵势，间隔 0.5 秒",
+      "受到重创时， +20% 几率获得硬化屏障，持续 4 秒",
+      "造成元素异常状态时， +20% 几率获得兴奋屏障，持续 4 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_207_128.webp",
+    "name": "舞锋者的轻踏",
+    "level": 58,
+    "list": [
+      "+(1–2) 位移技能等级",
+      "如果最近使用过位移技能， +(30–40)% 移动速度",
+      "额外 +(20–30)% 位移技能伤害",
+      "使用位移技能时，可以消耗 1 层灵动祝福，重置位移技能冷却，间隔 0.6 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_204_128.webp",
+    "name": "君王恩赐",
+    "level": 58,
+    "list": [
+      "+(170–238) 该装备护盾",
+      "+(16–22)% 冰冷抗性",
+      "造成持续伤害时，收割 0.25 秒持续伤害，该效果对同一目标有 (1.5–3) 秒冷却时间",
+      "额外 +(10–30)% 受到的持续伤害",
+      "+(10–30)% 移动速度",
+      "事半功倍"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_205_128.webp",
+    "name": "心灵灌注",
+    "level": 58,
+    "list": [
+      "+(1340–1540) 该装备护甲值",
+      "+(1–2) 召唤召唤物的技能等级",
+      "+(30–35)% 你和周围友军移动速度",
+      "释放激发技能时，触发 (10–20) 级黑暗之门，冷却 6 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_208_128.webp",
+    "name": "雷尔夫的足迹",
+    "level": 58,
+    "list": [
+      "+(150–200) 最大生命和最大护盾",
+      "战意获得额外基础效果：每 5 点战意值，+1% 移动速度",
+      "额外 +50% 战意持续时间",
+      "+(20–22)% 闪电抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_209_128.webp",
+    "name": "灵猫步伐",
+    "level": 58,
+    "list": [
+      "+(2000–2100) 该装备闪避值",
+      "+(25–30)% 移动速度",
+      "收割时，获得 1 层灵动祝福",
+      "每有 1 层灵动祝福， +(13–15)% 收割冷却回复速度",
+      "收割时，获得 1 层偏斜，间隔 0.5 秒",
+      "灵动祝福层数上限最大为 (10–12)"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_212_128.webp",
+    "name": "鼠王的逃生秀",
+    "level": 58,
+    "list": [
+      "+(2017–2880) 该装备闪避值",
+      "+(30–40)% 移动速度",
+      "最近 10 秒内每闪避 1 次法术，额外 +(3–5)% 伤害，上限 10 层（叠乘）",
+      "+10% 元素抗性",
+      "逃脱大师"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_415_128.webp",
+    "name": "暮鸦尾翎",
+    "level": 58,
+    "list": [
+      "+1% 元素抗性上限",
+      "(-70–-50)% 受到减速效果",
+      "+(15–20)% 移动速度",
+      "+(3–5)% 元素抗性",
+      "击中时， +30% 几率造成瘫痪",
+      "击中时， +30% 几率造成致盲"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_424_128.webp",
+    "name": "蠕行探戈",
+    "level": 58,
+    "list": [
+      "+(1–2) 投射物技能等级",
+      "间隔 10 秒，轮流获得以下效果：核心技能被 (15–25) 级致盲和疾风投射辅助；核心技能被 (15–25) 级范围扩大和慢速投射辅助",
+      "移动速度不低于基础值的 300% 时，最近每移动 1 米，-1% 移动速度，+1% 投射物速度，上限 100%"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_425_128.webp",
+    "name": "三步舞",
+    "level": 58,
+    "list": [
+      "静止时， 触发 (10–20) 级瞄准，间隔 1 秒",
+      "开始移动时， 触发 (10–20) 级迷踪步，间隔 1 秒",
+      "移动时，触发 (10–20) 级石肤术，间隔 1 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_427_128.webp",
+    "name": "破壁战履",
+    "level": 58,
+    "list": [
+      "+(1000–1500) 该装备护甲值",
+      "+(25–30)% 移动速度",
+      "+5 战吼至少影响的敌人数量",
+      "消耗破击蓄能时，该次技能额外 +(40–50)% 伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shoes/128/Icon_Equip_Shoes_Epic_428_128.webp",
+    "name": "炎魔的焚步",
+    "level": 58,
+    "list": [
+      "+(150–250) 最大生命",
+      "+5% 火焰抗性上限",
+      "地面数量上限的加成固定为 1",
+      "处于地面技能上时， +80% 移动速度，持续 2 秒",
+      "每溢出 1% 的火焰抗性，+1% 地面蓄能回复速度，+1% 地面技能范围"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_103_128.webp",
+    "name": "奥术秘能之盾",
+    "level": 58,
+    "list": [
+      "+(272–340) 该装备护盾",
+      "每隔 6 秒，触发 20 级秘源释放",
+      "+(8–16)% 护盾返还",
+      "+72% 法术格挡率",
+      "无法格挡攻击"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_106_128.webp",
+    "name": "沉重灵魂",
+    "level": 58,
+    "list": [
+      "+(3456–4032) 该装备护甲值",
+      "+198 最大生命",
+      "+(10–14)% 攻击与法术格挡率",
+      "-20% 移动速度",
+      "周围有劲敌时，额外 -10% 受到伤害",
+      "周围有普通敌人时， +10% 几率避免伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_105_128.webp",
+    "name": "电能增幅器",
+    "level": 58,
+    "list": [
+      "+(30–32)% 闪电抗性",
+      "-5% 闪电抗性上限",
+      "+3 闪电技能等级",
+      "最近每造成一次麻痹，额外 +1% 最大伤害，上限 30 层（叠乘）"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_103_128.webp",
+    "name": "冰川魔盾",
+    "level": 58,
+    "list": [
+      "+(160–200) 最大魔力",
+      "每秒自然回复 (200–240) 魔力",
+      "+30% 魔力封印补偿",
+      "最近每消耗 (750–785) 魔力，法术附加 (26–34) - (38–42) 点冰冷伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Shield/128/Icon_Equip_Weapon_Shield_Epic_001_128.webp",
+    "name": "怯懦者的反击",
+    "level": 58,
+    "list": [
+      "侵蚀之心",
+      "+(30–45) 最大生命和最大护盾",
+      "+(4–5)% 攻击与法术格挡率",
+      "+20% 格挡比例",
+      "格挡时，使周围敌人瘫痪"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_222_128.webp",
+    "name": "狂怒之心",
+    "level": 58,
+    "list": [
+      "+(40–50)% 攻击暴击伤害",
+      "暴击时， +(60–100)% 几率获得一层灵动祝福，间隔 0.1 秒",
+      "每有1层灵动祝福， -24% 暴击值，最多叠加 4 次",
+      "灵动祝福达到上限时，+120 攻击和法术暴击值",
+      "+1 灵动祝福层数上限"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_407_128.webp",
+    "name": "号令指环",
+    "level": 58,
+    "list": [
+      "每秒自然回复 (30–40) 生命",
+      "+(20–40)% 魔力自然回复速度",
+      "+(50–60)% 召唤物伤害",
+      "释放激发技能时，召唤物 +(10–80)% 暴击伤害和移动速度，持续 4 秒",
+      "额外 (-10–10)% 受到的伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_201_128.webp",
+    "name": "喑腐神智",
+    "level": 58,
+    "list": [
+      "+(3–4)% 魔力封印补偿",
+      "+(5–6)% 元素抗性",
+      "+1 智械召唤物数量上限",
+      "召唤物附加 (5–15)% 物理伤害的腐蚀伤害",
+      "召唤物附加 (5–15)% 最大生命的护盾",
+      "召唤物 50% 物理伤害转化为腐蚀伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_408_128.webp",
+    "name": "躁动冰河",
+    "level": 58,
+    "list": [
+      "(-50–-40) 智慧",
+      "+(20–25)% 冰冷抗性",
+      "+(20–30)% 施加的冰结值",
+      "击败冰封的敌人时爆炸，对半径 3 米内的敌人造成被击败的敌人最大生命 (2–3)% 的间接冰冷伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_202_128.webp",
+    "name": "混乱终焉",
+    "level": 58,
+    "list": [
+      "+(11–12) 全属性",
+      "+8% 最大生命",
+      "+9% 最大护盾",
+      "<随机一条六神的恩泽词缀>",
+      "<随机一条六神的恩泽词缀>",
+      "<随机一条六神的恩泽词缀>"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_413_128.webp",
+    "name": "破厄雷狱",
+    "level": 58,
+    "list": [
+      "+(10–15)% 最大生命和最大护盾",
+      "额外 -80% 主动技能伤害",
+      "最近雷霆加持每造成一次击中，+2% 闪电伤害",
+      "+35% 雷霆加持魔力封印补偿",
+      "额外 +(100–150)% 雷霆加持伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_417_128.webp",
+    "name": "钢铁涓流",
+    "level": 58,
+    "list": [
+      "+(60–70)% 近战伤害",
+      "+(60–70)% 坚固魔力封印补偿",
+      "对非物理伤害，+(8–12)% 护甲有效率"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_205_128.webp",
+    "name": "不燃之火",
+    "level": 58,
+    "list": [
+      "+(20–24)% 最大生命和最大护盾",
+      "+(3–5) 激发技能等级",
+      "击中敌人时，+(50–80)% 几率触发 30 级公牛之怒，冷却4秒",
+      "+(35–42)% 火焰与闪电抗性",
+      "无法造成点燃"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_206_128.webp",
+    "name": "不冻之冰",
+    "level": 58,
+    "list": [
+      "+(20–24)% 最大生命和最大护盾",
+      "+10 防护技能等级",
+      "击中敌人时，+(50–80)% 几率触发 30 级寒冰盾，冷却4秒",
+      "+(35–42)% 冰冷与腐蚀抗性",
+      "无法造成冰结"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_209_128.webp",
+    "name": "风息之引",
+    "level": 58,
+    "list": [
+      "+40% 防御值",
+      "+(10–12)% 元素抗性",
+      "(-20–-10)% 移动速度",
+      "装备在左侧戒指槽位时，+(2–4) 引导上限",
+      "装备在右侧戒指槽位时，引导时，+(15–30)% 几率避免伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_208_128.webp",
+    "name": "风息之散",
+    "level": 58,
+    "list": [
+      "+40% 防御值",
+      "+(10–12)% 元素抗性",
+      "(-20–-10)% 冷却回复速度",
+      "装备在左侧戒指槽位时，+(1–4) 引导下限",
+      "装备在右侧戒指槽位时，引导时，+(30–50)% 几率造成双倍伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_207_128.webp",
+    "name": "清净幻痛",
+    "level": 58,
+    "list": [
+      "+(50–70)% 持续伤害",
+      "+(5–10)% 技能效果持续时间",
+      "周围敌人加剧值达到上限时，收割其具有的 0.25 秒持续伤害，该效果对同一目标有 (3–6) 秒冷却时间",
+      "+(5–6)% 火焰与冰冷抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_211_128.webp",
+    "name": "世界流转",
+    "level": 58,
+    "list": [
+      "+66 最大生命",
+      "+(7–10)% 攻击和施法速度",
+      "+(11–14) 全属性",
+      "轮流获得以下增益，每种增益持续 4 秒：额外 +(40–50)% 腐蚀伤害额外 +(40–50)% 元素伤害额外 +(40–50)% 物理伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_216_128.webp",
+    "name": "勾指怪谈",
+    "level": 58,
+    "list": [
+      "+10% 最大生命和最大护盾",
+      "当敏捷大于智慧时，+10% 迷踪效果",
+      "装备在左侧戒指槽位时，失去迷踪 (1–2) 秒后获得迷踪",
+      "装备魔法戒指时，迷踪获得额外效果：每 1 点迷踪值， +1% 持续伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_223_128.webp",
+    "name": "顽石之心",
+    "level": 58,
+    "list": [
+      "受击后， 每 0.25 秒获得 1 层坚韧祝福，持续 2 秒",
+      "坚韧祝福达到上限时，+(10–13)% 受到的伤害",
+      "每有 1 层坚韧祝福，+(15–20)% 火焰伤害，最多叠加 6 层",
+      "+1 坚韧祝福层数上限"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_224_128.webp",
+    "name": "万法之心",
+    "level": 58,
+    "list": [
+      "+(100–146) 最大护盾",
+      "+(15–25) 智慧",
+      "每 0.5 秒获得 1 层聚能祝福；如果最近没有暴击，则改为失去聚能祝福",
+      "聚能祝福达到上限时，额外 +(10–20)% 法术伤害",
+      "+1 聚能祝福层数上限"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_201_128.webp",
+    "name": "荒芜结晶",
+    "level": 58,
+    "list": [
+      "+(2016–2880) 护甲值",
+      "每 20000 点护甲值，额外 +4% 伤害",
+      "护甲值不低于 100000 点时，+(10–15)% 元素和腐蚀抗性",
+      "对非物理伤害，-15% 护甲有效率"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_402_128.webp",
+    "name": "旋流之心",
+    "level": 58,
+    "list": [
+      "攻击和法术附加 (44–46) - (54–56) 点物理伤害",
+      "+(54–66)% 暴击伤害",
+      "+(108–132)% 暴击值",
+      "(-32–-40)% 技能范围",
+      "聚能之击"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_404_128.webp",
+    "name": "防御宗师吊坠",
+    "level": 58,
+    "list": [
+      "+(70–100) 最大生命",
+      "+(30–60)% 从胸甲获得的防御值",
+      "+(12–16)% 攻击格挡率",
+      "+(4–6)% 元素抗性",
+      "额外格挡 (40–120) 点伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_406_128.webp",
+    "name": "玛格努斯的心火",
+    "level": 58,
+    "list": [
+      "+(88–110) 最大生命",
+      "+2 火焰技能等级",
+      "+(5–11)% 火焰抗性",
+      "+(6–7)% 火焰穿透",
+      "真实之焰"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_407_128.webp",
+    "name": "真理",
+    "level": 58,
+    "list": ["+(3–4) 全部技能等级", "<随机一条属性词缀>"]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_408_128.webp",
+    "name": "典狱官的胸针",
+    "level": 58,
+    "list": [
+      "+(1–2) 被动技能等级",
+      "+(90–108)% 召唤物最大生命",
+      "+(101–144)% 召唤物伤害",
+      "你的召唤物只能造成物理伤害",
+      "暴击值和暴击伤害的 (50–75)% 同样作用于召唤物"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_409_128.webp",
+    "name": "磐岩的汪洋",
+    "level": 58,
+    "list": [
+      "+(132–176) 最大生命",
+      "+(210–280) 最大护盾",
+      "稳定",
+      "附加 (10–15)% 最大生命的护盾"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_202_128.webp",
+    "name": "淬火之鸟的颈链",
+    "level": 58,
+    "list": [
+      "+(8–12)% 最大生命和最大护盾",
+      "(-25–-5)% 元素抗性",
+      "拥有屏障时，受到伤害触发屏障爆裂，对周围敌人造成等同于最大护盾的 20% 的法术火焰伤害，冷却时间 (0.25–0.5) 秒",
+      "周围每有一个敌人， +(10–20)% 元素伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_204_128.webp",
+    "name": "幻影",
+    "level": 58,
+    "list": [
+      "+(100–200) 最大魔力",
+      "满魔时，每封印 (10–20)% 生命， +1 核心技能等级",
+      "<随机一条光环词缀>",
+      "+60% 魔力自然回复速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_206_128.webp",
+    "name": "幻海缠丝-铁雨",
+    "level": 58,
+    "list": [
+      "+(8–12)% 最大生命、最大魔力和最大护盾",
+      "攻击和法术附加 (49–54) - (62–68) 点物理伤害",
+      "-16% 生命自然回复速度",
+      "额外 +10% 护甲值",
+      "击中敌人时，触发 (10–19) 级易伤诅咒，冷却时间为 1 秒",
+      "(30–50)% 受到的腐蚀伤害转化为物理伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_207_128.webp",
+    "name": "幻海缠丝-劫灰",
+    "level": 58,
+    "list": [
+      "+(8–12)% 最大生命、最大魔力和最大护盾",
+      "攻击和法术附加 (54–57) - (63–67) 点火焰伤害",
+      "-20% 火焰抗性",
+      "+1 坚韧祝福层数上限",
+      "击中敌人时，触发 (10–19) 级炽热诅咒，冷却时间为 1 秒",
+      "(30–50)% 受到的腐蚀伤害转化为火焰伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_208_128.webp",
+    "name": "幻海缠丝-厉雷",
+    "level": 58,
+    "list": [
+      "+(8–12)% 最大生命、最大魔力和最大护盾",
+      "攻击和法术附加 (6–9) - (71–74) 点闪电伤害",
+      "-20% 闪电抗性",
+      "+1 灵动祝福层数上限",
+      "击中敌人时，触发 (10–19) 级感电诅咒，冷却时间为 1 秒",
+      "(30–50)% 受到的腐蚀伤害转化为闪电伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_209_128.webp",
+    "name": "幻海缠丝-苦寒",
+    "level": 58,
+    "list": [
+      "+(8–12)% 最大生命、最大魔力和最大护盾",
+      "攻击和法术附加 (56–58) - (62–64) 点冰冷伤害",
+      "-20% 冰冷抗性",
+      "+1 聚能祝福层数上限",
+      "击中敌人时，触发 (10–19) 级蚀骨之寒诅咒，冷却时间为 1 秒",
+      "(30–50)% 受到的腐蚀伤害转化为冰冷伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_210_128.webp",
+    "name": "幻海缠丝-虚妄",
+    "level": 58,
+    "list": [
+      "+(8–12)% 最大生命、最大魔力和最大护盾",
+      "攻击和法术附加 (57–59) - (61–63) 点腐蚀伤害",
+      "额外 +10% 返还间隔",
+      "额外 +10% 闪避值",
+      "击中敌人时，触发 (10–19) 级邪恶侵蚀诅咒，冷却时间为 1 秒",
+      "+(3–5)% 腐蚀抗性上限"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_303_128.webp",
+    "name": "破碎日环",
+    "level": 58,
+    "list": [
+      "+(220–264) 最大生命",
+      "+(1–3)% 斩击几率",
+      "额外 -30% 挥击伤害；额外 +(100–115)% 斩击伤害",
+      "+(25–30)% 火焰抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_304_128.webp",
+    "name": "母神围场",
+    "level": 58,
+    "list": [
+      "+(30–40)% 防御值",
+      "地面数量上限的加成固定为 0",
+      "消耗非满层地面蓄能时，每消耗 1 地面蓄能，额外 +(10–12)% 加剧效果",
+      "使用地面技能时， (50–100)% 几率获得 1 层蓄能层数",
+      "消耗满层地面蓄能 1 秒后，收割周围敌人 1.5 秒的持续伤害，冷却 3 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_306_128.webp",
+    "name": "洞明",
+    "level": 58,
+    "list": [
+      "+(88–132) 最大生命",
+      "空手时，额外 +(15–21)% 伤害",
+      "空手时，+(144–202) 暴击值",
+      "+(19–38)% 连续攻击几率"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_307_128.webp",
+    "name": "操幕之链",
+    "level": 58,
+    "list": [
+      "+(6–20)% 最大护盾",
+      "+(10–15) 点敏捷与智慧",
+      "+(12–30)% 腐蚀抗性",
+      "迷踪获得额外效果：每 5 点迷踪值，+1 每秒施加加剧值",
+      "每移动 3 米，获得 (5–10) 点迷踪值"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_309_128.webp",
+    "name": "伪神之蜕",
+    "level": 58,
+    "list": [
+      "+(6–10)% 全属性",
+      "<随机一条属性增益词缀>",
+      "<随机一条属性增益词缀>",
+      "<随机一条属性增益词缀>",
+      "<随机一条属性增益词缀>"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_312_128.webp",
+    "name": "鼠王的百面骰",
+    "level": 58,
+    "list": [
+      "+(65–75)% 暴击伤害",
+      "额外 +(6–30)% 最大伤害",
+      "额外 (-30–-6)% 最小伤害",
+      "每过 5 秒随机触发一个如下效果，持续 5 秒暴击幸运伤害不幸伤害幸运暴击不幸"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_315_128.webp",
+    "name": "铁巢",
+    "level": 58,
+    "list": [
+      "统御值每秒增加转变为每秒减少使用黑暗之门获得的统御值变为失去统御值",
+      "智械召唤物无法移动+200% 智械召唤物持续时间",
+      "统御值不超过 -20 时，每 -1 统御值，-2% 光环范围，+1% 光环效果+5 智械召唤物的直射投射物弹射次数",
+      "统御值不超过 -40 时，周围的智械召唤物对近处的敌人额外 +25% 投射物伤害，随距离递减召唤物的直射投射物无法穿透",
+      "统御值不超过 -60 时，周围的智械召唤物体型 +30%周围的智械召唤物 +100% 连续攻击几率，+25% 连续攻击伤害递增",
+      "+20% 移动速度+20% 位移技能冷却回复速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_317_128.webp",
+    "name": "劲风起时",
+    "level": 58,
+    "list": [
+      "击中时，淘汰生命低于 10% 的敌人",
+      "狂风",
+      "+(130–200)% 远程攻击暴击值"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_319_128.webp",
+    "name": "悼歌者的冥影",
+    "level": 58,
+    "list": [
+      "+(220–264) 最大生命",
+      "+1 幻影数量",
+      "额外 +(100–115)% 幻影伤害",
+      "+(25–30)% 闪电抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_320_128.webp",
+    "name": "怒汉之高歌",
+    "level": 58,
+    "list": [
+      "+(220–264) 最大生命",
+      "+(20–30)% 破击蓄能回复速度",
+      "消耗破击蓄能时，该次技能额外 +(130–150)% 伤害",
+      "+(25–30)% 冰冷抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_323_128.webp",
+    "name": "腐殖恩泽",
+    "level": 58,
+    "list": [
+      "+(15–20)% 最大生命",
+      "+(80–100)% 腐蚀伤害",
+      "+(50–70)% 腐蚀增幅光环效果",
+      "(-20–-10)% 魔力封印补偿"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_324_128.webp",
+    "name": "风暴之心",
+    "level": 58,
+    "list": [
+      "+(12–16)% 最大生命和最大护盾",
+      "每隔 10 秒，以自身为中心形成半径 15 米的风场，持续 8 秒；该效果受冷却回复速度影响风场处于风场时，自身获得风暴",
+      "最近每使用一次攻击直射投射物技能，+(5–6)% 风暴效果，最多增加 10 层"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_326_128.webp",
+    "name": "溯寒者的鸣泣",
+    "level": 58,
+    "list": [
+      "+40% 几率造成异常状态",
+      "+(15–20)% 元素抗性",
+      "+(20–30)% 异常生效速度",
+      "免疫冰结免疫减速"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_201_128.webp",
+    "name": "永恒日轮",
+    "level": 58,
+    "list": [
+      "+(330–550) 最大生命",
+      "+(41–65)% 火焰抗性",
+      "每损失 1% 生命，每秒自然回复 0.2% 生命，0.4% 生命自然回复速度",
+      "拥有护盾时，额外 +20% 受到的伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_403_128.webp",
+    "name": "绝缘",
+    "level": 58,
+    "list": [
+      "攻击和法术附加 (1–4) - (75–100) 点闪电伤害",
+      "+(5–10)% 闪电抗性",
+      "防护技能效果持续期间， +(1000–3000) 闪避值",
+      "防护技能效果持续期间，对法术伤害，闪避值不再默认额外降低"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_404_128.webp",
+    "name": "歧路药师护腰",
+    "level": 58,
+    "list": [
+      "+(10–12)% 最大生命和最大魔力",
+      "+(16–20) 全属性",
+      "+(10–16)% 腐蚀抗性",
+      "如果最近释放过回复技能， +(50–150)% 凋零伤害",
+      "如果最近释放过回复技能， +(8–20)% 几率额外造成一层凋零",
+      "回复效果持续期间，造成伤害时必定造成凋零"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_406_128.webp",
+    "name": "混乱元素腰带",
+    "level": 58,
+    "list": [
+      "+(6–8)% 全属性",
+      "+(20–30)% 异常伤害",
+      "当力量大于敏捷时，获得技能伤害的 17% 至基础创伤伤害",
+      "当智慧大于力量时，获得技能伤害的 10% 至基础凋零伤害",
+      "当敏捷大于智慧时，获得技能伤害的 12% 至基础点燃伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_407_128.webp",
+    "name": "苍白云雾之拥",
+    "level": 58,
+    "list": [
+      "+44 最大生命",
+      "+(8–10)% 元素抗性",
+      "+(20–30)% 技能范围",
+      "技能范围的增加和减少的 25% 同样作用于范围伤害，最多 +100%"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_203_128.webp",
+    "name": "原点的寒冬",
+    "level": 58,
+    "list": [
+      "+(15–20)% 召唤物攻击与施法速度",
+      "+(8–16)% 冰冷抗性",
+      "+(8–12)% 最大生命",
+      "至少拥有 (3–5) 层聚能祝福时，额外 +(10–15)% 冷却回复速度",
+      "至少拥有 (9–10) 层聚能祝福时，额外 +(80–90)% 召唤物伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_410_128.webp",
+    "name": "生息代偿",
+    "level": 58,
+    "list": [
+      "+(10–15)% 最大生命和最大魔力",
+      "+(70–90)% 魔力自然回复速度",
+      "最近每消耗 100 魔力， +(2–6)% 法术伤害，最高 300%",
+      "最近每消耗 100 魔力， +2% 魔力自然回复速度，最高 200%",
+      "非生命濒危时，你拥有 (25–30) 级法术增幅"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_414_128.webp",
+    "name": "永燃雷火",
+    "level": 58,
+    "list": [
+      "+(18–25) 点力量与敏捷",
+      "+(40–80)% 点燃几率",
+      "+(40–80)% 麻痹几率",
+      "对麻痹的敌人，+1 点燃上限",
+      "对被点燃敌人，闪电伤害幸运"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_204_128.webp",
+    "name": "猎光腰带",
+    "level": 58,
+    "list": [
+      "+(350–400) 最大护盾",
+      "40% 生命转换为护盾",
+      "护盾充能无法被打断",
+      "当前每拥有 5% 护盾，护盾充能速度额外 -6%",
+      "+(12–16)% 腐蚀抗性"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_416_128.webp",
+    "name": "黑潮之拥",
+    "level": 58,
+    "list": [
+      "+(100–300) 最大生命",
+      "+(12–16)% 火焰抗性",
+      "+(12–16)% 闪电抗性",
+      "最近每造成一次点燃，1% 受到的物理伤害转化为火焰伤害，上限 (5–20)%",
+      "最近每造成一次 麻痹，1% 受到的物理伤害转化为闪电伤害，上限 (5–20)%"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_207_128.webp",
+    "name": "多棱之围",
+    "level": 58,
+    "list": [
+      "+(15–25)% 最大生命和最大护盾",
+      "+(6–10)% 火焰与冰冷抗性",
+      "+1 射线条数",
+      "额外 (-20–20)% 射线长度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_206_128.webp",
+    "name": "流形之蚀",
+    "level": 58,
+    "list": [
+      "+(20–25) 全属性",
+      "受到腐蚀伤害时，获得 1 层坚韧祝福",
+      "至少拥有 8 层坚韧祝福时，+50% 腐蚀抗性",
+      "拥有坚韧祝福时，每 4 秒回复 20% 最大生命和魔力"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_210_128.webp",
+    "name": "虚海永雾",
+    "level": 58,
+    "list": [
+      "+(5–15)% 防御值",
+      "+(5–6)% 元素抗性",
+      "(-20–20)% 迷踪效果",
+      "迷踪获得额外效果：每点迷踪值，+0.3% 移动速度",
+      "失去迷踪时，+10% 移动速度，持续 1 秒",
+      "闪避时， +50% 几率获得迷踪"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_213_128.webp",
+    "name": "泛泛倾心",
+    "level": 58,
+    "list": [
+      "(-3–-2) 核心技能等级",
+      "<随机一条技能栏位相关词缀>",
+      "<随机一条技能栏位相关词缀>",
+      "<随机一条技能栏位相关词缀>",
+      "<随机一条技能栏位相关词缀>"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_214_128.webp",
+    "name": "破阵",
+    "level": 58,
+    "list": [
+      "放置哨卫的技能额外 (-40–20)% 攻击和施法速度",
+      "+48% 技能范围",
+      "哨卫近处的敌人，额外 +30% 受到的伤害",
+      "使用哨卫技能时， 获得破击蓄能"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_217_128.webp",
+    "name": "牧鼠人的金缰绳",
+    "level": 58,
+    "list": [
+      "引导时， 额外 (-20–-15)% 受到的伤害",
+      "最近每使用 1 次引导技能，+20% 召唤物 法术迸发充能速度，上限 400%",
+      "最近每释放 1 次召唤召唤物技能， 召唤物法术迸发上限 +2，最高 +4",
+      "-15% 召唤物攻击与施法速度"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_220_128.webp",
+    "name": "热夜的轻拥",
+    "level": 58,
+    "list": [
+      "+(30–40) 智慧",
+      "+(10–15)% 受伤缓冲",
+      "+1 火焰技能等级",
+      "每释放 10 次火焰技能，获得余烬，持续 1 秒"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_221_128.webp",
+    "name": "破晓",
+    "level": 58,
+    "list": [
+      "+(500–1000) 点护甲和闪避值",
+      "<随机一条属性词缀>",
+      "拥有战意",
+      "固定拥有 (60–70) 点战意值",
+      "每 2 点战意值，额外 +1% 伤害"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Belt/128/Icon_Equip_Belt_Epic_218_128.webp",
+    "name": "永恒",
+    "level": 66,
+    "list": [
+      "+(160–220) 最大生命",
+      "击败时，+(30–50)% 几率获得 1 层永恒斗志",
+      "击败时，+(30–50)% 几率获得 1 层永恒梦魇",
+      "击败时，+(10–20)% 几率获得 1 层永恒虚影",
+      "击败魔法怪物时，+(30–50)% 几率获得 1 层永恒守护",
+      "击败魔法怪物时，+(10–20)% 几率获得 1 层永恒拟像",
+      "击败劲敌时，+50% 几率获得 1 层永恒主宰"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_217_128.webp",
+    "name": "时之逝",
+    "level": 68,
+    "list": [
+      "每秒消耗 10% 当前生命与护盾",
+      "+10% 冷却回复速度-80% 异常状态持续时间",
+      "最近每造成 1 种异常状态或控制类状态，额外 +3% 伤害（叠乘）"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Ring/128/Icon_Equip_Ring_Epic_218_128.webp",
+    "name": "誓之时",
+    "level": 68,
+    "list": [
+      "每秒回复 10% 已损生命和护盾",
+      "+10% 技能效果持续时间-80% 冷却回复速度",
+      "敌人每拥有 1 种异常状态或控制类状态，额外 -3% 伤害（叠乘）"
+    ]
+  },
+  {
+    "img": "https://cdn.tlidb.com/UI/Textures/Common/Icon/EquipCommon/Amulet/128/Icon_Equip_Amulet_Epic_314_128.webp",
+    "name": "二律背反",
+    "level": 70,
+    "list": [
+      "秩序值不大于 0 时，获得 100 点秩序值",
+      "当秩序值大于混乱值时，获得 +(25–30)% 当前秩序值的秩序值效果",
+      "当混乱值大于秩序值时，获得 +(25–30)% 当前混乱值的混乱值效果",
+      "当秩序值大于混乱值时，-10% 元素和腐蚀抗性",
+      "当秩序值小于混乱值时， 随机获得以下一个效果：额外 -10% 护甲值/额外 -10% 护盾值/额外 -10% 闪避值。持续5秒",
+      "每秒失去 9 点秩序值"
+    ]
+  }
+]

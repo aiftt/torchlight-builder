@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 火炬之光：无限 构建工具
 
-## Getting Started
+这是一个为火炬之光：无限游戏设计的角色构建工具，帮助玩家规划和优化他们的角色构建。
 
-First, run the development server:
+## 主要功能
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. 英雄选择
+- 选择各职业的英雄
+- 显示英雄基础信息和描述
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. 特性选择
+- 显示英雄的1级基础特性
+- 可选择45/60/75级特性
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3. 天赋树
+- 动态加载所有职业的天赋数据
+- 根据英雄职业自动匹配对应的天赋树
+- 可选择核心天赋和常规天赋
+- 有限的可用点数分配
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. 属性计算
+- 根据职业设置基础属性值(力量、敏捷、智慧、魔力)
+- 特性选择影响属性加成
+- 天赋选择影响属性加成
+- 装备属性加成(待实现)
 
-## Learn More
+### 5. 伤害计算
+- 基础伤害受主属性和特性、天赋影响
+- 暴击率受敏捷和天赋影响
+- 暴击伤害受力量和天赋影响
+- 攻击速度和DPS动态计算
 
-To learn more about Next.js, take a look at the following resources:
+### 6. 装备选择
+- 武器、防具和饰品选择(待完善)
+- 装备属性加成(待实现)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 7. 构建管理
+- 保存构建(待实现)
+- 分享构建(待实现)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 技术实现
 
-## Deploy on Vercel
+- 基于Next.js框架
+- 使用React Hooks进行状态管理
+- 动态数据加载和计算
+- 响应式UI设计
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 未来计划
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 完善装备系统
+- 添加技能选择和计算
+- 实现构建保存和分享功能
+- 添加更多统计数据和图表显示
