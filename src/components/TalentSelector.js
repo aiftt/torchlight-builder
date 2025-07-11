@@ -159,14 +159,7 @@ export default function TalentSelector({ selectedHero, onTalentSelect }) {
     
     if (isSelected) {
       // 如果已选择，则移除
-      const updatedTalents = selectedTalents.filter(t => t.id !== talent.id);
-      setSelectedTalents(updatedTalents);
-      setAvailablePoints(availablePoints + 1);
-      
-      // 通知父组件
-      if (onTalentSelect) {
-        onTalentSelect(updatedTalents);
-      }
+      removeTalent(talent.id);
     } else if (availablePoints > 0) {
       // 如果有可用点数，则添加
       // 添加所属天赋大类信息
@@ -183,6 +176,27 @@ export default function TalentSelector({ selectedHero, onTalentSelect }) {
         onTalentSelect(updatedTalents);
       }
     }
+  };
+
+  // 移除已选天赋
+  const removeTalent = (talentId) => {
+    const updatedTalents = selectedTalents.filter(t => t.id !== talentId);
+    setSelectedTalents(updatedTalents);
+    setAvailablePoints(availablePoints + 1);
+    
+    // 通知父组件
+    if (onTalentSelect) {
+      onTalentSelect(updatedTalents);
+    }
+  };
+
+  // 处理可用点数变更
+  const handlePointsChange = (e) => {
+    const value = parseInt(e.target.value) || 0;
+    // 确保点数不小于已使用的点数
+    const usedPoints = selectedTalents.length;
+    const newPoints = Math.max(value, usedPoints);
+    setAvailablePoints(newPoints);
   };
 
   // 提取天赋描述中的数值
@@ -339,12 +353,20 @@ export default function TalentSelector({ selectedHero, onTalentSelect }) {
 
   // 渲染天赋树
   return (
-    <div className="bg-gray-800 rounded-lg p-6 shadow-lg mt-6">
+    <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold text-amber-400">天赋树</h2>
-        <span className="bg-amber-600 px-3 py-1 rounded text-sm">
-          可用点数: {availablePoints}
-        </span>
+        <div className="flex items-center">
+          <label htmlFor="availablePoints" className="mr-2">可用点数:</label>
+          <input 
+            id="availablePoints"
+            type="number" 
+            value={availablePoints} 
+            onChange={handlePointsChange}
+            min={selectedTalents.length}
+            className="bg-gray-700 border border-gray-600 rounded px-2 py-1 w-16 text-center"
+          />
+        </div>
       </div>
       
       {error && (
@@ -357,8 +379,8 @@ export default function TalentSelector({ selectedHero, onTalentSelect }) {
       <div className="mb-4 border-b border-gray-700 relative">
         <div className="flex items-center">
           <button 
-            className="bg-gray-700 hover:bg-gray-600 p-2 rounded-l-lg text-gray-300"
-            onClick={prevTalentClass}
+            className="bg-gray-700 hover:bg-gray-600 p-2 rounded-l-lg text-gray-300 z-10"
+            onClick={scrollTabsLeft}
             aria-label="上一个天赋大类"
           >
             &lt;
@@ -367,32 +389,105 @@ export default function TalentSelector({ selectedHero, onTalentSelect }) {
           <div 
             ref={tabsContainerRef}
             className="flex overflow-x-auto custom-scrollbar flex-grow mx-1 scrollbar-none"
-            style={{ scrollbarWidth: 'none' }}
+            style={{ 
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none'
+            }}
           >
-            {availableTalentClasses.map((className, index) => (
-              <button
-                key={className}
-                className={`px-4 py-2 mx-1 rounded-t-lg text-sm font-medium whitespace-nowrap ${
-                  activeTalentClass === className
-                    ? 'bg-gray-700 text-amber-400 border-b-2 border-amber-400'
-                    : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-                }`}
-                onClick={() => switchTalentClass(className, index)}
-              >
-                {className}
-              </button>
-            ))}
+            <div className="flex">
+              {availableTalentClasses.map((className, index) => (
+                <button
+                  key={className}
+                  className={`px-4 py-2 mx-1 rounded-t-lg text-sm font-medium whitespace-nowrap ${
+                    activeTalentClass === className
+                      ? 'bg-gray-700 text-amber-400 border-b-2 border-amber-400'
+                      : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+                  }`}
+                  onClick={() => switchTalentClass(className, index)}
+                >
+                  {className}
+                </button>
+              ))}
+            </div>
           </div>
           
           <button 
-            className="bg-gray-700 hover:bg-gray-600 p-2 rounded-r-lg text-gray-300"
-            onClick={nextTalentClass}
+            className="bg-gray-700 hover:bg-gray-600 p-2 rounded-r-lg text-gray-300 z-10"
+            onClick={scrollTabsRight}
             aria-label="下一个天赋大类"
           >
             &gt;
           </button>
         </div>
       </div>
+      
+      {/* 已选天赋摘要 - 增强数值展示 */}
+      {selectedTalents.length > 0 && (
+        <div className="mb-6 bg-gray-700 p-4 rounded-lg">
+          <div className="flex justify-between items-center mb-3">
+            <h3 className="font-semibold">已选天赋 ({selectedTalents.length})</h3>
+            
+            {/* 天赋加成总和 */}
+            <div className="flex flex-wrap gap-1 justify-end">
+              {talentBonuses.map(([type, value], index) => (
+                <span key={index} className="bg-gray-800 px-2 py-1 rounded text-xs">
+                  <span className="text-blue-300">{type}:</span> 
+                  <span className="text-green-400 ml-1">+{value.toFixed(1)}</span>
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="max-h-48 overflow-y-auto pr-2 custom-scrollbar">
+            <ul className="text-sm">
+              {selectedTalents.map((talent, index) => {
+                const values = extractValues(talent.desc);
+                const effectTypes = extractEffectTypes(talent.desc);
+                const talentType = talent.isMainTalent ? "核心" : "常规";
+                
+                return (
+                  <li key={talent.id || index} className="mb-2 pb-2 border-b border-gray-600 last:border-0">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <div className="flex items-center">
+                          <span className="text-amber-400 mr-1">[{talent.belong}]</span>
+                          <span className={`mr-1 ${talent.isMainTalent ? 'text-yellow-300' : ''}`}>
+                            {talent.name}
+                            <span className="text-xs text-gray-400 ml-1">({talentType})</span>
+                          </span>
+                        </div>
+                        
+                        {/* 显示数值和效果类型 */}
+                        <div className="flex flex-wrap gap-1 mt-1">
+                          {values.map((value, i) => (
+                            <span key={i} className="text-green-400 bg-gray-800 px-1.5 py-0.5 rounded text-xs">
+                              {value}
+                            </span>
+                          ))}
+                          {effectTypes.map((type, i) => (
+                            <span key={`type-${i}`} className="text-blue-300 bg-gray-800 px-1.5 py-0.5 rounded text-xs">
+                              {type}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      {/* 删除按钮 */}
+                      <button 
+                        onClick={() => removeTalent(talent.id)} 
+                        className="text-red-400 hover:text-red-300 ml-2 p-1"
+                        aria-label="删除天赋"
+                      >
+                        ×
+                      </button>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      )}
       
       {/* 核心天赋 */}
       {coreTalents.length > 0 && (
@@ -444,62 +539,6 @@ export default function TalentSelector({ selectedHero, onTalentSelect }) {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      )}
-      
-      {/* 已选天赋摘要 - 增强数值展示 */}
-      {selectedTalents.length > 0 && (
-        <div className="mt-6 bg-gray-700 p-4 rounded-lg">
-          <div className="flex justify-between items-center mb-3">
-            <h3 className="font-semibold">已选天赋 ({selectedTalents.length})</h3>
-            
-            {/* 天赋加成总和 */}
-            <div className="flex flex-wrap gap-1 justify-end">
-              {talentBonuses.map(([type, value], index) => (
-                <span key={index} className="bg-gray-800 px-2 py-1 rounded text-xs">
-                  <span className="text-blue-300">{type}:</span> 
-                  <span className="text-green-400 ml-1">+{value.toFixed(1)}</span>
-                </span>
-              ))}
-            </div>
-          </div>
-          
-          <div className="max-h-48 overflow-y-auto pr-2 custom-scrollbar">
-            <ul className="text-sm">
-              {selectedTalents.map((talent, index) => {
-                const values = extractValues(talent.desc);
-                const effectTypes = extractEffectTypes(talent.desc);
-                const talentType = talent.isMainTalent ? "核心" : "常规";
-                
-                return (
-                  <li key={talent.id || index} className="mb-2 pb-2 border-b border-gray-600 last:border-0">
-                    <div className="flex items-start flex-wrap">
-                      <span className="text-amber-400 mr-1">[{talent.belong}]</span>
-                      <span className={`mr-1 ${talent.isMainTalent ? 'text-yellow-300' : ''}`}>
-                        {talent.name}
-                        <span className="text-xs text-gray-400 ml-1">({talentType})</span>
-                      </span>
-                      
-                      {/* 显示数值和效果类型 */}
-                      <div className="flex flex-wrap gap-1 mt-1">
-                        {values.map((value, i) => (
-                          <span key={i} className="text-green-400 bg-gray-800 px-1.5 py-0.5 rounded text-xs">
-                            {value}
-                          </span>
-                        ))}
-                        {effectTypes.map((type, i) => (
-                          <span key={`type-${i}`} className="text-blue-300 bg-gray-800 px-1.5 py-0.5 rounded text-xs">
-                            {type}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="text-gray-400 text-xs mt-1">{talent.desc}</div>
-                  </li>
-                );
-              })}
-            </ul>
           </div>
         </div>
       )}

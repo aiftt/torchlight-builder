@@ -1,9 +1,16 @@
 'use client'
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function HeroSelector({ heroes, onHeroSelect, loading, error }) {
   const [selectedHero, setSelectedHero] = useState(null);
+
+  // 当heroes数据变化时，如果有默认选中的英雄，更新本地状态
+  useEffect(() => {
+    if (heroes && heroes.length > 0 && !selectedHero) {
+      setSelectedHero(heroes[0]);
+    }
+  }, [heroes, selectedHero]);
 
   const handleHeroSelect = (hero) => {
     setSelectedHero(hero);
