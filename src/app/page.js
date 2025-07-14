@@ -3,6 +3,7 @@
 import HeroSelector from '@/components/HeroSelector';
 import EquipmentSelector from '@/components/EquipmentSelector';
 import TalentSelector from '@/components/TalentSelector';
+import DamageCalculator from '@/components/DamageCalculator';
 import { useState, useEffect, useCallback, useMemo } from 'react';
 
 export default function Home() {
@@ -18,7 +19,8 @@ export default function Home() {
     wisdom: 60,
     mana: 120
   });
-  const [activeTab, setActiveTab] = useState('build'); // 'build', 'guide', 'data'
+  const [activeTab, setActiveTab] = useState('build'); // 'build', 'guide', 'data', 'damage'
+  const [selectedHeroFeatures, setSelectedHeroFeatures] = useState([]);  // 添加英雄特性选择状态
 
   // 获取英雄数据
   useEffect(() => {
@@ -94,6 +96,67 @@ export default function Home() {
     }
   }, [selectedHero]);
 
+  // 获取英雄特性
+  useEffect(() => {
+    if (selectedHero) {
+      // 根据英雄类型设置可选的特性
+      // 这里简单模拟一些英雄特性，实际应该从API获取
+      const heroType = selectedHero.name.split('|')[1] || '';
+      let defaultFeatures = [];
+      
+      if (heroType.includes('怒火') || heroType.includes('战火')) {
+        defaultFeatures = [
+          { id: 'strength_bonus', name: '力量专精', desc: '力量+20%，近战武器伤害+10%' },
+          { id: 'endurance', name: '坚韧不拔', desc: '生命值+15%，所有抗性+10%' },
+          { id: 'rage', name: '战争怒火', desc: '攻击时有15%几率进入狂怒状态，持续5秒' }
+        ];
+      } else if (heroType.includes('猎') || heroType.includes('影')) {
+        defaultFeatures = [
+          { id: 'agility_bonus', name: '敏捷专精', desc: '敏捷+20%，暴击率+5%' },
+          { id: 'evasion', name: '灵巧闪避', desc: '15%几率闪避敌人攻击' },
+          { id: 'precision', name: '精准打击', desc: '远程武器伤害+10%，暴击伤害+25%' }
+        ];
+      } else if (heroType.includes('焰') || heroType.includes('冰') || heroType.includes('元素')) {
+        defaultFeatures = [
+          { id: 'wisdom_bonus', name: '智慧专精', desc: '智慧+20%，元素伤害+15%' },
+          { id: 'mana_flow', name: '魔力流转', desc: '魔力恢复速度+30%，技能冷却时间-10%' },
+          { id: 'elemental_mastery', name: '元素掌控', desc: '所有元素技能效果提高20%' }
+        ];
+      } else {
+        defaultFeatures = [
+          { id: 'adaptability', name: '适应性强化', desc: '所有属性+5%' },
+          { id: 'vitality', name: '生命活力', desc: '生命值和魔力值恢复速度+10%' },
+          { id: 'combat_training', name: '战斗训练', desc: '伤害+5%，命中率+10%' }
+        ];
+      }
+      
+      // 只更新特性，不重置已经选中的特性
+      if (selectedHeroFeatures.length === 0) {
+        setSelectedHeroFeatures([defaultFeatures[0]]);  // 默认选择第一个特性
+      }
+    }
+  }, [selectedHero, selectedHeroFeatures.length]);
+
+  // 处理英雄特性选择
+  const handleFeatureSelect = useCallback((feature) => {
+    setSelectedHeroFeatures(prev => {
+      // 检查是否已选择该特性
+      const exists = prev.some(f => f.id === feature.id);
+      
+      if (exists) {
+        // 如果已存在，则移除
+        return prev.filter(f => f.id !== feature.id);
+      } else {
+        // 如果不存在，且当前选择少于2个，则添加
+        if (prev.length < 2) {
+          return [...prev, feature];
+        }
+        // 否则替换最早选择的特性
+        return [prev[1], feature];
+      }
+    });
+  }, []);
+
   // 计算天赋对属性的加成 - 修复无限循环问题
   const calculateTalentBonuses = useCallback((baseAttributes) => {
     if (!selectedHero || !baseAttributes) return baseAttributes;
@@ -162,8 +225,7 @@ export default function Home() {
   // 处理英雄选择 - 使用 useCallback 优化
   const handleHeroSelect = useCallback((hero) => {
     setSelectedHero(hero);
-    // 重置已选天赋
-    setSelectedTalents([]);
+    // 不再重置天赋和装备，只重置与英雄相关的特性
   }, []);
 
   // 处理天赋选择 - 使用 useCallback 优化
@@ -283,7 +345,7 @@ export default function Home() {
   const renderContent = useCallback(() => {
     switch (activeTab) {
       case 'build':
-        return (
+  return (
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             {/* 英雄选择区域 */}
             <div className="lg:col-span-1">
@@ -370,6 +432,78 @@ export default function Home() {
                     <>
                       <h3 className="font-semibold mb-2">{selectedHero.name}</h3>
                       <p className="text-sm">{selectedHero.desc || '暂无描述'}</p>
+                      
+                      {/* 添加英雄特性选择UI */}
+                      <div className="mt-4">
+                        <h4 className="text-sm font-medium text-blue-300 mb-2">选择英雄特性 (最多选择2个)</h4>
+                        <div className="space-y-2">
+                          {(() => {
+                            // 根据英雄类型获取可选特性
+                            const heroType = selectedHero.name.split('|')[1] || '';
+                            let availableFeatures = [];
+                            
+                            if (heroType.includes('怒火') || heroType.includes('战火')) {
+                              availableFeatures = [
+                                { id: 'strength_bonus', name: '力量专精', desc: '力量+20%，近战武器伤害+10%' },
+                                { id: 'endurance', name: '坚韧不拔', desc: '生命值+15%，所有抗性+10%' },
+                                { id: 'rage', name: '战争怒火', desc: '攻击时有15%几率进入狂怒状态，持续5秒' }
+                              ];
+                            } else if (heroType.includes('猎') || heroType.includes('影')) {
+                              availableFeatures = [
+                                { id: 'agility_bonus', name: '敏捷专精', desc: '敏捷+20%，暴击率+5%' },
+                                { id: 'evasion', name: '灵巧闪避', desc: '15%几率闪避敌人攻击' },
+                                { id: 'precision', name: '精准打击', desc: '远程武器伤害+10%，暴击伤害+25%' }
+                              ];
+                            } else if (heroType.includes('焰') || heroType.includes('冰') || heroType.includes('元素')) {
+                              availableFeatures = [
+                                { id: 'wisdom_bonus', name: '智慧专精', desc: '智慧+20%，元素伤害+15%' },
+                                { id: 'mana_flow', name: '魔力流转', desc: '魔力恢复速度+30%，技能冷却时间-10%' },
+                                { id: 'elemental_mastery', name: '元素掌控', desc: '所有元素技能效果提高20%' }
+                              ];
+                            } else {
+                              availableFeatures = [
+                                { id: 'adaptability', name: '适应性强化', desc: '所有属性+5%' },
+                                { id: 'vitality', name: '生命活力', desc: '生命值和魔力值恢复速度+10%' },
+                                { id: 'combat_training', name: '战斗训练', desc: '伤害+5%，命中率+10%' }
+                              ];
+                            }
+                            
+                            return availableFeatures.map((feature) => {
+                              const isSelected = selectedHeroFeatures.some(f => f.id === feature.id);
+                              
+                              return (
+                                <div 
+                                  key={feature.id}
+                                  className={`p-2 rounded-md border cursor-pointer transition ${
+                                    isSelected 
+                                      ? 'bg-amber-900 border-amber-500' 
+                                      : 'bg-gray-800 border-gray-700 hover:bg-gray-700'
+                                  }`}
+                                  onClick={() => handleFeatureSelect(feature)}
+                                >
+                                  <div className="flex items-center">
+                                    <input 
+                                      type="checkbox" 
+                                      checked={isSelected}
+                                      readOnly 
+                                      className="h-4 w-4 text-amber-500 rounded border-gray-500 focus:ring-0"
+                                    />
+                                    <div className="ml-2">
+                                      <div className="font-medium text-sm">{feature.name}</div>
+                                      <div className="text-xs text-gray-400">{feature.desc}</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            });
+                          })()}
+                        </div>
+                        <div className="mt-2 text-xs text-gray-400">
+                          {selectedHeroFeatures.length === 0 
+                            ? '未选择特性' 
+                            : `已选择 ${selectedHeroFeatures.length}/2 个特性`}
+                        </div>
+                      </div>
                     </>
                   ) : (
                     <p className="text-sm">选择一个英雄查看其特性描述...</p>
@@ -464,6 +598,16 @@ export default function Home() {
             </div>
           </div>
         );
+      case 'damage':
+        return (
+          <DamageCalculator
+            selectedHero={selectedHero}
+            selectedTalents={selectedTalents}
+            selectedEquipment={selectedEquipment}
+            attributes={attributes}
+            selectedHeroFeatures={selectedHeroFeatures}
+          />
+        );
       default:
         return null;
     }
@@ -487,7 +631,7 @@ export default function Home() {
                 分享构建
               </button>
             </div>
-          </div>
+        </div>
           
           {/* 导航标签页 */}
           <nav className="mt-6 border-b border-gray-700">
@@ -516,6 +660,14 @@ export default function Home() {
                   数据查询
                 </button>
               </li>
+              <li>
+                <button 
+                  className={`px-4 py-2 ${activeTab === 'damage' ? 'text-amber-400 border-b-2 border-amber-400' : 'text-gray-300 hover:text-gray-100'}`}
+                  onClick={() => setActiveTab('damage')}
+                >
+                  伤害计算
+                </button>
+              </li>
             </ul>
           </nav>
         </header>
@@ -527,8 +679,8 @@ export default function Home() {
         <footer className="mt-8 text-center text-gray-400 text-sm">
           <p>火炬之光：无限 构建工具 © 2023 - 本工具仅供游戏爱好者使用，与官方无关</p>
           <p className="mt-2">数据来源于游戏内容，如有错误请反馈</p>
-        </footer>
-      </div>
+      </footer>
+    </div>
     </main>
   );
 }
