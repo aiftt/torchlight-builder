@@ -1,434 +1,381 @@
 'use client'
 
 import { useState, useEffect, useMemo } from 'react';
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetClose
-} from './ui/sheet';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-// 伤害类型定义
-const DAMAGE_TYPES = {
-  BASE: 'base',    // 基础伤害（点伤）
-  PERCENT: 'percent', // 百分比伤害（inc）
-  EXTRA: 'extra'   // 额外伤害（more）
-};
+const DamageCalculator = ({ 
+  selectedHero, 
+  selectedTalents, 
+  selectedEquipment, 
+  attributes
+}) => {
+  // 状态管理
+  const [activeTab, setActiveTab] = useState('hero');
+  const [baseWeaponDamage, setBaseWeaponDamage] = useState(100); // 默认基础伤害
+  
+  // 各个来源的伤害加成
+  const [heroDamageBonus, setHeroDamageBonus] = useState({ normal: 0, extra: [] });
+  const [talentDamageBonus, setTalentDamageBonus] = useState({ normal: 0, extra: [] });
+  const [equipmentDamageBonus, setEquipmentDamageBonus] = useState({ normal: 0, extra: [] });
+  const [petDamageBonus, setPetDamageBonus] = useState({ normal: 0, extra: [] });
+  const [skillDamageBonus, setSkillDamageBonus] = useState({ normal: 0, extra: [] });
+  const [heroSkills, setHeroSkills] = useState([]);
 
-// 伤害类型标签
-const DAMAGE_LABELS = {
-  [DAMAGE_TYPES.BASE]: '基础伤害(点伤)',
-  [DAMAGE_TYPES.PERCENT]: '百分比伤害(inc)',
-  [DAMAGE_TYPES.EXTRA]: '额外伤害(more)'
-};
-
-export default function DamageCalculator({ 
-  selectedHero,
-  selectedTalents = [],
-  selectedEquipment = {},
-  attributes = {},
-  selectedHeroFeatures = [] // 添加英雄特性参数
-}) {
-  const [damagePool, setDamagePool] = useState([]);
-  const [selectedDamages, setSelectedDamages] = useState([]);
-  const [showSheet, setShowSheet] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
-
-  // 从装备和天赋中提取伤害信息
+  // 当英雄变化时，加载英雄特性数据
   useEffect(() => {
-    const extractedDamages = [];
-    let index = 0;
-    
-    // 从装备中提取伤害信息
-    Object.values(selectedEquipment).forEach(item => {
-      if (!item || !item.stats) return;
-      
-      item.stats.forEach(stat => {
-        const damageInfo = extractDamageInfo(stat.name);
-        if (damageInfo) {
-          extractedDamages.push({
-            id: `equipment_damage_${index++}`,
-            source: item.name,
-            sourceType: '装备',
-            ...damageInfo
+    async function loadHeroSkills() {
+      if (selectedHero && selectedHero.key) {
+        try {
+          const response = await fetch('/json/skills.json');
+          if (!response.ok) {
+            throw new Error(`获取英雄特性数据失败: ${response.status}`);
+          }
+          const skillsData = await response.json();
+          
+          // 获取当前英雄的特性数据
+          const heroSkillsData = skillsData[selectedHero.key] || [];
+          setHeroSkills(heroSkillsData);
+          
+          // 提取英雄特性提供的伤害加成
+          let normalBonus = 0;
+          let extraBonuses = [];
+          
+          if (heroSkillsData.length > 0) {
+            const baseSkill = heroSkillsData[0]; // 基础特性
+            if (baseSkill && baseSkill.description) {
+              const descText = baseSkill.description.join(' ');
+              
+              // 解析普通伤害加成
+              const normalDamageMatch = descText.match(/额外\s*\+(\d+)%\s*伤害/);
+              if (normalDamageMatch && normalDamageMatch[1]) {
+                normalBonus += parseInt(normalDamageMatch[1]);
+              }
+              
+              // 解析可能的额外伤害加成
+              const extraDamageMatches = descText.match(/额外\s*\+(\d+)%\s*([^，。]+?伤害)/g);
+              if (extraDamageMatches) {
+                extraDamageMatches.forEach(match => {
+                  const detailMatch = match.match(/额外\s*\+(\d+)%\s*([^，。]+?伤害)/);
+                  if (detailMatch && detailMatch[1] && detailMatch[2] && !detailMatch[2].startsWith('伤害')) {
+                    extraBonuses.push({
+                      value: parseInt(detailMatch[1]),
+                      type: detailMatch[2]
+                    });
+                  }
+                });
+              }
+            }
+          }
+          
+          setHeroDamageBonus({ normal: normalBonus, extra: extraBonuses });
+        } catch (error) {
+          console.error('加载英雄特性数据出错:', error);
+        }
+      }
+    }
+
+    loadHeroSkills();
+  }, [selectedHero]);
+
+  // 当天赋变化时，计算天赋带来的伤害加成
+  useEffect(() => {
+    let normalBonus = 0;
+    let extraBonuses = [];
+
+    selectedTalents.forEach(talent => {
+      if (talent.desc) {
+        // 解析普通伤害加成
+        const damageMatch = talent.desc.match(/\+(\d+)%\s*伤害/);
+        if (damageMatch && damageMatch[1]) {
+          normalBonus += parseInt(damageMatch[1]);
+        }
+        
+        // 解析元素伤害等特定类型伤害
+        const elementalMatch = talent.desc.match(/\+(\d+)%\s*(元素|火焰|冰冷|闪电)伤害/);
+        if (elementalMatch && elementalMatch[1] && elementalMatch[2]) {
+          extraBonuses.push({
+            value: parseInt(elementalMatch[1]),
+            type: `${elementalMatch[2]}伤害`
           });
         }
-      });
-    });
-    
-    // 从天赋中提取伤害信息
-    selectedTalents.forEach(talent => {
-      if (!talent.desc) return;
-      
-      const damageInfo = extractDamageInfo(talent.desc);
-      if (damageInfo) {
-        extractedDamages.push({
-          id: `talent_damage_${index++}`,
-          source: talent.name,
-          sourceType: '天赋',
-          ...damageInfo
-        });
       }
     });
-    
-    // 从英雄特性中提取伤害信息
-    selectedHeroFeatures.forEach(feature => {
-      if (!feature.desc) return;
-      
-      const damageInfo = extractDamageInfo(feature.desc);
-      if (damageInfo) {
-        extractedDamages.push({
-          id: `feature_damage_${index++}`,
-          source: feature.name,
-          sourceType: '英雄特性',
-          ...damageInfo
-        });
-      }
-    });
-    
-    setDamagePool(extractedDamages);
-    // 默认选中所有伤害
-    setSelectedDamages(extractedDamages.map(item => item.id));
-  }, [selectedHero, selectedTalents, selectedEquipment, selectedHeroFeatures]);
-  
-  // 提取伤害信息的工具函数
-  const extractDamageInfo = (text) => {
-    // 基础伤害（点伤）匹配，如"附加50点火焰伤害"
-    const baseMatch = text.match(/附加(\d+)点([\u4e00-\u9fa5]+)伤害/);
-    if (baseMatch) {
-      return {
-        type: DAMAGE_TYPES.BASE,
-        value: parseInt(baseMatch[1]),
-        element: baseMatch[2],
-        description: text
-      };
-    }
-    
-    // 额外伤害（more）匹配，如"额外30%伤害"
-    const extraMatch = text.match(/额外(\d+)%([\u4e00-\u9fa5]*)伤害/);
-    if (extraMatch) {
-      return {
-        type: DAMAGE_TYPES.EXTRA,
-        value: parseInt(extraMatch[1]),
-        element: extraMatch[2] || '所有',
-        description: text
-      };
-    }
-    
-    // 百分比伤害（inc）匹配，如"增加25%物理伤害"
-    const percentMatch = text.match(/(增加|提高)(\d+)%([\u4e00-\u9fa5]*)伤害/);
-    if (percentMatch) {
-      return {
-        type: DAMAGE_TYPES.PERCENT,
-        value: parseInt(percentMatch[2]),
-        element: percentMatch[3] || '所有',
-        description: text
-      };
-    }
-    
-    // 百分比伤害的另一种表示，如"+25%伤害"
-    const percentMatch2 = text.match(/\+(\d+)%([\u4e00-\u9fa5]*)伤害/);
-    if (percentMatch2) {
-      return {
-        type: DAMAGE_TYPES.PERCENT,
-        value: parseInt(percentMatch2[1]),
-        element: percentMatch2[2] || '所有',
-        description: text
-      };
-    }
-    
-    return null;
-  };
-  
-  // 过滤伤害池中的项目
-  const filteredDamagePool = useMemo(() => {
-    if (!searchTerm) return damagePool;
-    
-    return damagePool.filter(item => 
-      item.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.source.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.element.includes(searchTerm)
-    );
-  }, [damagePool, searchTerm]);
-  
-  // 计算最终伤害
-  const calculatedDamage = useMemo(() => {
-    // 获取选中的伤害项
-    const selectedItems = damagePool.filter(item => selectedDamages.includes(item.id));
-    
-    // 基础伤害总和
-    const baseDamage = selectedItems
-      .filter(item => item.type === DAMAGE_TYPES.BASE)
-      .reduce((sum, item) => sum + item.value, 0);
-    
-    // 百分比伤害总和
-    const percentDamageTotal = selectedItems
-      .filter(item => item.type === DAMAGE_TYPES.PERCENT)
-      .reduce((sum, item) => sum + item.value, 0);
-    
-    // 额外伤害系数列表
-    const extraDamageFactors = selectedItems
-      .filter(item => item.type === DAMAGE_TYPES.EXTRA)
-      .map(item => 1 + item.value / 100);
-    
-    // 计算最终伤害
-    let finalDamage = baseDamage * (1 + percentDamageTotal / 100);
-    extraDamageFactors.forEach(factor => {
-      finalDamage *= factor;
-    });
-    
-    return {
-      base: baseDamage,
-      percent: percentDamageTotal,
-      extra: extraDamageFactors,
-      final: Math.round(finalDamage),
-      selectedItems: selectedItems
-    };
-  }, [damagePool, selectedDamages]);
-  
-  // 处理伤害选择
-  const handleDamageToggle = (id) => {
-    setSelectedDamages(prevSelected => {
-      if (prevSelected.includes(id)) {
-        return prevSelected.filter(item => item !== id);
-      } else {
-        return [...prevSelected, id];
-      }
-    });
-  };
-  
-  // 处理全选/全不选
-  const handleSelectAll = (select) => {
-    if (select) {
-      setSelectedDamages(filteredDamagePool.map(item => item.id));
-    } else {
-      setSelectedDamages([]);
-    }
-  };
 
-  return (
-    <div className="mt-4">
-      <div className="bg-gray-800 rounded-lg p-4 shadow-md">
-        <h2 className="text-xl text-amber-400 mb-3">伤害计算器</h2>
-        
-        {/* 伤害计算公式 */}
-        <div className="mb-4 bg-gray-700 p-3 rounded-md">
-          <h3 className="text-blue-300 font-medium mb-2">伤害计算公式</h3>
-          <p className="text-gray-200 text-sm">伤害值 = 基础伤害 × (1 + 所有非额外百分比加成) × (1 + 额外百分比加成1) × (1 + 额外百分比加成2) ×...</p>
-          <div className="mt-2 text-sm text-gray-300">
-            <p>• 基础伤害（点伤）：如"附加xxx点xx伤害的"</p>
-            <p>• 百分比伤害（inc）：带百分比但不包含"额外"的</p>
-            <p>• 额外伤害（more）：包含"额外"的伤害</p>
-          </div>
-        </div>
+    setTalentDamageBonus({ normal: normalBonus, extra: extraBonuses });
+  }, [selectedTalents]);
 
-        {/* 伤害计算结果 */}
-        <div className="mb-4 bg-gray-700 p-3 rounded-md">
-          <h3 className="text-green-300 font-medium mb-2">计算结果</h3>
-          <div className="grid grid-cols-2 gap-3 text-sm">
-            <div className="bg-gray-800 p-2 rounded">
-              <span className="text-gray-400">基础伤害：</span>
-              <span className="text-white">{calculatedDamage.base}</span>
-            </div>
-            <div className="bg-gray-800 p-2 rounded">
-              <span className="text-gray-400">百分比加成：</span>
-              <span className="text-white">+{calculatedDamage.percent}%</span>
-            </div>
-            <div className="bg-gray-800 p-2 rounded">
-              <span className="text-gray-400">额外加成数量：</span>
-              <span className="text-white">{calculatedDamage.extra.length}</span>
-            </div>
-            <div className="bg-gray-800 p-2 rounded">
-              <span className="text-gray-400">最终伤害：</span>
-              <span className="text-amber-400 font-bold">{calculatedDamage.final}</span>
-            </div>
-          </div>
-        </div>
-        
-        {/* 已选中伤害项显示区域 */}
-        <div className="mb-4 bg-gray-700 p-3 rounded-md">
-          <h3 className="text-blue-300 font-medium mb-2">已选中伤害词条 ({calculatedDamage.selectedItems.length})</h3>
-          
-          {calculatedDamage.selectedItems.length === 0 ? (
-            <p className="text-gray-400 text-center py-2">未选中任何伤害词条</p>
-          ) : (
-            <div className="space-y-2 max-h-60 overflow-y-auto">
-              {/* 基础伤害显示 */}
-              {calculatedDamage.selectedItems.filter(item => item.type === DAMAGE_TYPES.BASE).length > 0 && (
-                <div>
-                  <h4 className="text-green-300 text-xs font-medium mb-1">基础伤害(点伤):</h4>
-                  <div className="space-y-1">
-                    {calculatedDamage.selectedItems
-                      .filter(item => item.type === DAMAGE_TYPES.BASE)
-                      .map((item, idx) => (
-                        <div key={idx} className="bg-gray-800 p-2 rounded-md text-xs flex justify-between">
-                          <div>
-                            <span className="text-white">{item.description}</span>
-                            <div className="text-gray-400 text-[10px] mt-0.5">{item.sourceType}: {item.source}</div>
-                          </div>
-                          <button 
-                            className="text-red-400 hover:text-red-300 ml-2" 
-                            onClick={() => handleDamageToggle(item.id)}
-                          >
-                            移除
-                          </button>
-                        </div>
-                      ))}
-                  </div>
-                </div>
-              )}
-              
-              {/* 百分比伤害显示 */}
-              {calculatedDamage.selectedItems.filter(item => item.type === DAMAGE_TYPES.PERCENT).length > 0 && (
-                <div className="mt-2">
-                  <h4 className="text-blue-300 text-xs font-medium mb-1">百分比伤害(inc):</h4>
-                  <div className="space-y-1">
-                    {calculatedDamage.selectedItems
-                      .filter(item => item.type === DAMAGE_TYPES.PERCENT)
-                      .map((item, idx) => (
-                        <div key={idx} className="bg-gray-800 p-2 rounded-md text-xs flex justify-between">
-                          <div>
-                            <span className="text-white">{item.description}</span>
-                            <div className="text-gray-400 text-[10px] mt-0.5">{item.sourceType}: {item.source}</div>
-                          </div>
-                          <button 
-                            className="text-red-400 hover:text-red-300 ml-2" 
-                            onClick={() => handleDamageToggle(item.id)}
-                          >
-                            移除
-                          </button>
-                        </div>
-                      ))}
-                  </div>
-                </div>
-              )}
-              
-              {/* 额外伤害显示 */}
-              {calculatedDamage.selectedItems.filter(item => item.type === DAMAGE_TYPES.EXTRA).length > 0 && (
-                <div className="mt-2">
-                  <h4 className="text-purple-300 text-xs font-medium mb-1">额外伤害(more):</h4>
-                  <div className="space-y-1">
-                    {calculatedDamage.selectedItems
-                      .filter(item => item.type === DAMAGE_TYPES.EXTRA)
-                      .map((item, idx) => (
-                        <div key={idx} className="bg-gray-800 p-2 rounded-md text-xs flex justify-between">
-                          <div>
-                            <span className="text-white">{item.description}</span>
-                            <div className="text-gray-400 text-[10px] mt-0.5">{item.sourceType}: {item.source}</div>
-                          </div>
-                          <button 
-                            className="text-red-400 hover:text-red-300 ml-2" 
-                            onClick={() => handleDamageToggle(item.id)}
-                          >
-                            移除
-                          </button>
-                        </div>
-                      ))}
-                  </div>
-                </div>
-              )}
+  // 当装备变化时，计算装备带来的伤害加成
+  useEffect(() => {
+    // 这里将来可以根据选中的装备计算加成
+    // 目前先使用空值
+    setEquipmentDamageBonus({ normal: 0, extra: [] });
+  }, [selectedEquipment]);
+
+  // 计算总伤害
+  const totalDamage = useMemo(() => {
+    // 所有普通百分比伤害加成相加
+    const normalBonusPercent = (
+      heroDamageBonus.normal + 
+      talentDamageBonus.normal + 
+      equipmentDamageBonus.normal + 
+      petDamageBonus.normal + 
+      skillDamageBonus.normal
+    ) / 100;
+    
+    // 所有额外伤害乘区相乘
+    const allExtraBonuses = [
+      ...heroDamageBonus.extra,
+      ...talentDamageBonus.extra,
+      ...equipmentDamageBonus.extra,
+      ...petDamageBonus.extra,
+      ...skillDamageBonus.extra
+    ];
+    
+    let extraMultiplier = 1;
+    allExtraBonuses.forEach(bonus => {
+      extraMultiplier *= (1 + bonus.value / 100);
+    });
+
+    // 基础伤害 * (1 + 普通百分比加成) * 额外乘区
+    return baseWeaponDamage * (1 + normalBonusPercent) * extraMultiplier;
+  }, [
+    baseWeaponDamage,
+    heroDamageBonus, 
+    talentDamageBonus, 
+    equipmentDamageBonus, 
+    petDamageBonus, 
+    skillDamageBonus
+  ]);
+
+  // 渲染伤害来源明细
+  const renderDamageSourceDetail = (sourceTitle, sourceData) => {
+    return (
+      <div className="bg-gray-700 p-3 rounded-md mb-3">
+        <h4 className="text-amber-400 font-semibold mb-2">{sourceTitle}伤害加成</h4>
+        <div className="text-sm space-y-1">
+          {sourceData.normal > 0 && (
+            <p>普通伤害: +{sourceData.normal}%</p>
+          )}
+          {sourceData.extra.length > 0 && (
+            <div>
+              <p className="text-xs text-amber-300">额外伤害加成:</p>
+              <ul className="list-disc pl-5">
+                {sourceData.extra.map((bonus, index) => (
+                  <li key={index}>
+                    {bonus.type}: +{bonus.value}%
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
+          {sourceData.normal === 0 && sourceData.extra.length === 0 && (
+            <p className="text-gray-400">无伤害加成</p>
+          )}
         </div>
-
-        {/* 伤害池按钮 */}
-        <button 
-          className="bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-md transition"
-          onClick={() => setShowSheet(true)}
-        >
-          管理伤害词条 ({selectedDamages.length}/{damagePool.length})
-        </button>
       </div>
-
-      {/* 伤害词条选择抽屉 */}
-      <Sheet open={showSheet} onOpenChange={(open) => setShowSheet(open)}>
-        <SheetContent side="right" className="w-[85%] sm:w-[450px] bg-gray-800 border-l border-gray-700">
-          <SheetHeader>
-            <SheetTitle className="text-amber-400">伤害词条选择</SheetTitle>
-          </SheetHeader>
-          
-          {/* 搜索框 */}
-          <div className="mt-4">
-            <input 
-              type="text"
-              className="w-full bg-gray-700 border border-gray-600 rounded px-3 py-2 text-white text-sm"
-              placeholder="搜索伤害词条..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </div>
-          
-          {/* 全选/全不选按钮 */}
-          <div className="mt-3 flex space-x-2">
-            <button 
-              className="text-xs text-blue-400 hover:text-blue-300 flex-1 bg-gray-700 rounded-md py-1"
-              onClick={() => handleSelectAll(true)}
-            >
-              全选
-            </button>
-            <button 
-              className="text-xs text-red-400 hover:text-red-300 flex-1 bg-gray-700 rounded-md py-1"
-              onClick={() => handleSelectAll(false)}
-            >
-              全不选
-            </button>
-          </div>
-          
-          {/* 伤害词条列表 */}
-          <div className="mt-4 overflow-y-auto max-h-[calc(100vh-200px)]">
-            {filteredDamagePool.length === 0 ? (
-              <div className="text-center text-gray-400 py-10">未找到伤害词条</div>
-            ) : (
-              <div className="space-y-2">
-                {filteredDamagePool.map((item) => (
-                  <div 
-                    key={item.id} 
-                    className={`p-2 rounded-md cursor-pointer transition border ${
-                      selectedDamages.includes(item.id) 
-                        ? 'bg-gray-700 border-amber-500'
-                        : 'bg-gray-800 border-gray-700 hover:border-gray-500'
-                    }`}
-                    onClick={() => handleDamageToggle(item.id)}
-                  >
-                    <div className="flex items-center">
-                      <div className="flex-1">
-                        <p className="text-sm">{item.description}</p>
-                        <div className="flex items-center mt-1">
-                          <span className={`inline-block rounded-full px-2 py-0.5 text-[10px] mr-2 ${
-                            item.type === DAMAGE_TYPES.BASE 
-                              ? 'bg-green-900 text-green-300' 
-                              : item.type === DAMAGE_TYPES.PERCENT 
-                                ? 'bg-blue-900 text-blue-300'
-                                : 'bg-purple-900 text-purple-300'
-                          }`}>
-                            {DAMAGE_LABELS[item.type]}
-                          </span>
-                          <span className="text-xs text-gray-400">{item.sourceType}: {item.source}</span>
-                        </div>
-                      </div>
-                      <div className="ml-2">
-                        <input
-                          type="checkbox"
-                          checked={selectedDamages.includes(item.id)}
-                          onChange={() => {}}
-                          className="h-5 w-5 rounded border-gray-500 text-amber-600 focus:ring-amber-600"
-                        />
+    );
+  };
+  
+  // 渲染英雄特性Tab内容
+  const renderHeroTab = () => {
+    return (
+      <div>
+        <h3 className="text-lg font-semibold mb-3">英雄特性</h3>
+        {selectedHero ? (
+          <div>
+            <div className="mb-4">
+              <h4 className="font-medium mb-2">基础特性</h4>
+              {heroSkills.length > 0 ? (
+                <div className="bg-gray-700 p-3 rounded-md">
+                  <div className="text-amber-400">{heroSkills[0]?.name}</div>
+                  <div className="text-sm mt-2">
+                    {heroSkills[0]?.description?.join(' ')}
+                  </div>
+                </div>
+              ) : (
+                <p className="text-gray-400">该英雄没有特性数据</p>
+              )}
+            </div>
+            
+            {heroSkills.length > 1 && (
+              <div>
+                <h4 className="font-medium mb-2">高级特性 (等级45+)</h4>
+                <div className="space-y-2">
+                  {heroSkills.filter(skill => skill.level >= 45 && skill.level < 60).map((skill, index) => (
+                    <div key={index} className="bg-gray-700 p-3 rounded-md">
+                      <div className="text-amber-400">{skill.name} (Lv.{skill.level})</div>
+                      <div className="text-sm mt-2">
+                        {skill.description?.join(' ')}
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             )}
           </div>
+        ) : (
+          <p className="text-gray-400">请先选择一个英雄</p>
+        )}
+      </div>
+    );
+  };
+
+  // 渲染天赋Tab内容
+  const renderTalentTab = () => {
+    return (
+      <div>
+        <h3 className="text-lg font-semibold mb-3">已选择的天赋</h3>
+        {selectedTalents.length > 0 ? (
+          <div className="space-y-2">
+            {selectedTalents.map((talent, index) => (
+              <div key={index} className="bg-gray-700 p-3 rounded-md">
+                <div className="flex items-center">
+                  {talent.img && (
+                    <img 
+                      src={talent.img} 
+                      alt={talent.name} 
+                      className="w-8 h-8 mr-2 rounded-full"
+                    />
+                  )}
+                  <div>
+                    <div className="text-amber-400">{talent.name}</div>
+                    <div className="text-sm">{talent.desc}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-gray-400">尚未选择任何天赋</p>
+        )}
+      </div>
+    );
+  };
+
+  // 渲染装备Tab内容
+  const renderEquipmentTab = () => {
+    return (
+      <div>
+        <h3 className="text-lg font-semibold mb-3">装备</h3>
+        <div className="mb-4">
+          <label className="block text-sm font-medium mb-1">基础武器伤害</label>
+          <input
+            type="number"
+            value={baseWeaponDamage}
+            onChange={(e) => setBaseWeaponDamage(Math.max(1, parseInt(e.target.value) || 0))}
+            className="bg-gray-700 text-white p-2 rounded-md w-full"
+          />
+        </div>
+        <div className="bg-gray-700 p-3 rounded-md">
+          <p className="text-gray-400">暂未实现装备选择功能</p>
+        </div>
+      </div>
+    );
+  };
+
+  // 渲染契灵Tab内容
+  const renderPetTab = () => {
+    return (
+      <div>
+        <h3 className="text-lg font-semibold mb-3">契灵与命运</h3>
+        <div className="bg-gray-700 p-3 rounded-md">
+          <p className="text-gray-400">契灵系统尚未实现</p>
+        </div>
+      </div>
+    );
+  };
+
+  // 渲染技能Tab内容
+  const renderSkillTab = () => {
+    return (
+      <div>
+        <h3 className="text-lg font-semibold mb-3">技能与魂烛</h3>
+        <div className="bg-gray-700 p-3 rounded-md">
+          <p className="text-gray-400">技能系统尚未实现</p>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="bg-gray-800 rounded-lg p-6 shadow-lg mt-4">
+      <h2 className="text-xl font-bold mb-4 text-amber-400">伤害计算</h2>
+      
+      {/* 将标签栏放在顶部 */}
+      <Tabs defaultValue="hero" value={activeTab} onValueChange={setActiveTab}>
+        <TabsList className="w-full mb-4 p-0 border-b-0">
+          <TabsTrigger value="hero" className="flex-1 py-2 px-4">英雄特性</TabsTrigger>
+          <TabsTrigger value="talent" className="flex-1 py-2 px-4">天赋</TabsTrigger>
+          <TabsTrigger value="equipment" className="flex-1 py-2 px-4">装备</TabsTrigger>
+          <TabsTrigger value="pet" className="flex-1 py-2 px-4">契灵(宠物)</TabsTrigger>
+          <TabsTrigger value="skill" className="flex-1 py-2 px-4">技能+魂烛</TabsTrigger>
+        </TabsList>
+        
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* 左侧内容区域 */}
+          <div className="lg:w-3/5 w-full">
+            <TabsContent value="hero" className="bg-gray-800 p-4 rounded-md">
+              {renderHeroTab()}
+            </TabsContent>
+            
+            <TabsContent value="talent" className="bg-gray-800 p-4 rounded-md">
+              {renderTalentTab()}
+            </TabsContent>
+            
+            <TabsContent value="equipment" className="bg-gray-800 p-4 rounded-md">
+              {renderEquipmentTab()}
+            </TabsContent>
+            
+            <TabsContent value="pet" className="bg-gray-800 p-4 rounded-md">
+              {renderPetTab()}
+            </TabsContent>
+            
+            <TabsContent value="skill" className="bg-gray-800 p-4 rounded-md">
+              {renderSkillTab()}
+            </TabsContent>
+          </div>
           
-          <SheetClose asChild>
-            <button className="mt-4 bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-md transition w-full">
-              确认选择
-            </button>
-          </SheetClose>
-        </SheetContent>
-      </Sheet>
+          {/* 右侧伤害计算面板 */}
+          <div className="lg:w-2/5 w-full bg-gray-700 rounded-lg p-4">
+            <h3 className="text-lg font-bold mb-4 text-amber-400 border-b border-amber-400 pb-2">已选伤害汇总</h3>
+            
+            <div className="space-y-3">
+              {/* 基础伤害 */}
+              <div className="flex justify-between">
+                <span>基础伤害:</span>
+                <span className="font-semibold">{baseWeaponDamage}</span>
+              </div>
+              
+              {/* 总伤害 */}
+              <div className="flex justify-between text-lg text-amber-400 border-t border-amber-400 pt-2 mt-2">
+                <span>总计伤害:</span>
+                <span className="font-bold">{Math.round(totalDamage * 100) / 100}</span>
+              </div>
+              
+              <div className="border-t border-gray-600 pt-3 mt-3">
+                <h4 className="text-lg font-semibold mb-2">伤害加成明细</h4>
+                
+                {renderDamageSourceDetail("英雄特性", heroDamageBonus)}
+                {renderDamageSourceDetail("天赋", talentDamageBonus)}
+                {renderDamageSourceDetail("装备", equipmentDamageBonus)}
+                {renderDamageSourceDetail("契灵", petDamageBonus)}
+                {renderDamageSourceDetail("技能", skillDamageBonus)}
+                
+                <div className="bg-gray-700 p-3 rounded-md mt-3">
+                  <h4 className="text-amber-400 font-semibold mb-2">计算公式</h4>
+                  <div className="text-xs text-gray-300">
+                    <p>普通百分比加成: {heroDamageBonus.normal + talentDamageBonus.normal + equipmentDamageBonus.normal + petDamageBonus.normal + skillDamageBonus.normal}%</p>
+                    <p>额外加成倍率: {Math.round((totalDamage / (baseWeaponDamage * (1 + (heroDamageBonus.normal + talentDamageBonus.normal + equipmentDamageBonus.normal + petDamageBonus.normal + skillDamageBonus.normal) / 100)) - 1) * 10000) / 100}%</p>
+                    <p className="mt-1">伤害 = 基础伤害 × (1 + 普通百分比加成) × (1 + 额外加成1) × (1 + 额外加成2)...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Tabs>
     </div>
   );
-} 
+};
+
+export default DamageCalculator; 
