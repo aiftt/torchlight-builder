@@ -21,9 +21,8 @@ export default function HeroSelector({ heroes, onHeroSelect, loading, error }) {
 
   if (loading) {
     return (
-      <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
-        <h2 className="text-xl font-bold mb-4 text-amber-400">选择英雄</h2>
-        <div className="flex justify-center items-center h-40">
+      <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+        <div className="flex justify-center items-center h-20">
           <p>加载英雄数据中...</p>
         </div>
       </div>
@@ -32,9 +31,8 @@ export default function HeroSelector({ heroes, onHeroSelect, loading, error }) {
 
   if (error) {
     return (
-      <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
-        <h2 className="text-xl font-bold mb-4 text-amber-400">选择英雄</h2>
-        <div className="bg-gray-700 p-4 rounded-lg text-center">
+      <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+        <div className="bg-gray-600 p-3 rounded-lg text-center">
           <p className="text-red-400">{error}</p>
         </div>
       </div>
@@ -42,30 +40,29 @@ export default function HeroSelector({ heroes, onHeroSelect, loading, error }) {
   }
 
   return (
-    <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
-      <h2 className="text-xl font-bold mb-4 text-amber-400">选择英雄</h2>
+    <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
       {heroes.length > 0 ? (
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
           {heroes.map((hero, index) => (
             <div 
               key={index} 
-              className={`bg-gray-700 p-3 rounded-lg cursor-pointer hover:bg-amber-900 transition ${selectedHero === hero ? 'ring-2 ring-amber-500' : ''}`}
+              className={`bg-gray-600 p-2 rounded-lg cursor-pointer hover:bg-amber-900 transition ${selectedHero === hero ? 'ring-2 ring-amber-500' : ''}`}
               onClick={() => handleHeroSelect(hero)}
             >
-              <h3 className="text-center text-sm">{hero.name.split('|')[0]}</h3>
-              <div className="flex justify-center my-2">
+              <div className="flex flex-col items-center">
                 <img 
                   src={hero.avatar} 
                   alt={hero.name} 
-                  className="w-16 h-16 rounded-full object-cover"
+                  className="w-12 h-12 rounded-full object-cover mb-1"
                 />
+                <h3 className="text-center text-xs">{hero.name.split('|')[0]}</h3>
+                <p className="text-xs text-gray-300 text-center truncate w-full">{hero.name.split('|')[1] || ''}</p>
               </div>
-              <p className="text-xs text-gray-300 text-center">{hero.name.split('|')[1] || ''}</p>
             </div>
           ))}
         </div>
       ) : (
-        <div className="bg-gray-700 p-4 rounded-lg text-center">
+        <div className="bg-gray-600 p-3 rounded-lg text-center">
           <p>没有可用的英雄数据</p>
         </div>
       )}

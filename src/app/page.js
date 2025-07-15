@@ -1,12 +1,12 @@
 'use client'
 
+import { useState, useEffect } from 'react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import HeroSelector from '@/components/HeroSelector';
-import EquipmentSelector from '@/components/EquipmentSelector';
 import TalentSelector from '@/components/TalentSelector';
-import DamageCalculator from '@/components/DamageCalculator';
-import { useState, useEffect, useCallback, useMemo } from 'react';
 
 export default function Home() {
+  // 状态管理
   const [heroes, setHeroes] = useState([]);
   const [selectedHero, setSelectedHero] = useState(null);
   const [selectedTalents, setSelectedTalents] = useState([]);
@@ -19,8 +19,17 @@ export default function Home() {
     wisdom: 60,
     mana: 120
   });
-  const [activeTab, setActiveTab] = useState('build'); // 'build', 'guide', 'data', 'damage'
-  const [selectedHeroFeatures, setSelectedHeroFeatures] = useState([]);  // 添加英雄特性选择状态
+  const [selectedHeroFeatures, setSelectedHeroFeatures] = useState([]);  
+  const [heroSkills, setHeroSkills] = useState([]);
+  const [activeTab, setActiveTab] = useState('hero');
+  const [baseWeaponDamage, setBaseWeaponDamage] = useState(100);
+  
+  // 伤害加成数据
+  const [heroDamageBonus, setHeroDamageBonus] = useState({ normal: 0, extra: [] });
+  const [talentDamageBonus, setTalentDamageBonus] = useState({ normal: 0, extra: [] });
+  const [equipmentDamageBonus, setEquipmentDamageBonus] = useState({ normal: 0, extra: [] });
+  const [petDamageBonus, setPetDamageBonus] = useState({ normal: 0, extra: [] });
+  const [skillDamageBonus, setSkillDamageBonus] = useState({ normal: 0, extra: [] });
 
   // 获取英雄数据
   useEffect(() => {
@@ -50,637 +59,353 @@ export default function Home() {
     fetchHeroData();
   }, []);
 
-  // 当选择英雄时，重置已选特性和属性
+  // 当英雄变化时，加载英雄特性数据
   useEffect(() => {
-    if (selectedHero) {
-      // 根据英雄类型设置初始属性
-      const heroType = selectedHero.name.split('|')[1] || '';
-      let baseAttributes = {
-        strength: 100,
-        dexterity: 80,
-        wisdom: 60,
-        mana: 120
-      };
-      
-      if (heroType.includes('怒火') || heroType.includes('战火')) {
-        baseAttributes = {
-          strength: 140,
-          dexterity: 70,
-          wisdom: 50,
-          mana: 100
-        };
-      } else if (heroType.includes('猎') || heroType.includes('影')) {
-        baseAttributes = {
-          strength: 70,
-          dexterity: 140,
-          wisdom: 60,
-          mana: 110
-        };
-      } else if (heroType.includes('焰') || heroType.includes('冰')) {
-        baseAttributes = {
-          strength: 60,
-          dexterity: 70,
-          wisdom: 140,
-          mana: 150
-        };
+    async function loadHeroSkills() {
+      if (selectedHero && selectedHero.key) {
+        try {
+          const response = await fetch('/json/skills.json');
+          if (!response.ok) {
+            throw new Error(`获取英雄特性数据失败: ${response.status}`);
+          }
+          const skillsData = await response.json();
+          
+          // 获取当前英雄的特性数据
+          const heroSkillsData = skillsData[selectedHero.key] || [];
+          setHeroSkills(heroSkillsData);
+          
+          // 提取英雄特性提供的伤害加成
+          let normalBonus = 0;
+          let extraBonuses = [];
+          
+          if (heroSkillsData.length > 0) {
+            const baseSkill = heroSkillsData[0]; // 基础特性
+            if (baseSkill && baseSkill.description) {
+              const descText = baseSkill.description.join(' ');
+              
+              // 解析普通伤害加成
+              const normalDamageMatch = descText.match(/额外\s*\+(\d+)%\s*伤害/);
+              if (normalDamageMatch && normalDamageMatch[1]) {
+                normalBonus += parseInt(normalDamageMatch[1]);
+              }
+              
+              // 解析可能的额外伤害加成
+              const extraDamageMatches = descText.match(/额外\s*\+(\d+)%\s*([^，。]+?伤害)/g);
+              if (extraDamageMatches) {
+                extraDamageMatches.forEach(match => {
+                  const detailMatch = match.match(/额外\s*\+(\d+)%\s*([^，。]+?伤害)/);
+                  if (detailMatch && detailMatch[1] && detailMatch[2] && !detailMatch[2].startsWith('伤害')) {
+                    extraBonuses.push({
+                      value: parseInt(detailMatch[1]),
+                      type: detailMatch[2]
+                    });
+                  }
+                });
+              }
+            }
+          }
+          
+          setHeroDamageBonus({ normal: normalBonus, extra: extraBonuses });
+        } catch (error) {
+          console.error('加载英雄特性数据出错:', error);
+        }
       }
-      
-      setAttributes(baseAttributes);
-    } else {
-      setAttributes({
-        strength: 100,
-        dexterity: 80,
-        wisdom: 60,
-        mana: 120
-      });
     }
+
+    loadHeroSkills();
   }, [selectedHero]);
 
-  // 获取英雄特性
+  // 当天赋变化时，计算天赋带来的伤害加成
   useEffect(() => {
-    if (selectedHero) {
-      // 根据英雄类型设置可选的特性
-      // 这里简单模拟一些英雄特性，实际应该从API获取
-      const heroType = selectedHero.name.split('|')[1] || '';
-      let defaultFeatures = [];
-      
-      if (heroType.includes('怒火') || heroType.includes('战火')) {
-        defaultFeatures = [
-          { id: 'strength_bonus', name: '力量专精', desc: '力量+20%，近战武器伤害+10%' },
-          { id: 'endurance', name: '坚韧不拔', desc: '生命值+15%，所有抗性+10%' },
-          { id: 'rage', name: '战争怒火', desc: '攻击时有15%几率进入狂怒状态，持续5秒' }
-        ];
-      } else if (heroType.includes('猎') || heroType.includes('影')) {
-        defaultFeatures = [
-          { id: 'agility_bonus', name: '敏捷专精', desc: '敏捷+20%，暴击率+5%' },
-          { id: 'evasion', name: '灵巧闪避', desc: '15%几率闪避敌人攻击' },
-          { id: 'precision', name: '精准打击', desc: '远程武器伤害+10%，暴击伤害+25%' }
-        ];
-      } else if (heroType.includes('焰') || heroType.includes('冰') || heroType.includes('元素')) {
-        defaultFeatures = [
-          { id: 'wisdom_bonus', name: '智慧专精', desc: '智慧+20%，元素伤害+15%' },
-          { id: 'mana_flow', name: '魔力流转', desc: '魔力恢复速度+30%，技能冷却时间-10%' },
-          { id: 'elemental_mastery', name: '元素掌控', desc: '所有元素技能效果提高20%' }
-        ];
-      } else {
-        defaultFeatures = [
-          { id: 'adaptability', name: '适应性强化', desc: '所有属性+5%' },
-          { id: 'vitality', name: '生命活力', desc: '生命值和魔力值恢复速度+10%' },
-          { id: 'combat_training', name: '战斗训练', desc: '伤害+5%，命中率+10%' }
-        ];
-      }
-      
-      // 只更新特性，不重置已经选中的特性
-      if (selectedHeroFeatures.length === 0) {
-        setSelectedHeroFeatures([defaultFeatures[0]]);  // 默认选择第一个特性
-      }
-    }
-  }, [selectedHero, selectedHeroFeatures.length]);
+    let normalBonus = 0;
+    let extraBonuses = [];
 
-  // 处理英雄特性选择
-  const handleFeatureSelect = useCallback((feature) => {
-    setSelectedHeroFeatures(prev => {
-      // 检查是否已选择该特性
-      const exists = prev.some(f => f.id === feature.id);
-      
-      if (exists) {
-        // 如果已存在，则移除
-        return prev.filter(f => f.id !== feature.id);
-      } else {
-        // 如果不存在，且当前选择少于2个，则添加
-        if (prev.length < 2) {
-          return [...prev, feature];
-        }
-        // 否则替换最早选择的特性
-        return [prev[1], feature];
-      }
-    });
-  }, []);
-
-  // 计算天赋对属性的加成 - 修复无限循环问题
-  const calculateTalentBonuses = useCallback((baseAttributes) => {
-    if (!selectedHero || !baseAttributes) return baseAttributes;
-    
-    // 创建一个新的属性对象，避免修改原始对象
-    let calculatedAttributes = { ...baseAttributes };
-    
-    // 应用天赋加成
     selectedTalents.forEach(talent => {
       if (talent.desc) {
-        // 解析天赋描述，提取属性加成
-        const desc = talent.desc;
-        
-        // 处理力量加成
-        if (desc.includes('力量')) {
-          const strengthMatch = desc.match(/\+(\d+)\s*力量/);
-          if (strengthMatch && strengthMatch[1]) {
-            calculatedAttributes.strength += parseInt(strengthMatch[1]);
-          }
-        }
-
-        // 处理敏捷加成
-        if (desc.includes('敏捷')) {
-          const dexterityMatch = desc.match(/\+(\d+)\s*敏捷/);
-          if (dexterityMatch && dexterityMatch[1]) {
-            calculatedAttributes.dexterity += parseInt(dexterityMatch[1]);
-          }
-        }
-        
-        // 处理智慧加成
-        if (desc.includes('智慧')) {
-          const wisdomMatch = desc.match(/\+(\d+)\s*智慧/);
-          if (wisdomMatch && wisdomMatch[1]) {
-            calculatedAttributes.wisdom += parseInt(wisdomMatch[1]);
-          }
-          // 处理百分比智慧加成
-          const wisdomPercentMatch = desc.match(/\+(\d+)%\s*智慧/);
-          if (wisdomPercentMatch && wisdomPercentMatch[1]) {
-            const percent = parseInt(wisdomPercentMatch[1]) / 100;
-            calculatedAttributes.wisdom += Math.floor(calculatedAttributes.wisdom * percent);
-          }
-        }
-        
-        // 处理魔力加成
-        if (desc.includes('魔力') || desc.includes('最大魔力')) {
-          const manaMatch = desc.match(/\+(\d+)%\s*最大魔力/);
-          if (manaMatch && manaMatch[1]) {
-            const percent = parseInt(manaMatch[1]) / 100;
-            calculatedAttributes.mana += Math.floor(calculatedAttributes.mana * percent);
-          }
-        }
-      }
-    });
-    
-    return calculatedAttributes;
-  }, [selectedHero, selectedTalents]);
-
-  // 当天赋改变时，重新计算属性 - 修复无限循环
-  useEffect(() => {
-    if (!selectedHero) return;
-    
-    // 使用当前的 attributes 作为基础，而不是依赖 attributes 状态
-    setAttributes(prevAttributes => calculateTalentBonuses(prevAttributes));
-  }, [selectedTalents, selectedHero, calculateTalentBonuses]);
-
-  // 处理英雄选择 - 使用 useCallback 优化
-  const handleHeroSelect = useCallback((hero) => {
-    setSelectedHero(hero);
-    // 不再重置天赋和装备，只重置与英雄相关的特性
-  }, []);
-
-  // 处理天赋选择 - 使用 useCallback 优化
-  const handleTalentSelect = useCallback((talents) => {
-    setSelectedTalents(talents);
-  }, []);
-
-  // 处理装备选择 - 使用 useCallback 优化
-  const handleEquipmentChange = useCallback((equipment) => {
-    setSelectedEquipment(equipment);
-    // 在这里可以处理装备对属性的影响
-    // 类似于处理天赋对属性的影响
-  }, []);
-
-  // 计算属性百分比 - 使用 useCallback 优化
-  const calculateAttributePercentage = useCallback((attribute) => {
-    const maxValues = {
-      strength: 200,
-      dexterity: 200,
-      wisdom: 200,
-      mana: 200
-    };
-    
-    return (attributes[attribute] / maxValues[attribute]) * 100;
-  }, [attributes]);
-
-  // 计算伤害 - 使用 useMemo 优化
-  const damage = useMemo(() => {
-    if (!selectedHero) return { base: 0, critRate: 0, critDamage: 0, attackSpeed: 0, dps: 0 };
-    
-    // 基础伤害计算
-    let baseDamage = 100;
-    
-    // 根据主属性增加基础伤害
-    const heroType = selectedHero.name.split('|')[1] || '';
-    if (heroType.includes('怒火') || heroType.includes('战火')) {
-      baseDamage += attributes.strength * 2;
-    } else if (heroType.includes('猎') || heroType.includes('影')) {
-      baseDamage += attributes.dexterity * 2;
-    } else if (heroType.includes('焰') || heroType.includes('冰')) {
-      baseDamage += attributes.wisdom * 2;
-    }
-    
-    // 应用天赋加成
-    selectedTalents.forEach(talent => {
-      const desc = talent.desc;
-      
-      // 解析伤害加成
-      if (desc.includes('伤害')) {
-        const damageMatch = desc.match(/\+(\d+)%\s*伤害/);
+        // 解析普通伤害加成
+        const damageMatch = talent.desc.match(/\+(\d+)%\s*伤害/);
         if (damageMatch && damageMatch[1]) {
-          baseDamage *= (1 + parseInt(damageMatch[1]) / 100);
+          normalBonus += parseInt(damageMatch[1]);
         }
         
-        // 解析元素伤害加成
-        const elementalMatch = desc.match(/\+(\d+)%\s*元素伤害/);
-        if (elementalMatch && elementalMatch[1] && 
-            (heroType.includes('焰') || heroType.includes('冰') || heroType.includes('元素'))) {
-          baseDamage *= (1 + parseInt(elementalMatch[1]) / 100);
+        // 解析元素伤害等特定类型伤害
+        const elementalMatch = talent.desc.match(/\+(\d+)%\s*(元素|火焰|冰冷|闪电)伤害/);
+        if (elementalMatch && elementalMatch[1] && elementalMatch[2]) {
+          extraBonuses.push({
+            value: parseInt(elementalMatch[1]),
+            type: `${elementalMatch[2]}伤害`
+          });
         }
       }
     });
-    
-    // 暴击率和暴击伤害
-    let critRate = 5 + attributes.dexterity * 0.1;
-    let critDamage = 150 + attributes.strength * 0.2;
-    
-    // 从天赋中加入暴击率和暴击伤害的修正
-    selectedTalents.forEach(talent => {
-      const desc = talent.desc;
-      
-      // 暴击率加成
-      if (desc.includes('暴击值')) {
-        const critRateMatch = desc.match(/\+(\d+)%\s*暴击值/);
-        if (critRateMatch && critRateMatch[1]) {
-          critRate += parseInt(critRateMatch[1]);
-        }
-      }
-      
-      // 暴击伤害加成
-      if (desc.includes('暴击伤害')) {
-        const critDamageMatch = desc.match(/\+(\d+)%\s*暴击伤害/);
-        if (critDamageMatch && critDamageMatch[1]) {
-          critDamage += parseInt(critDamageMatch[1]);
-        }
-      }
-    });
-    
-    // 攻击速度
-    let attackSpeed = 1 + attributes.dexterity * 0.005;
-    
-    // 从天赋中加入攻击速度修正
-    selectedTalents.forEach(talent => {
-      const desc = talent.desc;
-      
-      if (desc.includes('攻击与施法速度')) {
-        const speedMatch = desc.match(/\+(\d+)%\s*攻击与施法速度/);
-        if (speedMatch && speedMatch[1]) {
-          attackSpeed *= (1 + parseInt(speedMatch[1]) / 100);
-        }
-      }
-    });
-    
-    // 每秒伤害
-    let dps = baseDamage * attackSpeed * (1 + (critRate / 100) * (critDamage / 100 - 1));
-    
-    return {
-      base: Math.round(baseDamage),
-      critRate: Math.min(Math.round(critRate), 100),
-      critDamage: Math.round(critDamage),
-      attackSpeed: attackSpeed.toFixed(2),
-      dps: Math.round(dps)
-    };
-  }, [selectedHero, attributes, selectedTalents]);
 
-  // 渲染内容 - 使用 useCallback 优化
-  const renderContent = useCallback(() => {
-    switch (activeTab) {
-      case 'build':
-  return (
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-            {/* 英雄选择区域 */}
-            <div className="lg:col-span-1">
-              <HeroSelector 
-                heroes={heroes} 
-                onHeroSelect={handleHeroSelect}
-                loading={loading}
-                error={error}
-              />
-              
-              {/* 属性分配 */}
-              {selectedHero && (
-                <div className="bg-gray-800 rounded-lg p-6 shadow-lg mt-6">
-                  <h2 className="text-xl font-bold mb-4 text-amber-400">属性分配</h2>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-gray-700 p-4 rounded-lg">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-semibold">力量</span>
-                        <span className="bg-amber-600 px-2 py-1 rounded text-sm">{attributes.strength}</span>
-                      </div>
-                      <div className="w-full bg-gray-600 rounded-full h-2">
-                        <div 
-                          className="bg-amber-500 h-2 rounded-full" 
-                          style={{ width: `${calculateAttributePercentage('strength')}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                    <div className="bg-gray-700 p-4 rounded-lg">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-semibold">敏捷</span>
-                        <span className="bg-amber-600 px-2 py-1 rounded text-sm">{attributes.dexterity}</span>
-                      </div>
-                      <div className="w-full bg-gray-600 rounded-full h-2">
-                        <div 
-                          className="bg-amber-500 h-2 rounded-full" 
-                          style={{ width: `${calculateAttributePercentage('dexterity')}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                    <div className="bg-gray-700 p-4 rounded-lg">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-semibold">智慧</span>
-                        <span className="bg-amber-600 px-2 py-1 rounded text-sm">{attributes.wisdom}</span>
-                      </div>
-                      <div className="w-full bg-gray-600 rounded-full h-2">
-                        <div 
-                          className="bg-amber-500 h-2 rounded-full" 
-                          style={{ width: `${calculateAttributePercentage('wisdom')}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                    <div className="bg-gray-700 p-4 rounded-lg">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-semibold">魔力</span>
-                        <span className="bg-amber-600 px-2 py-1 rounded text-sm">{attributes.mana}</span>
-                      </div>
-                      <div className="w-full bg-gray-600 rounded-full h-2">
-                        <div 
-                          className="bg-amber-500 h-2 rounded-full" 
-                          style={{ width: `${calculateAttributePercentage('mana')}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
+    setTalentDamageBonus({ normal: normalBonus, extra: extraBonuses });
+  }, [selectedTalents]);
+
+  // 处理英雄选择
+  const handleHeroSelect = (hero) => {
+    setSelectedHero(hero);
+  };
+
+  // 处理天赋选择
+  const handleTalentSelect = (talents) => {
+    setSelectedTalents(talents);
+  };
+
+  // 计算总伤害
+  const calculateTotalDamage = () => {
+    // 所有普通百分比伤害加成相加
+    const normalBonusPercent = (
+      heroDamageBonus.normal + 
+      talentDamageBonus.normal + 
+      equipmentDamageBonus.normal + 
+      petDamageBonus.normal + 
+      skillDamageBonus.normal
+    ) / 100;
+    
+    // 所有额外伤害乘区相乘
+    const allExtraBonuses = [
+      ...heroDamageBonus.extra,
+      ...talentDamageBonus.extra,
+      ...equipmentDamageBonus.extra,
+      ...petDamageBonus.extra,
+      ...skillDamageBonus.extra
+    ];
+    
+    let extraMultiplier = 1;
+    allExtraBonuses.forEach(bonus => {
+      extraMultiplier *= (1 + bonus.value / 100);
+    });
+
+    // 基础伤害 * (1 + 普通百分比加成) * 额外乘区
+    return baseWeaponDamage * (1 + normalBonusPercent) * extraMultiplier;
+  };
+
+  // 渲染伤害来源明细
+  const renderDamageSourceDetail = (sourceTitle, sourceData) => {
+    return (
+      <div className="bg-gray-700 p-3 rounded-md mb-3">
+        <h4 className="text-amber-400 font-semibold mb-2">{sourceTitle}伤害加成</h4>
+        <div className="text-sm space-y-1">
+          {sourceData.normal > 0 && (
+            <p>普通伤害: +{sourceData.normal}%</p>
+          )}
+          {sourceData.extra.length > 0 && (
+            <div>
+              <p className="text-xs text-amber-300">额外伤害加成:</p>
+              <ul className="list-disc pl-5">
+                {sourceData.extra.map((bonus, index) => (
+                  <li key={index}>
+                    {bonus.type}: +{bonus.value}%
+                  </li>
+                ))}
+              </ul>
             </div>
-            
-            {/* 天赋选择区域 */}
-            <div className="lg:col-span-2">
-              <TalentSelector 
-                selectedHero={selectedHero}
-                onTalentSelect={handleTalentSelect}
-              />
-            </div>
-            
-            {/* 右侧 - 装备和伤害统计 */}
-            <div className="lg:col-span-1">
-              {/* 英雄描述 */}
-              <div className="bg-gray-800 rounded-lg p-6 shadow-lg mb-6">
-                <h2 className="text-xl font-bold mb-4 text-amber-400">英雄特性</h2>
-                <div className="bg-gray-700 p-3 rounded-lg">
-                  {selectedHero ? (
-                    <>
-                      <h3 className="font-semibold mb-2">{selectedHero.name}</h3>
-                      <p className="text-sm">{selectedHero.desc || '暂无描述'}</p>
-                      
-                      {/* 添加英雄特性选择UI */}
-                      <div className="mt-4">
-                        <h4 className="text-sm font-medium text-blue-300 mb-2">选择英雄特性 (最多选择2个)</h4>
-                        <div className="space-y-2">
-                          {(() => {
-                            // 根据英雄类型获取可选特性
-                            const heroType = selectedHero.name.split('|')[1] || '';
-                            let availableFeatures = [];
-                            
-                            if (heroType.includes('怒火') || heroType.includes('战火')) {
-                              availableFeatures = [
-                                { id: 'strength_bonus', name: '力量专精', desc: '力量+20%，近战武器伤害+10%' },
-                                { id: 'endurance', name: '坚韧不拔', desc: '生命值+15%，所有抗性+10%' },
-                                { id: 'rage', name: '战争怒火', desc: '攻击时有15%几率进入狂怒状态，持续5秒' }
-                              ];
-                            } else if (heroType.includes('猎') || heroType.includes('影')) {
-                              availableFeatures = [
-                                { id: 'agility_bonus', name: '敏捷专精', desc: '敏捷+20%，暴击率+5%' },
-                                { id: 'evasion', name: '灵巧闪避', desc: '15%几率闪避敌人攻击' },
-                                { id: 'precision', name: '精准打击', desc: '远程武器伤害+10%，暴击伤害+25%' }
-                              ];
-                            } else if (heroType.includes('焰') || heroType.includes('冰') || heroType.includes('元素')) {
-                              availableFeatures = [
-                                { id: 'wisdom_bonus', name: '智慧专精', desc: '智慧+20%，元素伤害+15%' },
-                                { id: 'mana_flow', name: '魔力流转', desc: '魔力恢复速度+30%，技能冷却时间-10%' },
-                                { id: 'elemental_mastery', name: '元素掌控', desc: '所有元素技能效果提高20%' }
-                              ];
-                            } else {
-                              availableFeatures = [
-                                { id: 'adaptability', name: '适应性强化', desc: '所有属性+5%' },
-                                { id: 'vitality', name: '生命活力', desc: '生命值和魔力值恢复速度+10%' },
-                                { id: 'combat_training', name: '战斗训练', desc: '伤害+5%，命中率+10%' }
-                              ];
-                            }
-                            
-                            return availableFeatures.map((feature) => {
-                              const isSelected = selectedHeroFeatures.some(f => f.id === feature.id);
-                              
-                              return (
-                                <div 
-                                  key={feature.id}
-                                  className={`p-2 rounded-md border cursor-pointer transition ${
-                                    isSelected 
-                                      ? 'bg-amber-900 border-amber-500' 
-                                      : 'bg-gray-800 border-gray-700 hover:bg-gray-700'
-                                  }`}
-                                  onClick={() => handleFeatureSelect(feature)}
-                                >
-                                  <div className="flex items-center">
-                                    <input 
-                                      type="checkbox" 
-                                      checked={isSelected}
-                                      readOnly 
-                                      className="h-4 w-4 text-amber-500 rounded border-gray-500 focus:ring-0"
-                                    />
-                                    <div className="ml-2">
-                                      <div className="font-medium text-sm">{feature.name}</div>
-                                      <div className="text-xs text-gray-400">{feature.desc}</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            });
-                          })()}
-                        </div>
-                        <div className="mt-2 text-xs text-gray-400">
-                          {selectedHeroFeatures.length === 0 
-                            ? '未选择特性' 
-                            : `已选择 ${selectedHeroFeatures.length}/2 个特性`}
-                        </div>
-                      </div>
-                    </>
-                  ) : (
-                    <p className="text-sm">选择一个英雄查看其特性描述...</p>
-                  )}
-                </div>
-              </div>
-              
-              {/* 已选天赋摘要 - 已移到天赋选择器内部 */}
-              
-              {/* 装备选择 */}
-              <EquipmentSelector 
-                selectedHero={selectedHero}
-                onEquipmentChange={handleEquipmentChange}
-              />
-              
-              {/* 伤害统计 */}
-              {selectedHero && (
-                <div className="bg-gray-800 rounded-lg p-6 shadow-lg mt-6">
-                  <h2 className="text-xl font-bold mb-4 text-amber-400">伤害统计</h2>
-                  <div className="space-y-3">
-                    <div className="bg-gray-700 p-3 rounded-lg">
-                      <div className="flex justify-between">
-                        <span>基础伤害</span>
-                        <span className="text-amber-400">{damage.base}</span>
-                      </div>
-                    </div>
-                    <div className="bg-gray-700 p-3 rounded-lg">
-                      <div className="flex justify-between">
-                        <span>暴击率</span>
-                        <span className="text-amber-400">{damage.critRate}%</span>
-                      </div>
-                    </div>
-                    <div className="bg-gray-700 p-3 rounded-lg">
-                      <div className="flex justify-between">
-                        <span>暴击伤害</span>
-                        <span className="text-amber-400">{damage.critDamage}%</span>
-                      </div>
-                    </div>
-                    <div className="bg-gray-700 p-3 rounded-lg">
-                      <div className="flex justify-between">
-                        <span>攻击速度</span>
-                        <span className="text-amber-400">{damage.attackSpeed}</span>
-                      </div>
-                    </div>
-                    <div className="bg-gray-700 p-3 rounded-lg">
-                      <div className="flex justify-between">
-                        <span>每秒伤害</span>
-                        <span className="text-amber-400">{damage.dps}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        );
-      case 'guide':
-        return (
-          <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
-            <h2 className="text-xl font-bold mb-4 text-amber-400">游戏攻略</h2>
-            <div className="bg-gray-700 p-4 rounded-lg">
-              <p>游戏攻略内容正在建设中...</p>
-              <div className="mt-4">
-                <h3 className="font-semibold mb-2">热门攻略</h3>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>新手入门指南</li>
-                  <li>职业选择建议</li>
-                  <li>装备搭配技巧</li>
-                  <li>天赋加点推荐</li>
-                  <li>副本通关攻略</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        );
-      case 'data':
-        return (
-          <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
-            <h2 className="text-xl font-bold mb-4 text-amber-400">游戏数据</h2>
-            <div className="bg-gray-700 p-4 rounded-lg">
-              <p>游戏数据查询功能正在建设中...</p>
-              <div className="mt-4">
-                <h3 className="font-semibold mb-2">可查询数据</h3>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>装备数据库</li>
-                  <li>技能效果详解</li>
-                  <li>怪物图鉴</li>
-                  <li>地图资源分布</li>
-                  <li>材料获取途径</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        );
-      case 'damage':
-        return (
-          <DamageCalculator
-            selectedHero={selectedHero}
-            selectedTalents={selectedTalents}
-            selectedEquipment={selectedEquipment}
-            attributes={attributes}
-            selectedHeroFeatures={selectedHeroFeatures}
-          />
-        );
-      default:
-        return null;
-    }
-  }, [activeTab, heroes, selectedHero, loading, error, attributes, handleHeroSelect, calculateAttributePercentage, handleTalentSelect, handleEquipmentChange, damage]);
+          )}
+          {sourceData.normal === 0 && sourceData.extra.length === 0 && (
+            <p className="text-gray-400">无伤害加成</p>
+          )}
+        </div>
+      </div>
+    );
+  };
+  
+  // 计算最终伤害值
+  const totalDamage = calculateTotalDamage();
 
   return (
     <main className="min-h-screen bg-gray-900 text-gray-100 p-4">
       <div className="container mx-auto">
-        {/* 头部区域 */}
-        <header className="mb-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <h1 className="text-3xl font-bold text-amber-400 mb-4 md:mb-0">火炬之光：无限 构建工具</h1>
-            <div className="flex space-x-4">
-              <button className="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition">
-                保存构建
-              </button>
-              <button className="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition">
-                加载构建
-              </button>
-              <button className="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition">
-                分享构建
-              </button>
+        {/* 页面标题 */}
+        <h1 className="text-2xl font-bold text-amber-400 mb-6">火炬之光：无限 伤害计算器</h1>
+
+        {/* 伤害计算Tabs */}
+        <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          {/* Tabs区域 */}
+          <Tabs defaultValue="hero" value={activeTab} onValueChange={setActiveTab}>
+            {/* Tab标题 */}
+            <TabsList className="w-full flex">
+              <TabsTrigger value="hero" className="flex-1 py-3 px-4">英雄特性</TabsTrigger>
+              <TabsTrigger value="talent" className="flex-1 py-3 px-4">天赋</TabsTrigger>
+              <TabsTrigger value="equipment" className="flex-1 py-3 px-4">装备</TabsTrigger>
+              <TabsTrigger value="pet" className="flex-1 py-3 px-4">契灵(宠物)</TabsTrigger>
+              <TabsTrigger value="skill" className="flex-1 py-3 px-4">技能+魂烛</TabsTrigger>
+            </TabsList>
+            
+            <div className="p-4">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                {/* 左侧和中间 - 当前选中Tab的内容 */}
+                <div className="lg:col-span-2">
+                  {/* 英雄特性Tab内容 */}
+                  <TabsContent value="hero" className="mt-0">
+                    <div className="bg-gray-800 p-4 rounded-md">
+                      {/* 集成英雄选择到英雄特性标签页 */}
+                      <div className="mb-6">
+                        <h3 className="text-lg font-semibold mb-3 text-amber-400">选择英雄</h3>
+                        <HeroSelector 
+                          heroes={heroes} 
+                          onHeroSelect={handleHeroSelect} 
+                          loading={loading} 
+                          error={error} 
+                        />
+                      </div>
+                      
+                      <div className="border-t border-gray-600 my-6 pt-6">
+                        <h3 className="text-lg font-semibold mb-3 text-amber-400">英雄特性</h3>
+                        
+                        {selectedHero ? (
+                          <div>
+                            {/* 显示已选英雄信息 */}
+                            <div className="bg-gray-700 rounded-lg p-4 shadow-lg mb-4">
+                              <h4 className="font-medium mb-2 text-amber-300">已选英雄: {selectedHero.name}</h4>
+                              <div className="flex items-center space-x-3 mb-2">
+                                {selectedHero.avatar && (
+                                  <img 
+                                    src={selectedHero.avatar} 
+                                    alt={selectedHero.name} 
+                                    className="w-12 h-12 rounded-full"
+                                  />
+                                )}
+                                <div className="flex-1">
+                                  <p className="text-sm text-gray-200">{selectedHero.desc}</p>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div className="mb-4">
+                              <h4 className="font-medium mb-2 text-amber-300">基础特性</h4>
+                              {heroSkills.length > 0 ? (
+                                <div className="bg-gray-700 p-3 rounded-md">
+                                  <div className="text-amber-400">{heroSkills[0]?.name}</div>
+                                  <div className="text-sm mt-2">
+                                    {heroSkills[0]?.description?.join(' ')}
+                                  </div>
+                                </div>
+                              ) : (
+                                <p className="text-gray-400">该英雄没有特性数据</p>
+                              )}
+                            </div>
+                            
+                            {heroSkills.length > 1 && (
+                              <div>
+                                <h4 className="font-medium mb-2 text-amber-300">高级特性 (等级45+)</h4>
+                                <div className="space-y-2">
+                                  {heroSkills.filter(skill => skill.level >= 45 && skill.level < 60).map((skill, index) => (
+                                    <div key={index} className="bg-gray-700 p-3 rounded-md">
+                                      <div className="text-amber-400">{skill.name} (Lv.{skill.level})</div>
+                                      <div className="text-sm mt-2">
+                                        {skill.description?.join(' ')}
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <p className="text-gray-400">请先选择一个英雄</p>
+                        )}
+                      </div>
+                    </div>
+                  </TabsContent>
+                  
+                  {/* 天赋Tab内容 */}
+                  <TabsContent value="talent" className="mt-0">
+                    <TalentSelector
+                      selectedHero={selectedHero}
+                      onTalentSelect={handleTalentSelect}
+                    />
+                  </TabsContent>
+                  
+                  {/* 装备Tab内容 */}
+                  <TabsContent value="equipment" className="mt-0">
+                    <div className="bg-gray-800 p-4 rounded-md">
+                      <h3 className="text-lg font-semibold mb-3">装备</h3>
+                      <div className="mb-4">
+                        <label className="block text-sm font-medium mb-1">基础武器伤害</label>
+                        <input
+                          type="number"
+                          value={baseWeaponDamage}
+                          onChange={(e) => setBaseWeaponDamage(Math.max(1, parseInt(e.target.value) || 0))}
+                          className="bg-gray-700 text-white p-2 rounded-md w-full"
+                        />
+                      </div>
+                      <div className="bg-gray-700 p-3 rounded-md">
+                        <p className="text-gray-400">装备系统正在建设中...</p>
+                      </div>
+                    </div>
+                  </TabsContent>
+                  
+                  {/* 契灵Tab内容 */}
+                  <TabsContent value="pet" className="mt-0">
+                    <div className="bg-gray-800 p-4 rounded-md">
+                      <h3 className="text-lg font-semibold mb-3">契灵与命运</h3>
+                      <div className="bg-gray-700 p-3 rounded-md">
+                        <p className="text-gray-400">契灵系统正在建设中...</p>
+                      </div>
+                    </div>
+                  </TabsContent>
+                  
+                  {/* 技能Tab内容 */}
+                  <TabsContent value="skill" className="mt-0">
+                    <div className="bg-gray-800 p-4 rounded-md">
+                      <h3 className="text-lg font-semibold mb-3">技能与魂烛</h3>
+                      <div className="bg-gray-700 p-3 rounded-md">
+                        <p className="text-gray-400">技能系统正在建设中...</p>
+                      </div>
+                    </div>
+                  </TabsContent>
+                </div>
+                
+                {/* 右侧 - 伤害计算结果面板 */}
+                <div>
+                  <div className="bg-gray-700 rounded-lg p-4 sticky top-4">
+                    <h3 className="text-lg font-bold mb-4 text-amber-400 border-b border-amber-400 pb-2">伤害汇总</h3>
+                    
+                    <div className="space-y-3">
+                      {/* 基础伤害 */}
+                      <div className="flex justify-between">
+                        <span>基础伤害:</span>
+                        <span className="font-semibold">{baseWeaponDamage}</span>
+                      </div>
+                      
+                      {/* 总伤害 */}
+                      <div className="flex justify-between text-lg text-amber-400 border-t border-amber-400 pt-2 mt-2">
+                        <span>总计伤害:</span>
+                        <span className="font-bold">{Math.round(totalDamage * 100) / 100}</span>
+                      </div>
+                      
+                      <div className="border-t border-gray-600 pt-3 mt-3">
+                        <h4 className="text-md font-semibold mb-2">伤害加成明细</h4>
+                        
+                        {renderDamageSourceDetail("英雄特性", heroDamageBonus)}
+                        {renderDamageSourceDetail("天赋", talentDamageBonus)}
+                        {renderDamageSourceDetail("装备", equipmentDamageBonus)}
+                        {renderDamageSourceDetail("契灵", petDamageBonus)}
+                        {renderDamageSourceDetail("技能", skillDamageBonus)}
+                        
+                        <div className="bg-gray-800 p-3 rounded-md mt-3">
+                          <h4 className="text-amber-400 font-semibold mb-2">计算公式</h4>
+                          <div className="text-xs text-gray-300">
+                            <p>普通百分比加成: {heroDamageBonus.normal + talentDamageBonus.normal + equipmentDamageBonus.normal + petDamageBonus.normal + skillDamageBonus.normal}%</p>
+                            <p>额外加成倍率: {Math.round((totalDamage / (baseWeaponDamage * (1 + (heroDamageBonus.normal + talentDamageBonus.normal + equipmentDamageBonus.normal + petDamageBonus.normal + skillDamageBonus.normal) / 100)) - 1) * 10000) / 100}%</p>
+                            <p className="mt-1">伤害 = 基础伤害 × (1 + 普通百分比加成) × (1 + 额外加成1) × (1 + 额外加成2)...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </Tabs>
         </div>
-          
-          {/* 导航标签页 */}
-          <nav className="mt-6 border-b border-gray-700">
-            <ul className="flex space-x-4">
-              <li>
-                <button 
-                  className={`px-4 py-2 ${activeTab === 'build' ? 'text-amber-400 border-b-2 border-amber-400' : 'text-gray-300 hover:text-gray-100'}`}
-                  onClick={() => setActiveTab('build')}
-                >
-                  构建工具
-                </button>
-              </li>
-              <li>
-                <button 
-                  className={`px-4 py-2 ${activeTab === 'guide' ? 'text-amber-400 border-b-2 border-amber-400' : 'text-gray-300 hover:text-gray-100'}`}
-                  onClick={() => setActiveTab('guide')}
-                >
-                  游戏攻略
-                </button>
-              </li>
-              <li>
-                <button 
-                  className={`px-4 py-2 ${activeTab === 'data' ? 'text-amber-400 border-b-2 border-amber-400' : 'text-gray-300 hover:text-gray-100'}`}
-                  onClick={() => setActiveTab('data')}
-                >
-                  数据查询
-                </button>
-              </li>
-              <li>
-                <button 
-                  className={`px-4 py-2 ${activeTab === 'damage' ? 'text-amber-400 border-b-2 border-amber-400' : 'text-gray-300 hover:text-gray-100'}`}
-                  onClick={() => setActiveTab('damage')}
-                >
-                  伤害计算
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        
-        {/* 主要内容区域 */}
-        {renderContent()}
-        
-        {/* 底部区域 */}
+
+        {/* 页脚 */}
         <footer className="mt-8 text-center text-gray-400 text-sm">
           <p>火炬之光：无限 构建工具 © 2023 - 本工具仅供游戏爱好者使用，与官方无关</p>
-          <p className="mt-2">数据来源于游戏内容，如有错误请反馈</p>
-      </footer>
-    </div>
+        </footer>
+      </div>
     </main>
   );
 }
